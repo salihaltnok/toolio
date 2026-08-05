@@ -25,5 +25,5 @@ jobs:
 
       - name: Deploy to Web Root
         run: |
-          sudo rm -rf /var/www/toolio/*
-          sudo cp -r dist/* /var/www/toolio/
+          rm -rf /var/www/toolio/*
+          cp -r dist/* /var/www/toolio/
