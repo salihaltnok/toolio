@@ -1,30 +1,29 @@
-name: Deploy React App (Self-Hosted)
+name: CI/CD to VDS
 
 on:
   push:
-    branches: ["main"]
-
-env:
-  IMAGE_NAME: my-react-website
-  CONTAINER_NAME: react-website-container
+    branches: [main] # veya kullandığın ana dal adı (master vb.)
 
 jobs:
   build-and-deploy:
-    # BURASI ÇOK ÖNEMLİ: "ubuntu-latest" yerine "self-hosted" yazıyoruz.
-    # Bu sayede işlem GitHub sunucularında değil, senin sunucunda gerçekleşiyor.
     runs-on: self-hosted
 
     steps:
-      - name: Kodu Çek (Checkout)
+      - name: Checkout code
         uses: actions/checkout@v4
 
-      # Eğer sunucunda Docker zaten kurulu ve çalışıyorsa,
-      # ekstra bir Docker kurulum step'ine gerek yok.
-      # Runner direkt sunucudaki docker komutunu kullanabilir.
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "18"
 
-      - name: Docker with Docker compose
+      - name: Install dependencies
+        run: npm install --legacy-peer-deps
+
+      - name: Build project
+        run: npm run build
+
+      - name: Deploy to Web Root
         run: |
-          docker compose up -d --build
-
-      - name: Gereksiz İmajları Temizle (Opsiyonel)
-        run: docker image prune -f
+          sudo rm -rf /var/www/toolio/*
+          sudo cp -r dist/* /var/www/toolio/
