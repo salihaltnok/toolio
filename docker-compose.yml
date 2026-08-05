@@ -1,0 +1,13 @@
+services:
+  react-app:
+    container_name: react-website-container
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    networks:
+      - proxy_net
+
+networks:
+  proxy_net:
+    external: true

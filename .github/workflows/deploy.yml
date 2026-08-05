@@ -1,0 +1,30 @@
+name: Deploy React App (Self-Hosted)
+
+on:
+  push:
+    branches: ["main"]
+
+env:
+  IMAGE_NAME: my-react-website
+  CONTAINER_NAME: react-website-container
+
+jobs:
+  build-and-deploy:
+    # BURASI ÇOK ÖNEMLİ: "ubuntu-latest" yerine "self-hosted" yazıyoruz.
+    # Bu sayede işlem GitHub sunucularında değil, senin sunucunda gerçekleşiyor.
+    runs-on: self-hosted
+
+    steps:
+      - name: Kodu Çek (Checkout)
+        uses: actions/checkout@v4
+
+      # Eğer sunucunda Docker zaten kurulu ve çalışıyorsa,
+      # ekstra bir Docker kurulum step'ine gerek yok.
+      # Runner direkt sunucudaki docker komutunu kullanabilir.
+
+      - name: Docker with Docker compose
+        run: |
+          docker compose up -d --build
+
+      - name: Gereksiz İmajları Temizle (Opsiyonel)
+        run: docker image prune -f

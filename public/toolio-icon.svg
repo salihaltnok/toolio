@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Toolio hammer T icon">
+  <defs>
+    <!-- Brand gradient -->
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#67E8F9"/>
+      <stop offset="0.5" stop-color="#60A5FA"/>
+      <stop offset="1" stop-color="#A78BFA"/>
+    </linearGradient>
+
+    <!-- Dark futuristic bg -->
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0B1020"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+
+    <!-- Glow -->
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="0" stdDeviation="10" flood-color="#67E8F9" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <!-- Rounded base -->
+  <rect x="6" y="6" width="116" height="116" rx="28" fill="url(#bg)"/>
+
+  <!-- Energy ring -->
+  <rect x="10" y="10" width="108" height="108" rx="24"
+        fill="none" stroke="url(#brand)" stroke-width="2" stroke-opacity="0.45"/>
+
+  <!-- Hammer-T symbol -->
+  <g filter="url(#glow)">
+    <!-- Hammer head (T top) -->
+    <path
+      d="M28 34
+         h72
+         c4 0 6 3 6 6
+         v6
+         c0 3-2 6-6 6
+         H28
+         c-4 0-6-3-6-6
+         v-6
+         c0-3 2-6 6-6z"
+      fill="url(#brand)"
+    />
+
+    <!-- Handle (T stem) -->
+    <path
+      d="M58 52
+         h12
+         v44
+         c0 6-5 10-10 10
+         s-10-4-10-10
+         v-30
+         c0-8 4-14 8-14z"
+      fill="url(#brand)"
+    />
+
+    <!-- Mechanical cut (detail) -->
+    <rect x="46" y="70" width="36" height="4" rx="2"
+          fill="#0B1020" opacity="0.35"/>
+  </g>
+
+  <!-- Spark / repair effect -->
+  <g opacity="0.9">
+    <circle cx="30" cy="90" r="3" fill="#67E8F9"/>
+    <circle cx="98" cy="86" r="2.5" fill="#A78BFA"/>
+    <circle cx="88" cy="104" r="2" fill="#60A5FA"/>
+  </g>
+</svg>
