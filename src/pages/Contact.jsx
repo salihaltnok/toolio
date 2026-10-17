@@ -11,10 +11,10 @@ const Contact = () => {
     const formData = new FormData(e.target);
     const subject = `Toolio İletişim: ${formData.get("name")}`;
     const body = `Ad: ${formData.get("name")}\nEmail: ${formData.get(
-      "email"
+      "email",
     )}\n\nMesaj:\n${formData.get("message")}`;
     window.location.href = `mailto:info@toolio.com.tr?subject=${encodeURIComponent(
-      subject
+      subject,
     )}&body=${encodeURIComponent(body)}`;
   };
 
@@ -107,36 +107,36 @@ const Contact = () => {
                   </label>
                   <input
                     type="text"
+                    name="name"
                     required
                     className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 focus:border-transparent outline-none transition"
                     placeholder={t("contact.form_placeholder_name")}
                   />
                 </div>
-
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
                     Email
                   </label>
                   <input
                     type="email"
+                    name="email"
                     required
                     className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 focus:border-transparent outline-none transition"
                     placeholder={t("contact.form_placeholder_email")}
                   />
                 </div>
-
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
                     {t("contact.form_message")}
                   </label>
                   <textarea
                     rows="4"
+                    name="message"
                     required
                     className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 focus:border-transparent outline-none transition resize-none"
                     placeholder={t("contact.form_placeholder_message")}
                   ></textarea>
                 </div>
-
                 <button
                   type="submit"
                   className="w-full bg-gray-900 text-white py-4 rounded-xl font-bold text-lg hover:bg-gray-800 transition flex items-center justify-center gap-2 group"

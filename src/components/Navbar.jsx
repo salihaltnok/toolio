@@ -229,12 +229,6 @@ const Navbar = () => {
       path: "/tweet-generator",
       icon: <MessageCircle size={16} />,
     },
-    {
-      id: 31,
-      key: "tools.bg_remover.name",
-      path: "/background-remover",
-      icon: <Sparkles size={16} />,
-    },
   ];
 
   // Scroll takibi

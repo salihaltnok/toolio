@@ -9,13 +9,10 @@ i18n
   .use(initReactI18next)
   .init({
     fallbackLng: "tr",
-    debug: true, // Konsoldaki hataları görmek için açık kalsın
-
+    debug: false,
     interpolation: {
       escapeValue: false,
     },
-
-    // ⚠️ BU KISIM EKSİKTİ, EKLE:
     backend: {
       loadPath: "/locales/{{lng}}/{{ns}}.json",
     },

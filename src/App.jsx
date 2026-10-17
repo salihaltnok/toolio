@@ -123,6 +123,7 @@ function App() {
                 <Route path="/fancy-font" element={<FancyFont />} />
                 <Route path="/speed-test" element={<SpeedTest />} />
                 <Route path="/tweet-generator" element={<TweetGenerator />} />
+                <Route path="*" element={<Home />} />
               </Routes>
             </Layout>
           </div>

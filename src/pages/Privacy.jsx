@@ -4,9 +4,9 @@ import { useTranslation } from "react-i18next";
 import { ShieldCheck, Lock, Server, Cookie } from "lucide-react";
 
 const Privacy = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const isTr = i18n.language?.startsWith("tr");
 
-  // Stil Tanımları
   const Section = ({ icon, title, children }) => (
     <div className="mb-10">
       <div className="flex items-center gap-3 mb-4">
@@ -27,20 +27,17 @@ const Privacy = () => {
         title={t("privacy.page_title")}
         description="Toolio Gizlilik Politikası"
       />
-
       <div className="bg-white min-h-screen py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto">
-          {/* Header */}
           <div className="text-center mb-16">
             <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-4">
               {t("privacy.page_title")}
             </h1>
             <p className="text-gray-500">
-              {t("privacy.last_updated")}: 27.12.2025
+              {t("privacy.last_updated")}: 17.10.2026
             </p>
           </div>
 
-          {/* İçerik */}
           <div className="prose prose-indigo max-w-none">
             <Section
               icon={<ShieldCheck size={24} />}
@@ -74,14 +71,29 @@ const Privacy = () => {
               title={t("privacy.cookies_title")}
             >
               <p>{t("privacy.cookies_desc")}</p>
-              <p className="text-sm bg-gray-50 p-3 rounded border border-gray-100 mt-2">
-                Google AdSense ve Google Analytics gibi üçüncü taraf hizmetler,
-                tarayıcınıza çerez yerleştirebilir.
-              </p>
+              <div className="text-sm bg-gray-50 p-4 rounded-xl border border-gray-100 mt-3 space-y-2">
+                <p>
+                  {isTr
+                    ? "Google dahil üçüncü taraf tedarikçiler, kullanıcılara sitemizdeki ve internetteki diğer sitelerdeki önceki ziyaretlerine dayalı olarak reklam sunmak için çerezleri (DoubleClick DART çerezi dahil) kullanmaktadır."
+                    : "Third-party vendors, including Google, use cookies (including the DoubleClick DART cookie) to serve ads based on a user's prior visits to our website or other websites."}
+                </p>
+                <p>
+                  {isTr
+                    ? "Kullanıcılar, Google Reklam Ayarları sayfasını ziyaret ederek kişiselleştirilmiş reklamcılığı devre dışı bırakabilirler: "
+                    : "Users may opt out of personalized advertising by visiting Google Ads Settings: "}
+                  <a
+                    href="https://adssettings.google.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-indigo-600 underline font-medium"
+                  >
+                    https://adssettings.google.com
+                  </a>
+                </p>
+              </div>
             </Section>
           </div>
 
-          {/* Alt Bilgi */}
           <div className="mt-16 pt-8 border-t border-gray-100 text-center">
             <p className="text-gray-500 text-sm">
               {t("privacy.contact_note")}{" "}

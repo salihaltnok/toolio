@@ -69,7 +69,7 @@ const PdfMerge = () => {
         const pdf = await PDFDocument.load(fileBuffer);
         const copiedPages = await mergedPdf.copyPages(
           pdf,
-          pdf.getPageIndices()
+          pdf.getPageIndices(),
         );
         copiedPages.forEach((page) => mergedPdf.addPage(page));
       }
@@ -85,7 +85,7 @@ const PdfMerge = () => {
     } catch (error) {
       console.error("PDF Merge Hatası:", error);
       alert(
-        "Bir hata oluştu. Lütfen dosyaların şifreli olmadığından emin olun."
+        "Bir hata oluştu. Lütfen dosyaların şifreli olmadığından emin olun.",
       );
     } finally {
       setIsMerging(false);
@@ -203,10 +203,49 @@ const PdfMerge = () => {
         <AdBanner slot="1234567890" />
       </div>
 
-      {/* --- EKSİK OLAN KISIM BURASIYDI, EKLENDİ --- */}
       <article className="mt-12 prose prose-lg max-w-none text-gray-600 bg-white p-8 rounded-2xl border border-gray-100 shadow-sm">
-        <h2 className="text-gray-800">{t("tools.pdf_merge.content.title")}</h2>
-        <p>{t("tools.pdf_merge.content.intro")}</p>
+        <h2 className="text-2xl font-bold text-gray-800 mb-4">
+          {t("tools.pdf_merge.content.title")}
+        </h2>
+        <p className="mb-6 leading-relaxed">
+          {t("tools.pdf_merge.content.intro")}
+        </p>
+        <h3 className="text-xl font-bold text-gray-800 mb-3">
+          {t("tools.pdf_merge.content.how_title", {
+            defaultValue: "PDF Dosyaları Nasıl Birleştirilir?",
+          })}
+        </h3>
+        <ul className="list-disc pl-5 space-y-2 mb-6">
+          <li>
+            {t("tools.pdf_merge.content.step1", {
+              defaultValue:
+                "Birleştirmek istediğiniz PDF dosyalarını yükleme alanına sürükleyin veya seçin.",
+            })}
+          </li>
+          <li>
+            {t("tools.pdf_merge.content.step2", {
+              defaultValue:
+                "Yukarı ve aşağı ok butonlarını kullanarak PDF sayfalarının birleşme sırasını dilediğiniz gibi düzenleyin.",
+            })}
+          </li>
+          <li>
+            {t("tools.pdf_merge.content.step3", {
+              defaultValue:
+                "Birleştir butonuna tıklayarak tek bir PDF dosyası halinde saniyeler içinde cihazınıza indirin.",
+            })}
+          </li>
+        </ul>
+        <h3 className="text-xl font-bold text-gray-800 mb-3">
+          {t("tools.pdf_merge.content.security_title", {
+            defaultValue: "%100 Güvenli ve Tarayıcı Tabanlı İşlem",
+          })}
+        </h3>
+        <p className="leading-relaxed">
+          {t("tools.pdf_merge.content.security_desc", {
+            defaultValue:
+              "Toolio PDF Birleştirici, yüklediğiniz hiçbir belgeyi uzak bir sunucuya göndermez. Tüm birleştirme işlemleri doğrudan kendi tarayıcınızda (Client-Side) gerçekleşir. Bu sayede özel ve kurumsal belgelerinizin gizliliği tamamen korunur.",
+          })}
+        </p>
       </article>
       {/* ------------------------------------------- */}
     </div>

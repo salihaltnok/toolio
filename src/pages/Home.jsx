@@ -380,6 +380,62 @@ const Home = () => {
             </button>
           </div>
         )}
+        {/* Ana Sayfa Zengin İçerik ve Rehber Alanı (AdSense & SEO) */}
+        <section className="mt-20 bg-white p-8 md:p-12 rounded-3xl shadow-sm border border-gray-100 text-gray-600 space-y-6">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
+            {t("home.seo_title", {
+              defaultValue:
+                "Toolio: Modern, Hızlı ve Güvenli Web Araçları Merkezi",
+            })}
+          </h2>
+          <p className="leading-relaxed">
+            {t("home.seo_p1", {
+              defaultValue:
+                "Toolio, yazılımcıların, tasarımcıların, öğrencilerin ve dijital içerik üreticilerinin günlük iş akışlarında ihtiyaç duyduğu 30'dan fazla çevrimiçi aracı tek bir çatı altında sunan ücretsiz bir platformdur. PDF işlemlerinden görsel sıkıştırmaya, JSON formatlamadan hız testine kadar tüm araçlara ek bir program indirmeden doğrudan tarayıcınız üzerinden ulaşabilirsiniz.",
+            })}
+          </p>
+          <div className="grid md:grid-cols-3 gap-6 pt-4">
+            <div className="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+              <h3 className="font-bold text-gray-900 mb-2">
+                {t("home.feature1_title", {
+                  defaultValue: "Tam Gizlilik (Client-Side)",
+                })}
+              </h3>
+              <p className="text-sm leading-relaxed">
+                {t("home.feature1_desc", {
+                  defaultValue:
+                    "PDF birleştirme, Word'den PDF'e dönüştürme ve görsel sıkıştırma gibi işlemler sunucularımıza yüklenmeden doğrudan kendi cihazınızın tarayıcısında işlenir.",
+                })}
+              </p>
+            </div>
+            <div className="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+              <h3 className="font-bold text-gray-900 mb-2">
+                {t("home.feature2_title", {
+                  defaultValue: "Ücretsiz ve Kayıtsız",
+                })}
+              </h3>
+              <p className="text-sm leading-relaxed">
+                {t("home.feature2_desc", {
+                  defaultValue:
+                    "Hiçbir aracı kullanmak için üyelik oluşturmanız veya ücret ödemeniz gerekmez. Sınırsız kullanım hakkıyla saniyeler içinde sonuç alabilirsiniz.",
+                })}
+              </p>
+            </div>
+            <div className="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+              <h3 className="font-bold text-gray-900 mb-2">
+                {t("home.feature3_title", {
+                  defaultValue: "Geliştirici ve Ofis Dostu",
+                })}
+              </h3>
+              <p className="text-sm leading-relaxed">
+                {t("home.feature3_desc", {
+                  defaultValue:
+                    "JSON düzenleyici, Base64 dönüştürücü, Diff Checker ve Markdown editörü gibi teknik araçların yanı sıra günlük ofis ve sosyal medya araçları bir aradadır.",
+                })}
+              </p>
+            </div>
+          </div>
+        </section>
       </div>
     </>
   );

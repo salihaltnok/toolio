@@ -34,7 +34,7 @@ const Terms = () => {
               {t("terms.page_title")}
             </h1>
             <p className="text-gray-500">
-              {t("privacy.last_updated")}: 27.12.2025
+              {t("privacy.last_updated")}: 17.10.2026
             </p>
           </div>
 
