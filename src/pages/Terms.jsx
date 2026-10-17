@@ -24,7 +24,7 @@ const Terms = () => {
     <>
       <SEO
         title={t("terms.page_title")}
-        description="Toolio Kullanım Şartları"
+        description="Toolio Kullanım Şartları ve Koşulları"
       />
 
       <div className="bg-white min-h-screen py-16 px-4 sm:px-6 lg:px-8">
