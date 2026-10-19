@@ -121,7 +121,7 @@ do_deploy() {
   rm -f "$ARCHIVE" 2>/dev/null || $SUDO rm -f "$ARCHIVE" 2>/dev/null || true
 
   if [ -f "$WEB_ROOT/surum.txt" ]; then
-    info "Yayindaki surum: $(head -n 1 "$WEB_ROOT/surum.txt")"
+    info "Yayindaki surum: $(head -n 1 "$WEB_ROOT/surum.txt" | tr -d '\r')"
   fi
   info "Yayin tamamlandi: $WEB_ROOT"
 }
@@ -142,14 +142,14 @@ do_rollback() {
   info "Site bir onceki surume geri alindi: $(basename "$LATEST")"
   info "Geri alinan (yeni) surum burada duruyor: $ROLLED_BACK_DIR"
   if [ -f "$WEB_ROOT/surum.txt" ]; then
-    info "Yayindaki surum: $(head -n 1 "$WEB_ROOT/surum.txt")"
+    info "Yayindaki surum: $(head -n 1 "$WEB_ROOT/surum.txt" | tr -d '\r')"
   fi
 }
 
 do_status() {
   info "Site klasoru: $WEB_ROOT"
   if [ -f "$WEB_ROOT/surum.txt" ]; then
-    info "Yayindaki surum: $(head -n 1 "$WEB_ROOT/surum.txt")"
+    info "Yayindaki surum: $(head -n 1 "$WEB_ROOT/surum.txt" | tr -d '\r')"
   else
     info "Yayindaki surum bilgisi yok (surum.txt bulunamadi)."
   fi
@@ -174,13 +174,13 @@ do_diagnose() {
   echo "## Kullanici / sistem"; id; uname -srm
   echo; echo "## Yayin klasoru: $WEB_ROOT"
   ls -la "$WEB_ROOT" 2>&1 | head -12
-  [ -f "$WEB_ROOT/surum.txt" ] && echo "surum.txt: $(cat "$WEB_ROOT/surum.txt")"
+  [ -f "$WEB_ROOT/surum.txt" ] && echo "surum.txt: $(tr -d '\r' < "$WEB_ROOT/surum.txt")"
   echo; echo "## 80/443 portlarini dinleyen programlar"
   ($S ss -ltnp 2>/dev/null || $S netstat -ltnp 2>/dev/null) | grep -E ':(80|443|8080|8443)[[:space:]]' || echo "(bulunamadi)"
   echo; echo "## Sunucunun kendisinden siteye istek (surum.txt)"
-  curl --noproxy "*" -sk -m 8 --resolve "$HOST:443:127.0.0.1" "https://$HOST/surum.txt" | head -c 200; echo
+  curl --noproxy "*" -sk -m 8 --resolve "$HOST:443:127.0.0.1" "https://$HOST/surum.txt" | head -c 200 | tr -d '\r'; echo
   curl --noproxy "*" -sk -m 8 -o /dev/null -w "HTTPS / -> %{http_code}\n" --resolve "$HOST:443:127.0.0.1" "https://$HOST/"
-  echo "HTTP (port 80) surum.txt: $(curl --noproxy "*" -s -m 8 -H "Host: $HOST" http://127.0.0.1/surum.txt | head -c 120 | tr '\n' ' ')"
+  echo "HTTP (port 80) surum.txt: $(curl --noproxy "*" -s -m 8 -H "Host: $HOST" http://127.0.0.1/surum.txt | head -c 120 | tr -d '\r' | tr '\n' ' ')"
   echo; echo "## Docker"
   if command -v docker >/dev/null 2>&1; then
     $S docker ps --format 'table {{.Names}}\t{{.Image}}\t{{.Ports}}\t{{.Status}}' 2>&1
@@ -278,7 +278,7 @@ do_setup() {
   else fail "Site dosyalari bulunamadi ($OLD_ROOT veya $NEW_ROOT). Once deploy.bat ile yayin yapin."; fi
   grep -qE '<div id="root"><[^/]' "$SRC/index.html" \
     || fail "$SRC/index.html yeni surum degil. Once deploy.bat ile yayin yapin. Hicbir sey degistirilmedi."
-  info "    Site dosyalari: $SRC ($(head -n 1 "$SRC/surum.txt" 2>/dev/null || echo 'surum bilgisi yok'))"
+  info "    Site dosyalari: $SRC ($(head -n 1 "$SRC/surum.txt" 2>/dev/null | tr -d '\r' || echo 'surum bilgisi yok'))"
 
   info "2/6 Site klasoru hazirlaniyor: $NEW_ROOT"
   mkdir -p "$SITE_BASE"
