@@ -26,7 +26,15 @@ const Pomodoro = () => {
   const [isActive, setIsActive] = useState(false);
   const [task, setTask] = useState("");
   const [toast, setToast] = useState({ show: false, message: "" });
-  const audioRef = useRef(null);
+  const originalTitleRef = useRef(null);
+  const deadlineRef = useRef(null);
+
+  // Sayfadan çıkınca sekme başlığını eski haline getir
+  useEffect(() => {
+    return () => {
+      if (originalTitleRef.current) document.title = originalTitleRef.current;
+    };
+  }, []);
 
   useEffect(() => {
     let minutes = 25;
@@ -45,21 +53,41 @@ const Pomodoro = () => {
     const timeString = `${minutes.toString().padStart(2, "0")}:${seconds
       .toString()
       .padStart(2, "0")}`;
-    document.title = `(${timeString}) ${
-      mode === "work" ? "Çalışma" : "Mola"
-    } - Toolio`;
+    if (isActive) {
+      if (!originalTitleRef.current) originalTitleRef.current = document.title;
+      document.title = `(${timeString}) ${
+        mode === "work" ? t("tools.pomodoro.work") : t("tools.pomodoro.short_break")
+      } - Toolio`;
+    } else if (originalTitleRef.current) {
+      document.title = originalTitleRef.current;
+      originalTitleRef.current = null;
+    }
 
     if (isActive && timeLeft > 0) {
+      // Bitiş anını sabitleyip kalan süreyi saatten hesaplıyoruz. Böylece
+      // sekme arka planda kalsa bile (tarayıcı zamanlayıcıları yavaşlatır)
+      // sayaç geri kalmaz.
+      if (!deadlineRef.current) {
+        deadlineRef.current = Date.now() + timeLeft * 1000;
+      }
       interval = setInterval(() => {
-        setTimeLeft((prev) => prev - 1);
-      }, 1000);
-    } else if (timeLeft === 0) {
+        const remaining = Math.max(
+          0,
+          Math.round((deadlineRef.current - Date.now()) / 1000),
+        );
+        setTimeLeft(remaining);
+      }, 500);
+    } else {
+      deadlineRef.current = null;
+    }
+
+    if (isActive && timeLeft === 0) {
       setIsActive(false);
       try {
         const audio = new Audio(
           "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
         );
-        audio.play();
+        audio.play().catch(() => {});
       } catch (e) {
         console.log("Ses çalınamadı");
       }
@@ -96,6 +124,11 @@ const Pomodoro = () => {
       />
 
       <div className="max-w-4xl mx-auto text-center relative">
+        <h1 className="text-3xl font-extrabold text-gray-900 mb-2">
+          {t("tools.pomodoro.name")}
+        </h1>
+        <p className="text-gray-600 mb-8">{t("tools.pomodoro.desc")}</p>
+
         {/* Mod Seçimi */}
         <div className="flex justify-center gap-4 mb-8">
           <button
@@ -282,45 +315,6 @@ const Pomodoro = () => {
         {/* REKLAM 2 */}
         <AdBanner slot="9988776655" className="mt-8" />
 
-        {/* --- ZENGİN İÇERİK ALANI (SEO) --- */}
-        <div className="mt-16 text-left max-w-3xl mx-auto px-4">
-          <article className="prose prose-teal prose-lg text-gray-600">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">
-              {t("tools.pomodoro.content.title")}
-            </h2>
-            <p className="mb-6 leading-relaxed">
-              {t("tools.pomodoro.content.intro")}
-            </p>
-
-            <h3 className="text-xl font-bold text-gray-800 mb-3">
-              {t("tools.pomodoro.content.how_title")}
-            </h3>
-            <ul className="list-disc pl-5 space-y-2 mb-6">
-              <li>
-                <strong>1.</strong> {t("tools.pomodoro.content.how_step_1")}
-              </li>
-              <li>
-                <strong>2.</strong> {t("tools.pomodoro.content.how_step_2")}
-              </li>
-              <li>
-                <strong>3.</strong> {t("tools.pomodoro.content.how_step_3")}
-              </li>
-              <li>
-                <strong>4.</strong> {t("tools.pomodoro.content.how_step_4")}
-              </li>
-              <li>
-                <strong>5.</strong> {t("tools.pomodoro.content.how_step_5")}
-              </li>
-            </ul>
-
-            <h3 className="text-xl font-bold text-gray-800 mb-3">
-              {t("tools.pomodoro.content.benefits_title")}
-            </h3>
-            <p className="leading-relaxed">
-              {t("tools.pomodoro.content.benefits_text")}
-            </p>
-          </article>
-        </div>
 
         {/* Toast */}
         <div

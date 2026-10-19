@@ -129,7 +129,9 @@ const ColorPalette = () => {
               </button>
 
               <span className="md:hidden text-white/80 text-sm mt-2">
-                {color.isLocked ? "Kilitli" : "Değişebilir"}
+                {color.isLocked
+                  ? t("tools.color_palette.locked")
+                  : t("tools.color_palette.unlocked")}
               </span>
             </div>
           ))}
@@ -138,31 +140,6 @@ const ColorPalette = () => {
         {/* REKLAM 1: Renklerin hemen altında */}
         <AdBanner slot="1234567890" className="my-8" />
 
-        {/* --- ZENGİN İÇERİK (SEO) ALANI (YENİ EKLENDİ) --- */}
-        <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 mb-8">
-          <article className="prose prose-indigo prose-lg text-gray-600 max-w-none">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">
-              {t("tools.color_palette.content.title")}
-            </h2>
-            <p className="mb-6 leading-relaxed">
-              {t("tools.color_palette.content.intro")}
-            </p>
-
-            <h3 className="text-xl font-bold text-gray-800 mb-3">
-              {t("tools.color_palette.content.how_title")}
-            </h3>
-            <p className="mb-6 leading-relaxed">
-              {t("tools.color_palette.content.how_text")}
-            </p>
-
-            <h3 className="text-xl font-bold text-gray-800 mb-3">
-              {t("tools.color_palette.content.areas_title")}
-            </h3>
-            <p className="leading-relaxed">
-              {t("tools.color_palette.content.areas_text")}
-            </p>
-          </article>
-        </div>
 
         {/* REKLAM 2: Sayfa sonu */}
         <AdBanner slot="9988776655" className="mb-12" />

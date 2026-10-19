@@ -230,26 +230,6 @@ const TextToSpeech = () => {
         <AdBanner slot="1234567890" />
       </div>
 
-      {/* SEO İçeriği */}
-      <article className="mt-12 prose prose-lg max-w-none text-gray-600 bg-white p-8 rounded-2xl border border-gray-100 shadow-sm">
-        <h2 className="text-gray-800">{t("tools.tts.content.title")}</h2>
-        <p>{t("tools.tts.content.p1")}</p>
-        <h3 className="text-gray-800">{t("tools.tts.content.h2")}</h3>
-        <ul>
-          <li>
-            <strong>{t("tools.tts.content.li1_title")}</strong>{" "}
-            {t("tools.tts.content.li1")}
-          </li>
-          <li>
-            <strong>{t("tools.tts.content.li2_title")}</strong>{" "}
-            {t("tools.tts.content.li2")}
-          </li>
-          <li>
-            <strong>{t("tools.tts.content.li3_title")}</strong>{" "}
-            {t("tools.tts.content.li3")}
-          </li>
-        </ul>
-      </article>
     </div>
   );
 };

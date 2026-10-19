@@ -3,19 +3,25 @@ import SEO from "../../components/SEO";
 import AdBanner from "../../components/AdBanner"; // Reklam bileşenini import et (Dosya yolunu kontrol et)
 import { useTranslation } from "react-i18next";
 
+const CHARSET =
+  "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*";
+
 const PasswordGenerator = () => {
   const { t } = useTranslation();
-  const [length, setLength] = useState(12);
+  const [length, setLength] = useState(16);
   const [password, setPassword] = useState("");
   const [copied, setCopied] = useState(false);
 
   const passwordGenerator = useCallback(() => {
+    // Tarayıcının kriptografik rastgele sayı üreteci (Math.random yerine).
+    // "limit" ile modulo yanlılığı (bazı karakterlerin daha sık çıkması) önlenir.
+    const max = CHARSET.length;
+    const limit = Math.floor(0x100000000 / max) * max;
+    const buffer = new Uint32Array(1);
     let pass = "";
-    let str =
-      "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*";
-    for (let i = 1; i <= length; i++) {
-      let char = Math.floor(Math.random() * str.length + 1);
-      pass += str.charAt(char);
+    while (pass.length < Number(length)) {
+      window.crypto.getRandomValues(buffer);
+      if (buffer[0] < limit) pass += CHARSET[buffer[0] % max];
     }
     setPassword(pass);
     setCopied(false);
@@ -48,7 +54,7 @@ const PasswordGenerator = () => {
         <div
           onClick={copyToClipboard}
           className="bg-gray-100 p-4 rounded-lg mb-4 text-lg font-mono break-all text-gray-800 cursor-pointer hover:bg-gray-200 transition relative group select-none"
-          title="Kopyalamak için tıkla"
+          title={t("common.click_to_copy")}
         >
           {password}
           {copied && (
@@ -68,7 +74,7 @@ const PasswordGenerator = () => {
             min={6}
             max={30}
             value={length}
-            onChange={(e) => setLength(e.target.value)}
+            onChange={(e) => setLength(Number(e.target.value))}
             className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-indigo-600"
           />
         </div>
@@ -88,36 +94,6 @@ const PasswordGenerator = () => {
         {/* <AdBanner slot="1234567890" />  */}
       </div>
 
-      {/* --- SEO VE İÇERİK ALANI (AdSense için Kritik Bölüm) --- */}
-      <div className="max-w-3xl mx-auto mt-12 px-4">
-        <article className="prose prose-indigo prose-lg text-gray-600">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">
-            {t("tools.password_gen.content.title")}
-          </h2>
-
-          <p className="mb-6 leading-relaxed">
-            {t("tools.password_gen.content.intro")}
-          </p>
-
-          <h3 className="text-xl font-bold text-gray-800 mb-3">
-            {t("tools.password_gen.content.how_title")}
-          </h3>
-
-          <ul className="list-disc pl-5 space-y-2 mb-6">
-            <li>{t("tools.password_gen.content.how_list_1")}</li>
-            <li>{t("tools.password_gen.content.how_list_2")}</li>
-            <li>{t("tools.password_gen.content.how_list_3")}</li>
-          </ul>
-
-          <h3 className="text-xl font-bold text-gray-800 mb-3">
-            {t("tools.password_gen.content.tips_title")}
-          </h3>
-
-          <p className="leading-relaxed">
-            {t("tools.password_gen.content.tips_text")}
-          </p>
-        </article>
-      </div>
     </>
   );
 };

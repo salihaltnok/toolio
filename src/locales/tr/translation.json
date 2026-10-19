@@ -1,0 +1,783 @@
+{
+  "navbar": {
+    "home": "Araçlar",
+    "about": "Hakkında",
+    "search_placeholder": "Araç ara...",
+    "no_results": "Sonuç bulunamadı.",
+    "switch_language": "Dili değiştir",
+    "menu": "Menü"
+  },
+  "common": {
+    "loading": "Yükleniyor...",
+    "error_title": "Bir şeyler ters gitti",
+    "error_desc": "Sayfa yüklenirken bir sorun oluştu. Sayfayı yenilemek genellikle sorunu çözer.",
+    "reload": "Sayfayı yenile",
+    "breadcrumb": "Sayfa konumu",
+    "cancel": "İptal",
+    "error_generic": "Bir hata oluştu. Lütfen tekrar deneyin.",
+    "invalid_image": "Lütfen geçerli bir resim dosyası yükleyin.",
+    "invalid_docx": "Lütfen geçerli bir .docx dosyası yükleyin.",
+    "docx_render_error": "Dosya görüntülenirken bir hata oluştu. Dosyanın bozuk olmadığından emin olun.",
+    "pdf_encrypted_error": "PDF'ler birleştirilemedi. Dosyalardan biri şifreli veya bozuk olabilir.",
+    "result_placeholder": "Sonuç burada görünecek...",
+    "click_to_copy": "Kopyalamak için tıklayın"
+  },
+  "home": {
+    "title": "Ücretsiz Web Araçları",
+    "subtitle": "PDF birleştirmeden resim sıkıştırmaya, şifre oluşturmadan kelime saymaya kadar günlük işlerinizi kolaylaştıran araçları üyelik gerekmeden, doğrudan tarayıcınızda kullanın.",
+    "h1": "Toolio: Ücretsiz Online Araçlar",
+    "meta_title": "Toolio – Ücretsiz Online Araçlar: PDF, Resim, Metin ve Hesaplama",
+    "meta_desc": "PDF birleştirme, JPG'den PDF'e, resim sıkıştırma, şifre oluşturma, kelime sayma ve daha fazlası. Toolio araçları ücretsizdir, üyelik istemez ve dosyalarınızı tarayıcınızda işler.",
+    "search_placeholder": "Araç ara... (ör. PDF, şifre, resim)",
+    "no_results_title": "Sonuç bulunamadı",
+    "no_results_desc": "\"{{term}}\" ile eşleşen bir araç bulamadık.",
+    "show_all": "Tüm araçları göster",
+    "seo_title": "Toolio nedir, ne işe yarar?",
+    "seo_p1": "Toolio; öğrencilerin, ofis çalışanlarının, tasarımcıların, yazılımcıların ve içerik üreticilerinin gün içinde sık ihtiyaç duyduğu küçük ama önemli işleri tek bir yerde toplayan ücretsiz bir araç sitesidir. Bir sözleşmenin sayfalarını tek PDF'te birleştirmek, telefonla çekilen fotoğrafları e-postaya sığacak boyuta küçültmek, bir makalenin kelime sayısını kontrol etmek ya da güçlü bir şifre üretmek için program kurmanız veya hesap açmanız gerekmez.",
+    "seo_p2": "Araçların büyük çoğunluğu tamamen tarayıcınızda çalışır: yüklediğiniz PDF, Word ve resim dosyaları ya da yazdığınız metinler Toolio sunucularına gönderilmez, işlem cihazınızda yapılır ve sonuç doğrudan size indirilir. Her aracın sayfasında nasıl kullanıldığını adım adım anlatan bir rehber, kullanım ipuçları ve sık sorulan sorular bulunur.",
+    "feature1_title": "Dosyalarınız cihazınızda kalır",
+    "feature1_desc": "PDF birleştirme, Word'den PDF'e dönüştürme ve resim sıkıştırma gibi işlemler sunucuya yükleme yapılmadan, tarayıcınızın içinde gerçekleşir.",
+    "feature2_title": "Ücretsiz ve üyeliksiz",
+    "feature2_desc": "Hiçbir araç için hesap oluşturmanız, e-posta adresi vermeniz veya ödeme yapmanız gerekmez. Kullanım sınırı yoktur.",
+    "feature3_title": "Her cihazda çalışır",
+    "feature3_desc": "Toolio güncel bir tarayıcıya sahip bilgisayar, tablet ve telefonlarda çalışır; kurulum veya eklenti gerektirmez.",
+    "seo_more": "Toolio'nun nasıl çalıştığını, kim tarafından geliştirildiğini ve nasıl finanse edildiğini merak ediyorsanız",
+    "seo_more_link": "Hakkında sayfasına göz atın."
+  },
+  "categories": {
+    "pdf": "PDF ve Belge Araçları",
+    "pdf_desc": "PDF birleştirin, resimleri PDF'e çevirin, Word belgelerini PDF olarak kaydedin.",
+    "image": "Görsel ve Tasarım Araçları",
+    "image_desc": "Resimleri sıkıştırın ve dönüştürün, QR kod ve imza oluşturun, renk paletleri keşfedin.",
+    "text": "Metin ve Yazı Araçları",
+    "text_desc": "Kelime sayın, harf düzenini değiştirin, iki metni karşılaştırın veya metni sesli dinleyin.",
+    "dev": "Geliştirici ve Güvenlik Araçları",
+    "dev_desc": "Güçlü şifreler üretin, JSON verisini düzenleyin, Base64 kodlayın ve çözün.",
+    "calc": "Hesaplama ve Dönüştürme",
+    "calc_desc": "Yüzde ve indirim hesaplayın, uzunluk, ağırlık ve sıcaklık birimlerini çevirin.",
+    "daily": "Verimlilik ve Günlük Araçlar",
+    "daily_desc": "Pomodoro ile odaklanın, internet hızınızı ölçün, klavye hızınızı test edin."
+  },
+  "guide_ui": {
+    "about_tool": "{{tool}} hakkında",
+    "how_to": "{{tool}} nasıl kullanılır?",
+    "uses": "Kimler, hangi durumlarda kullanır?",
+    "tips": "İpuçları ve bilmeniz gerekenler",
+    "faq": "Sıkça sorulan sorular",
+    "related": "Bunlar da işinize yarayabilir"
+  },
+  "not_found": {
+    "title": "Aradığınız sayfa bulunamadı",
+    "desc": "Bu adres taşınmış, kaldırılmış ya da hiç var olmamış olabilir. Ana sayfadan tüm araçlara ulaşabilirsiniz.",
+    "back_home": "Ana sayfaya dön",
+    "popular": "Popüler araçlar"
+  },
+  "footer": {
+    "desc": "Toolio, PDF, resim, metin ve hesaplama işlerinizi hızlandıran ücretsiz online araçlar sunar. Araçlar tarayıcınızda çalışır, üyelik gerekmez.",
+    "quick_links": "Popüler Araçlar",
+    "legal": "Kurumsal",
+    "privacy": "Gizlilik Politikası",
+    "terms": "Kullanım Şartları",
+    "contact": "İletişim",
+    "language": "Dil Seçimi",
+    "rights": "Tüm hakları saklıdır.",
+    "home": "Ana Sayfa",
+    "send_email": "E-Mail Gönder",
+    "bottom_note": "İstanbul'da geliştirildi."
+  },
+  "about": {
+    "page_title": "Hakkında",
+    "hero_title": "Toolio Hakkında",
+    "hero_desc": "Günlük dijital işler için basit, hızlı ve gizliliğe saygılı ücretsiz araçlar.",
+    "story_title": "Toolio neden var?",
+    "story_p1": "Basit bir işlem için, örneğin iki PDF'i birleştirmek ya da bir fotoğrafı küçültmek için program indirmek, üye olmak veya dosyanızı tanımadığınız bir sunucuya yüklemek zorunda kalmak can sıkıcıdır. Toolio bu ihtiyaçtan doğdu.",
+    "story_p2": "Bugün sitede PDF, görsel, metin, geliştirici, hesaplama ve verimlilik kategorilerinde {{count}} araç bulunuyor. Her araç tek bir işi iyi yapmak için tasarlandı ve her birinin sayfasında nasıl kullanılacağını anlatan bir rehber yer alıyor.",
+    "fast_title": "Hızlı",
+    "fast_desc": "İşlemler internet bağlantınızın hızına bağlı kalmadan doğrudan cihazınızda yapıldığı için sonuç genellikle birkaç saniye içinde hazırdır.",
+    "secure_title": "Gizliliğe saygılı",
+    "secure_desc": "PDF, Word ve resim dosyalarınız Toolio sunucularına yüklenmez; tarayıcınızda işlenir ve yalnızca sizin cihazınıza indirilir.",
+    "free_title": "Ücretsiz",
+    "free_desc": "Gizli ücret, deneme süresi veya üyelik zorunluluğu yoktur. Site, sayfalarda gösterilen reklamlarla ayakta durur.",
+    "modern_title": "Modern ve açık",
+    "modern_desc": "Toolio; güncel tarayıcıların sunduğu standart web teknolojileri ve yaygın açık kaynak kütüphanelerle geliştirildi.",
+    "tech_stack_title": "Kullanılan teknolojiler",
+    "meta_desc": "Toolio'nun ne olduğu, araçların nasıl çalıştığı, dosyalarınızın neden cihazınızdan çıkmadığı ve sitenin nasıl finanse edildiği hakkında bilgiler.",
+    "story_p3": "Araçlar ücretsizdir ve kullanmak için hesap açmanız gerekmez. Yeni araçlar ve iyileştirmeler, kullanıcılardan gelen geri bildirimlere göre düzenli olarak eklenir.",
+    "how_title": "Araçlar nasıl çalışır?",
+    "how_intro": "Toolio'daki araçlar, tarayıcınızın içinde çalışan JavaScript koduyla hazırlanmıştır. Bir sayfayı açtığınızda gerekli kod cihazınıza yüklenir; sonrasında yaptığınız işlemler cihazınızda gerçekleşir.",
+    "how_list": [
+      "PDF birleştirme, JPG'den PDF'e, Word'den PDF'e, resim sıkıştırma ve resim dönüştürme araçları dosyalarınızı sunucuya göndermez. Dosya tarayıcının belleğinde işlenir ve sonuç size indirilir.",
+      "Kelime sayacı, metin karşılaştırıcı, JSON düzenleyici, Base64 dönüştürücü ve şifre oluşturucu gibi metin araçlarına yazdıklarınız kaydedilmez ve hiçbir yere iletilmez.",
+      "İnternet hız testi, ölçüm yapabilmek için bağımsız bir araştırma ağı olan Measurement Lab (M-Lab) sunucularına bağlanır. Bu araç, doğası gereği internet bağlantısı kullanır; ayrıntılar Gizlilik Politikası'nda yer alır.",
+      "Metin seslendirme aracı tarayıcınızın kendi konuşma motorunu kullanır. Seçtiğiniz sese bağlı olarak bazı tarayıcılar metni kendi bulut hizmetlerinde seslendirebilir.",
+      "Sitede Google AdSense aracılığıyla reklam gösterilebilir. Reklamlar araçların çalışmasını engellemeyecek şekilde yerleştirilir."
+    ],
+    "who_title": "Toolio'yu kim geliştiriyor?",
+    "who_desc": "Toolio, İstanbul'da yaşayan bağımsız bir yazılım geliştirici tarafından geliştirilen ve bakımı yapılan kişisel bir projedir. Sitedeki tüm araçlar, metinler ve rehberler bu proje kapsamında hazırlanır ve kullanıcı geri bildirimleriyle güncellenir. Bir hata bulduğunuzda veya yeni bir araç önermek istediğinizde iletişim sayfasından doğrudan ulaşabilirsiniz.",
+    "ads_title": "Toolio nasıl finanse ediliyor?",
+    "ads_desc": "Sunucu, alan adı ve geliştirme masraflarını karşılamak için sayfalarda Google AdSense reklamları gösterilebilir. Reklamlar sayesinde araçlar herkes için ücretsiz kalır. Reklamlar ve çerezler hakkında ayrıntılı bilgi için şu sayfaya bakabilirsiniz:",
+    "tech_stack_desc": "Toolio aşağıdaki açık kaynak teknolojiler ve tarayıcı API'leri üzerine kuruludur:",
+    "stack_list": [
+      "React",
+      "Vite",
+      "Tailwind CSS",
+      "pdf-lib",
+      "jsPDF",
+      "docx-preview",
+      "browser-image-compression",
+      "Web Speech API",
+      "MediaRecorder API",
+      "Canvas API"
+    ],
+    "contact_title": "Bize ulaşın",
+    "contact_desc": "Soru, öneri ve hata bildirimleriniz için her zaman yazabilirsiniz."
+  },
+  "contact": {
+    "page_title": "İletişim",
+    "hero_desc": "Bir sorunuz, öneriniz veya hata bildiriminiz mi var? Bize yazın.",
+    "info_title": "Bize Ulaşın",
+    "info_desc": "Geri bildirimleriniz Toolio'yu geliştirmemize yardımcı oluyor. Araçlarla ilgili sorular, hata bildirimleri, yeni araç önerileri ve iş birlikleri için aşağıdaki e-posta adresini kullanabilirsiniz.",
+    "form_name": "Adınız Soyadınız",
+    "form_message": "Mesajınız",
+    "form_btn": "Mesajı Gönder",
+    "faq_title": "Sıkça sorulan sorular",
+    "faq_desc": "E-postalara genellikle 1-2 iş günü içinde yanıt veriyoruz.",
+    "form_placeholder_name": "Adınız Soyadınız",
+    "form_placeholder_email": "ornek@email.com",
+    "form_placeholder_message": "Mesajınızı buraya yazın...",
+    "email_label": "E-posta",
+    "location_label": "Konum",
+    "mail_subject": "Toolio İletişim",
+    "faq_badge": "SSS",
+    "faq_list": [
+      {
+        "q": "Toolio'yu kullanmak ücretli mi?",
+        "a": "Hayır. Sitedeki tüm araçlar ücretsizdir ve üyelik gerektirmez. Masraflar sayfalarda gösterilen reklamlarla karşılanır."
+      },
+      {
+        "q": "Yüklediğim dosyalar nereye gidiyor?",
+        "a": "PDF, Word ve resim araçlarına eklediğiniz dosyalar Toolio sunucularına yüklenmez; tarayıcınızda işlenir ve sonuç doğrudan cihazınıza indirilir. Sayfayı kapattığınızda dosyalar tarayıcı belleğinden de silinir."
+      },
+      {
+        "q": "Bir araç çalışmıyor, ne yapmalıyım?",
+        "a": "Önce tarayıcınızı güncelleyip sayfayı yenilemeyi deneyin. Sorun devam ederse kullandığınız aracı, tarayıcıyı ve gördüğünüz hatayı e-postayla bize iletin; mümkün olan en kısa sürede inceleyelim."
+      },
+      {
+        "q": "Yeni bir araç önerebilir miyim?",
+        "a": "Elbette. İhtiyaç duyduğunuz aracı ve nasıl çalışmasını istediğinizi kısaca anlatan bir e-posta göndermeniz yeterli. Öneriler yeni araç planlamasında öncelikli olarak değerlendirilir."
+      }
+    ],
+    "location_value": "İstanbul, Türkiye"
+  },
+  "privacy": {
+    "page_title": "Gizlilik Politikası",
+    "last_updated": "Son güncelleme",
+    "contact_note": "Gizlilikle ilgili sorularınız için:",
+    "meta_desc": "Toolio gizlilik politikası: dosyalarınızın tarayıcıda işlenmesi, sunucu kayıtları, çerezler, Google AdSense reklamları, üçüncü taraf hizmetler ve KVKK kapsamındaki haklarınız.",
+    "summary": "Bu politika, toolio.com.tr adresindeki web sitesini (\"Toolio\", \"site\") kullanırken hangi bilgilerin işlendiğini, neden işlendiğini ve haklarınızı açıklar. Kısaca: araçlara yüklediğiniz dosyalar ve yazdığınız metinler sunucularımıza gönderilmez; sitede Google AdSense reklamları ve bunlara bağlı çerezler kullanılabilir.",
+    "sections": [
+      {
+        "title": "Veri sorumlusu ve kapsam",
+        "paragraphs": [
+          "Bu politika Toolio web sitesi için geçerlidir. Kişisel verilerinizle ilgili her türlü soru ve talep için info@toolio.com.tr adresinden bize ulaşabilirsiniz.",
+          "Politika; 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) ve geçerli olduğu ölçüde Avrupa Birliği Genel Veri Koruma Tüzüğü (GDPR) dikkate alınarak hazırlanmıştır."
+        ]
+      },
+      {
+        "title": "Araçlara yüklediğiniz dosyalar ve metinler",
+        "paragraphs": [
+          "PDF birleştirme, JPG'den PDF'e, Word'den PDF'e, resim sıkıştırma, resim dönüştürme, meme oluşturma ve imza oluşturma gibi araçlar dosyalarınızı tarayıcınızın içinde işler. Bu dosyalar Toolio sunucularına yüklenmez, saklanmaz ve görüntülenmez.",
+          "Kelime sayacı, metin karşılaştırıcı, JSON düzenleyici, Base64 dönüştürücü, şifre oluşturucu ve benzeri araçlara yazdığınız içerikler de yalnızca cihazınızda işlenir. Sayfayı kapattığınızda bu veriler tarayıcı belleğinden silinir."
+        ]
+      },
+      {
+        "title": "Otomatik olarak işlenen teknik bilgiler",
+        "paragraphs": [
+          "Siteyi ziyaret ettiğinizde, sitenin barındırıldığı sunucu her web sunucusunda olduğu gibi standart erişim kayıtları (log) tutar. Bu kayıtlarda IP adresi, tarih ve saat, istenen sayfa, tarayıcı ve işletim sistemi bilgisi ile yönlendiren sayfa yer alabilir.",
+          "Bu kayıtlar yalnızca sitenin güvenliğini sağlamak, kötüye kullanımı önlemek ve teknik hataları gidermek amacıyla, sınırlı bir süre saklanır ve üçüncü kişilerle paylaşılmaz. Bu işlemenin hukuki dayanağı, sitenin güvenli şekilde işletilmesine ilişkin meşru menfaatimizdir."
+        ]
+      },
+      {
+        "title": "Tarayıcınızda saklanan bilgiler",
+        "paragraphs": [
+          "Toolio, seçtiğiniz dili hatırlamak için tarayıcınızın yerel depolama alanına (localStorage) \"i18nextLng\" adlı küçük bir kayıt yazar. Bir sayfa güncelleme sonrasında yüklenemezse, sayfanın sonsuz döngüde yenilenmesini önlemek için oturum depolamasına (sessionStorage) geçici bir işaret bırakılır. Bu bilgiler cihazınızdan dışarı gönderilmez ve tarayıcı ayarlarınızdan silinebilir."
+        ]
+      },
+      {
+        "title": "Çerezler ve Google AdSense reklamları",
+        "paragraphs": [
+          "Toolio, masraflarını karşılamak için Google AdSense hizmeti aracılığıyla reklam gösterebilir. Google dahil üçüncü taraf tedarikçiler, kullanıcılara bu sitedeki ve internetteki diğer sitelerdeki önceki ziyaretlerine dayalı reklamlar sunmak için çerezleri kullanır.",
+          "Google'ın reklam çerezlerini kullanması, Google'ın ve iş ortaklarının kullanıcılara bu siteye ve/veya internetteki diğer sitelere yaptıkları ziyaretlere göre reklam sunmasını sağlar. Bu çerezler aracılığıyla toplanan bilgiler Google'ın kendi gizlilik politikasına tabidir.",
+          "Kişiselleştirilmiş reklamcılığı Google Reklam Ayarları sayfasından devre dışı bırakabilirsiniz. Üçüncü taraf tedarikçilerin kişiselleştirilmiş reklamcılık için kullandığı çerezleri www.aboutads.info adresinden de devre dışı bırakabilirsiniz. Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre'deki ziyaretçilere, Google'ın onaylı izin yönetimi mesajı aracılığıyla reklam çerezlerine izin verip vermeme seçeneği sunulur.",
+          "Tarayıcınızın ayarlarından çerezleri her zaman silebilir veya engelleyebilirsiniz. Çerezleri engellemek araçların çalışmasını etkilemez; yalnızca gösterilen reklamların kişiselleştirilmesini sınırlar."
+        ],
+        "links": [
+          {
+            "label": "Google Reklam Ayarları",
+            "href": "https://adssettings.google.com"
+          },
+          {
+            "label": "Google, iş ortaklarının sitelerindeki bilgileri nasıl kullanır?",
+            "href": "https://policies.google.com/technologies/partner-sites"
+          },
+          {
+            "label": "Google reklam çerezleri hakkında",
+            "href": "https://policies.google.com/technologies/ads"
+          },
+          {
+            "label": "www.aboutads.info",
+            "href": "https://www.aboutads.info/choices/"
+          }
+        ]
+      },
+      {
+        "title": "Üçüncü taraf hizmetler",
+        "paragraphs": [
+          "Bazı araçlar, doğaları gereği üçüncü taraf hizmetlere bağlanır. Bu hizmetlerin kendi gizlilik politikaları geçerlidir:"
+        ],
+        "list": [
+          "İnternet Hız Testi: Ölçüm, Measurement Lab (M-Lab) ağındaki sunucularla yapılır. Testi başlattığınızda IP adresiniz ve test sonuçlarınız M-Lab tarafından işlenir ve M-Lab'in politikası gereği açık veri olarak herkese açık şekilde yayınlanır. Bu nedenle test, yalnızca siz başlat butonuna bastığınızda çalışır.",
+          "Pomodoro Sayacı: Süre dolduğunda çalan uyarı sesi Google'ın ses kütüphanesinden (actions.google.com) yüklenir. Bu istek sırasında IP adresiniz Google'a iletilir.",
+          "Metin Seslendirme: Tarayıcınızın konuşma motoru kullanılır. Seçtiğiniz sese bağlı olarak (ör. bazı \"Google\" veya \"Microsoft\" çevrim içi sesleri) metniniz tarayıcı üreticisinin bulut hizmetinde seslendirilebilir.",
+          "Google AdSense: Reklamların gösterilmesi için Google sunucularından içerik yüklenir; ayrıntılar yukarıdaki bölümde açıklanmıştır."
+        ],
+        "links": [
+          {
+            "label": "M-Lab Gizlilik Politikası",
+            "href": "https://www.measurementlab.net/privacy/"
+          },
+          {
+            "label": "Google Gizlilik Politikası",
+            "href": "https://policies.google.com/privacy"
+          }
+        ]
+      },
+      {
+        "title": "Çocukların gizliliği",
+        "paragraphs": [
+          "Toolio genel kitleye yönelik bir sitedir ve 13 yaşın altındaki çocuklara yönelik değildir. Çocuklardan bilerek kişisel veri toplamayız."
+        ]
+      },
+      {
+        "title": "KVKK kapsamındaki haklarınız",
+        "paragraphs": [
+          "KVKK'nın 11. maddesi uyarınca; kişisel verilerinizin işlenip işlenmediğini öğrenme, işlenmişse buna ilişkin bilgi talep etme, işlenme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme, yurt içinde veya yurt dışında aktarıldığı üçüncü kişileri bilme, eksik veya yanlış işlenmişse düzeltilmesini, şartları oluştuğunda silinmesini veya yok edilmesini isteme, işlenen verilerin münhasıran otomatik sistemler vasıtasıyla analiz edilmesi suretiyle aleyhinize bir sonucun ortaya çıkmasına itiraz etme ve kanuna aykırı işleme nedeniyle zarara uğramanız hâlinde zararın giderilmesini talep etme haklarına sahipsiniz.",
+          "Bu haklarınızı kullanmak için info@toolio.com.tr adresine e-posta gönderebilirsiniz. Başvurunuz en geç 30 gün içinde sonuçlandırılır. AB'de yaşayan kullanıcılar GDPR kapsamındaki erişim, düzeltme, silme, işlemeyi kısıtlama, itiraz ve veri taşınabilirliği haklarını da aynı adres üzerinden kullanabilir."
+        ]
+      },
+      {
+        "title": "Politikadaki değişiklikler",
+        "paragraphs": [
+          "Bu politika, sitedeki araçlar veya yasal düzenlemeler değiştikçe güncellenebilir. Güncel sürüm her zaman bu sayfada yayınlanır ve sayfanın üstündeki \"Son güncelleme\" tarihi değiştirilir."
+        ]
+      }
+    ]
+  },
+  "terms": {
+    "page_title": "Kullanım Şartları",
+    "meta_desc": "Toolio kullanım şartları: hizmetin kapsamı, kabul edilebilir kullanım kuralları, sorumluluk reddi, fikri mülkiyet ve uygulanacak hukuk.",
+    "summary": "Bu şartlar, toolio.com.tr adresindeki web sitesini ve sitedeki araçları kullanımınızı düzenler. Siteyi kullanarak bu şartları kabul etmiş olursunuz. Şartları kabul etmiyorsanız lütfen siteyi kullanmayın.",
+    "sections": [
+      {
+        "title": "Hizmetin tanımı",
+        "paragraphs": [
+          "Toolio; PDF, görsel, metin, hesaplama ve verimlilik alanlarında ücretsiz, tarayıcı tabanlı araçlar sunan bir web sitesidir. Araçların çoğu yalnızca sizin cihazınızda çalışır ve dosyalarınızı sunucuya yüklemez.",
+          "Toolio, araçları önceden bildirimde bulunmaksızın değiştirme, geliştirme, geçici olarak durdurma veya kaldırma hakkını saklı tutar."
+        ]
+      },
+      {
+        "title": "Kabul edilebilir kullanım",
+        "paragraphs": [
+          "Siteyi kullanırken aşağıdaki kurallara uymayı kabul edersiniz:"
+        ],
+        "list": [
+          "Araçları yalnızca yürürlükteki mevzuata uygun amaçlarla kullanmak.",
+          "Başkalarının telif hakkı, marka, gizlilik veya kişilik haklarını ihlal eden içerikleri işlememek ve yaymamak.",
+          "İmza oluşturucu dahil hiçbir aracı başkası adına sahte belge, imza veya kayıt üretmek ya da kimseyi aldatmak için kullanmamak.",
+          "Siteye zarar verecek, aşırı yük oluşturacak veya güvenliğini tehlikeye atacak otomatik istekler, saldırılar ya da benzeri girişimlerde bulunmamak."
+        ]
+      },
+      {
+        "title": "İçeriklerinizden sorumluluk",
+        "paragraphs": [
+          "Araçlara eklediğiniz dosya ve metinler cihazınızda işlenir. Bu içerikleri işleme ve paylaşma hakkına sahip olduğunuzdan ve elde ettiğiniz sonuçları nasıl kullandığınızdan siz sorumlusunuz."
+        ]
+      },
+      {
+        "title": "Sorumluluk reddi",
+        "paragraphs": [
+          "Araçlar \"olduğu gibi\" ve \"mevcut haliyle\" sunulur. Sonuçların doğru, eksiksiz ve kesintisiz olacağı garanti edilmez. Özellikle önemli belgelerde, çıktıyı kullanmadan önce kontrol etmenizi ve orijinal dosyalarınızın yedeğini saklamanızı öneririz.",
+          "Yüzde, indirim ve birim hesaplayıcılarının sonuçları bilgilendirme amaçlıdır; mali, hukuki veya mesleki danışmanlık yerine geçmez. İnternet hız testi sonuçları ağ koşullarına göre değişebilir."
+        ]
+      },
+      {
+        "title": "Sorumluluğun sınırlandırılması",
+        "paragraphs": [
+          "Yürürlükteki mevzuatın izin verdiği ölçüde Toolio; sitenin veya araçların kullanımından ya da kullanılamamasından doğan veri kaybı, iş kaybı veya dolaylı zararlardan sorumlu tutulamaz."
+        ]
+      },
+      {
+        "title": "Fikri mülkiyet",
+        "paragraphs": [
+          "Sitenin tasarımı, metinleri, rehberleri, logosu ve kaynak kodu Toolio'ya aittir ve izin alınmadan kopyalanamaz. Sitede kullanılan açık kaynak kütüphaneler kendi lisansları kapsamında kullanılmaktadır.",
+          "Sitede adı geçen Microsoft Word, PDF, YouTube, Instagram ve benzeri ürün ve marka adları ilgili sahiplerine aittir; Toolio bu şirketlerle bağlantılı değildir ve onlar tarafından onaylanmamıştır."
+        ]
+      },
+      {
+        "title": "Üçüncü taraf bağlantılar ve reklamlar",
+        "paragraphs": [
+          "Sitede üçüncü taraf web sitelerine bağlantılar ve Google AdSense aracılığıyla gösterilen reklamlar yer alabilir. Bu sitelerin ve reklamverenlerin içeriklerinden, ürünlerinden ve gizlilik uygulamalarından Toolio sorumlu değildir."
+        ]
+      },
+      {
+        "title": "Değişiklikler",
+        "paragraphs": [
+          "Bu şartlar zaman zaman güncellenebilir. Güncel sürüm bu sayfada yayınlanır; değişikliklerden sonra siteyi kullanmaya devam etmeniz güncel şartları kabul ettiğiniz anlamına gelir."
+        ]
+      },
+      {
+        "title": "Uygulanacak hukuk",
+        "paragraphs": [
+          "Bu şartlar Türkiye Cumhuriyeti kanunlarına tabidir. Uyuşmazlıklarda İstanbul mahkemeleri ve icra daireleri yetkilidir."
+        ]
+      }
+    ]
+  },
+  "legal": {
+    "updated_date": "19 Ekim 2026"
+  },
+  "tools": {
+    "password_gen": {
+      "name": "Şifre Oluşturucu",
+      "desc": "Güvenli ve rastgele şifreler üretin.",
+      "length": "Uzunluk",
+      "generate_btn": "Yenile",
+      "copied_msg": "Kopyalandı!",
+      "placeholder": "Şifre burada görünecek"
+    },
+    "word_counter": {
+      "name": "Kelime Sayacı",
+      "desc": "Metinlerinizin kelime ve karakter sayılarını ölçün.",
+      "words": "Kelime",
+      "chars": "Karakter",
+      "sentences": "Cümle",
+      "paragraphs": "Paragraf",
+      "header_text": "Metnini Buraya Yapıştır",
+      "placeholder": "Yazmaya başla veya metnini buraya yapıştır...",
+      "copy_msg": "Metin kopyalandı!",
+      "seo_desc": "Ücretsiz online kelime, karakter, cümle ve paragraf sayacı."
+    },
+    "json_formatter": {
+      "name": "JSON Düzenleyici",
+      "desc": "JSON verilerinizi doğrulayın ve güzelleştirin.",
+      "header": "JSON Düzenleyici",
+      "format_btn": "Formatla (Beautify)",
+      "minify_btn": "Sıkıştır (Minify)",
+      "clear_btn": "Temizle",
+      "input_label": "Giriş (Raw JSON)",
+      "output_label": "Çıktı",
+      "error_msg": "Geçersiz JSON formatı!",
+      "copy_msg": "JSON kopyalandı!",
+      "placeholder_input": "{\"ad\": \"Salih\"}",
+      "placeholder_output": "Sonuç burada görünecek..."
+    },
+    "qr_generator": {
+      "name": "QR Kod Oluşturucu",
+      "desc": "Renkli QR kodlar oluşturun ve indirin.",
+      "header": "QR Kod Oluşturucu",
+      "url_label": "Web Sitesi / Metin",
+      "fg_color": "Ön Renk",
+      "bg_color": "Arka Renk",
+      "size": "Boyut",
+      "download_btn": "PNG Olarak İndir"
+    },
+    "image_converter": {
+      "name": "Resim Dönüştürücü",
+      "desc": "PNG, JPG ve WEBP formatlarını dönüştürün.",
+      "header": "Resim Dönüştürücü",
+      "upload_title": "Resim Yükle veya Sürükle",
+      "upload_desc": "PNG, JPG, WEBP desteklenir",
+      "target_format": "Hedef Format",
+      "convert_btn": "İndir",
+      "processing": "İşleniyor...",
+      "privacy_note": "Resminiz tarayıcıda işlenir, sunucuya yüklenmez."
+    },
+    "unit_converter": {
+      "name": "Birim Çevirici",
+      "desc": "Uzunluk, ağırlık ve sıcaklık birimlerini birbirine çevirin.",
+      "header": "Birim Çevirici",
+      "select_category": "Kategori Seçin",
+      "length": "Uzunluk",
+      "weight": "Ağırlık",
+      "temperature": "Sıcaklık",
+      "from": "Dönüştürülecek",
+      "to": "Hedef Birim",
+      "result": "Sonuç"
+    },
+    "color_palette": {
+      "name": "Renk Paleti",
+      "desc": "Projeleriniz için mükemmel renk uyumları yakalayın.",
+      "header": "Renk Paleti Oluşturucu",
+      "generate_btn": "Oluştur (Space)",
+      "copy_msg": "Renk kopyalandı!",
+      "instruction": "Kilitlemek için kilide, kopyalamak için koda tıklayın.",
+      "locked": "Kilitli",
+      "unlocked": "Değişebilir"
+    },
+    "markdown_editor": {
+      "name": "Markdown Editörü",
+      "desc": "Markdown kodlarınızı yazın ve anlık olarak önizleyin.",
+      "header": "Markdown Editörü",
+      "write": "Yaz (Markdown)",
+      "preview": "Önizleme",
+      "placeholder": "# Başlık\n**Kalın** ve *italik* yazı...",
+      "copy_html": "HTML Kopyala",
+      "clear": "Temizle"
+    },
+    "lorem_ipsum": {
+      "name": "Lorem Ipsum & Metin Çoğaltıcı",
+      "desc": "Standart Lorem Ipsum üretin veya kendi metninizi çoğaltın.",
+      "header": "Lorem Ipsum Oluşturucu",
+      "count_label": "Tekrar Sayısı",
+      "source_label": "Özel Kaynak Metin (İsteğe Bağlı)",
+      "source_placeholder": "Buraya bir şey yazarsanız Latince yerine bunu çoğaltır...",
+      "generate_btn": "Oluştur",
+      "copy_btn": "Kopyala",
+      "copy_msg": "Metin kopyalandı!"
+    },
+    "case_converter": {
+      "name": "Metin Dönüştürücü",
+      "desc": "Metinlerinizi büyük, küçük, başlık veya URL formatına çevirin.",
+      "header": "Büyük/Küçük Harf Dönüştürücü",
+      "placeholder": "Dönüştürmek istediğiniz metni buraya yazın...",
+      "uppercase": "BÜYÜK HARF",
+      "lowercase": "küçük harf",
+      "capitalize": "Baş Harfler Büyük",
+      "sentence_case": "Cümle düzeni",
+      "slugify": "URL Formatı (Slug)",
+      "copy_msg": "Metin kopyalandı!",
+      "slug_info": "URL Formatı (Slug), harfleri küçültür, Türkçe karakterleri İngilizce karşılıklarına çevirir (ç→c, ş→s) ve boşlukları tireye (-) dönüştürür."
+    },
+    "percentage_calc": {
+      "name": "Yüzde Hesaplama",
+      "desc": "Yüzde alma, artış/azalış oranı ve ters yüzde işlemleri yapın.",
+      "header": "Yüzde Hesaplama Aracı",
+      "calc_1_title": "Yüzde Bulma",
+      "calc_1_between": "sayısının %",
+      "calc_1_after": "'i kaçtır?",
+      "calc_2_title": "Oran Bulma",
+      "calc_2_between": "sayısı,",
+      "calc_2_after": "sayısının yüzde kaçıdır?",
+      "calc_3_title": "Değişim Oranı",
+      "calc_3_between": "sayısından",
+      "calc_3_after": "sayısına değişim oranı nedir?",
+      "result": "Sonuç",
+      "calculate": "Hesapla",
+      "placeholder_a": "Sayı A",
+      "placeholder_b": "Sayı B"
+    },
+    "base64_converter": {
+      "name": "Base64 Dönüştürücü",
+      "desc": "Metinlerinizi Base64 formatına çevirin veya şifrelenmiş veriyi çözün.",
+      "header": "Base64 Dönüştürücü",
+      "encode_tab": "Şifrele (Encode)",
+      "decode_tab": "Çöz (Decode)",
+      "input_placeholder": "Metnini buraya yaz...",
+      "output_placeholder": "Sonuç burada görünecek...",
+      "copy_msg": "Sonuç kopyalandı!",
+      "error_msg": "Geçersiz Base64 formatı! Lütfen girdiyi kontrol edin."
+    },
+    "pomodoro": {
+      "name": "Pomodoro Sayacı",
+      "desc": "Odaklanın, mola verin ve üretkenliğinizi artırın.",
+      "header": "Pomodoro Sayacı",
+      "work": "Çalışma",
+      "short_break": "Kısa Mola",
+      "long_break": "Uzun Mola",
+      "start": "Başlat",
+      "pause": "Duraklat",
+      "reset": "Sıfırla",
+      "task_placeholder": "Şu an ne üzerinde çalışıyorsun?",
+      "time_up": "Süre Doldu!",
+      "settings": "Süre Ayarları (Dakika)",
+      "status_running": "SÜRE İŞLİYOR",
+      "status_paused": "DURAKLATILDI"
+    },
+    "discount_calculator": {
+      "name": "Gelişmiş İndirim Hesaplama",
+      "desc": "Çifte indirim, vergi ve detaylı fiyat hesaplamaları yapın.",
+      "header": "İndirim Hesaplama Aracı",
+      "original_price": "Etiket Fiyatı",
+      "discount_rate": "1. İndirim Oranı (%)",
+      "second_discount_rate": "Ekstra İndirim (%) (Opsiyonel)",
+      "tax_rate": "Vergi / KDV Oranı (%)",
+      "calculate_btn": "Hesapla",
+      "final_price": "Ödenecek Tutar",
+      "saved_amount": "Toplam Kazanç",
+      "placeholder_price": "Örn: 500",
+      "placeholder_rate": "Örn: 20",
+      "currency": "Para Birimi",
+      "enable_second_disc": "Ekstra İndirim Ekle",
+      "enable_tax": "Vergi Ekle",
+      "error_negative": "Değer 0'dan küçük olamaz",
+      "error_max_100": "Oran 100'den büyük olamaz",
+      "details": "Hesaplama Detayları",
+      "copy_btn": "Sonucu Kopyala",
+      "result_placeholder": "Hesaplama yapmak için değerleri girin...",
+      "first_discount": "1. İndirim",
+      "extra_discount": "Ekstra İndirim"
+    },
+    "counter": {
+      "name": "Akıllı Sayaç",
+      "desc": "Klavye destekli, sesli ve titreşimli online sayaç/zikirmatik.",
+      "header": "Akıllı Sayaç",
+      "current_count": "Güncel Sayı",
+      "step_label": "Artış Miktarı",
+      "reset_btn": "Sıfırla",
+      "sound_on": "Ses Açık",
+      "sound_off": "Ses Kapalı",
+      "vibration_on": "Titreşim Açık",
+      "vibration_off": "Titreşim Kapalı",
+      "keyboard_hint": "İpucu: Yön tuşlarını kullanabilirsiniz. (R: Sıfırla)"
+    },
+    "decision_wheel": {
+      "name": "Karar Çarkı",
+      "desc": "Kararsız mı kaldınız? Seçenekleri girin ve çarkı çevirin.",
+      "header": "Karar Çarkı",
+      "spin_btn": "ÇEVİR",
+      "reset_btn": "Listeyi Temizle",
+      "shuffle_btn": "Karıştır",
+      "input_label": "Seçenekler (Her satıra bir tane)",
+      "placeholder": "Pizza\nHamburger\nLahmacun\nSalata",
+      "winner_title": "Kazanan:",
+      "winner_msg": "Tebrikler! Seçimimiz belli oldu.",
+      "close_btn": "Tamam",
+      "option_count": "{{count}} seçenek",
+      "default_items": "Evet\nHayır\nBelki\nKesinlikle"
+    },
+    "docx_converter": {
+      "name": "Word to PDF",
+      "desc": "Word (DOCX) dosyalarınızı PDF'e çevirin.",
+      "header": "Word'den PDF'e Çevirici",
+      "subtext": "DOCX dosyalarınızı yükleyin ve saniyeler içinde PDF olarak indirin. Sunucuya yükleme yok, %100 güvenli.",
+      "drop_title": "Word Dosyasını Buraya Sürükleyin",
+      "drop_sub": "veya dosya seçmek için tıklayın (.docx)",
+      "processing": "Dönüştürülüyor...",
+      "success": "Dönüştürme Tamamlandı!",
+      "btn_download": "PDF Olarak İndir",
+      "btn_new": "Yeni Belge Dönüştür",
+      "error_process": "Dönüştürme sırasında bir hata oluştu."
+    },
+    "jpg_to_pdf": {
+      "name": "JPG'den PDF'e",
+      "desc": "Resimlerinizi tek bir PDF dosyasında birleştirin.",
+      "header": "JPG to PDF Dönüştürücü",
+      "subtext": "Sınırsız sayıda resmi saniyeler içinde PDF belgesine çevirin. Tarayıcı tabanlı, hızlı ve güvenli.",
+      "drag_drop": "Resimleri buraya sürükleyin veya seçin",
+      "add_more": "Ekle",
+      "convert_btn": "PDF Olarak İndir",
+      "converting": "PDF Oluşturuluyor..."
+    },
+    "pdf_merge": {
+      "name": "PDF Birleştirici",
+      "desc": "Birden fazla PDF dosyasını tek dosyada birleştirin.",
+      "header": "PDF Birleştirme Aracı",
+      "subtext": "Dosyalarınızı yükleyin, sürükleyerek sıraya dizin ve tek tıkla birleştirin. İşlem %100 tarayıcınızda gerçekleşir, dosyalar sunucuya yüklenmez.",
+      "drag_drop": "PDF dosyalarını buraya sürükleyin veya seçin",
+      "merge_btn": "PDF'leri Birleştir ve İndir",
+      "processing": "Birleştiriliyor...",
+      "min_warning": "Birleştirme işlemi için en az 2 dosya seçmelisiniz."
+    },
+    "signature": {
+      "name": "İmza Oluşturucu",
+      "desc": "Online dijital imzanızı oluşturun ve PNG olarak indirin.",
+      "header": "Online İmza Oluşturucu",
+      "subtext": "Mouse veya parmağınızı kullanarak imzanızı çizin, rengini seçin ve şeffaf arka planlı olarak indirin.",
+      "draw_here": "Buraya Çizin",
+      "color": "Renk",
+      "width": "Kalınlık",
+      "clear_btn": "Temizle",
+      "download_btn": "İmzayı İndir",
+      "empty_warning": "Lütfen önce bir imza çizin."
+    },
+    "compressor": {
+      "name": "Resim Sıkıştırma",
+      "desc": "Resimlerin boyutunu kaliteden ödün vermeden küçültün.",
+      "header": "Resim Sıkıştırma Aracı",
+      "subtext": "Web siteleri veya sosyal medya için resimlerinizi optimize edin. Dosyalarınız sunucuya yüklenmeden tarayıcıda küçültülür.",
+      "drag_drop": "Resmi buraya sürükleyin veya seçin",
+      "new_image": "Farklı Resim Seç",
+      "compress_btn": "Sıkıştır",
+      "processing": "İşleniyor...",
+      "result_title": "Harika! Küçültüldü",
+      "download_btn": "İndir"
+    },
+    "youtube_thumb": {
+      "name": "YouTube Thumbnail İndir",
+      "desc": "YouTube videolarının kapak fotoğrafını HD olarak indirin.",
+      "header": "YouTube Küçük Resim İndirici",
+      "subtext": "Videonun linkini yapıştırın, kapağını en yüksek kalitede saniyeler içinde indirin.",
+      "fetch_btn": "Resmi Bul",
+      "error_url": "Geçersiz YouTube linki!",
+      "content": {
+        "title": "YouTube Kapak Fotoğrafı İndirme Aracı",
+        "p1": "Beğendiğiniz bir YouTube videosunun küçük resmini (thumbnail) bilgisayarınıza veya telefonunuza kaydetmek mi istiyorsunuz? Toolio ile video linkini yapıştırmanız yeterli.",
+        "h2": "Hangi Kaliteleri İndirebilirim?",
+        "li1": "Mevcut olan en yüksek çözünürlük. Genelde 720p veya 1080p.",
+        "li2": "Standart kalite, blog yazıları için idealdir.",
+        "li3": "Daha düşük boyutlu, hızlı yüklenen versiyon."
+      }
+    },
+    "tts": {
+      "name": "Metin Seslendirme",
+      "desc": "Yazılarınızı sesli okuyun ve dinleyin.",
+      "header": "Metin Seslendirme Aracı (TTS)",
+      "subtext": "Metninizi yapıştırın, dili seçin ve dinlemeye başlayın. Tamamen ücretsiz ve tarayıcı tabanlı.",
+      "voice_label": "Ses Seçimi",
+      "speed_label": "Konuşma Hızı",
+      "pitch_label": "Ses Tonu",
+      "placeholder": "Buraya seslendirmek istediğiniz metni yazın...",
+      "play_btn": "Oku",
+      "pause_btn": "Duraklat",
+      "stop_btn": "Durdur"
+    },
+    "screen_recorder": {
+      "name": "Ekran Kaydedici",
+      "desc": "Program indirmeden ekran videosu kaydedin.",
+      "header": "Online Ekran Video Kaydedici",
+      "subtext": "Ekranınızın tamamını, bir pencereyi veya tarayıcı sekmesini kaydedin ve hemen indirin. Süre sınırı yok, filigran yok.",
+      "start_btn": "Kaydı Başlat",
+      "stop_btn": "Durdur",
+      "download_btn": "Videoyu İndir",
+      "new_rec_btn": "Yeni Kayıt",
+      "webm_note": "Not: Kayıtlar .webm formatında kaydedilir. Chrome, Firefox, Edge veya VLC Player ile açabilirsiniz.",
+      "ready": "Kayıt başlatılmaya hazır"
+    },
+    "meme": {
+      "name": "Meme Oluşturucu",
+      "desc": "Kendi komik internet capslerinizi (meme) oluşturun.",
+      "header": "Online Meme Oluşturucu",
+      "subtext": "Resminizi yükleyin, klasik üst ve alt yazıları ekleyin, anında indirin.",
+      "settings": "Yazı Ayarları",
+      "upload_btn": "Resim Yükle",
+      "top_text": "Üst Yazı",
+      "bottom_text": "Alt Yazı",
+      "font_size": "Yazı Boyutu",
+      "color": "Yazı Rengi",
+      "download_btn": "Meme'i İndir",
+      "preview_placeholder": "Resim yüklemek için sol taraftaki butonu kullanın",
+      "top_placeholder": "ÜST YAZI",
+      "bottom_placeholder": "ALT YAZI"
+    },
+    "typing": {
+      "name": "Klavye Hız Testi",
+      "desc": "1 dakikada kaç kelime yazabildiğinizi test edin.",
+      "header": "Online 10 Parmak Klavye Testi",
+      "subtext": "Yazma hızınızı ölçün, pratik yapın ve WPM (Dakikadaki Kelime Sayısı) skorunuzu öğrenin.",
+      "result_title": "Süre Doldu!",
+      "correct": "Doğru Kelime",
+      "incorrect": "Yanlış Kelime",
+      "restart_btn": "Tekrar Dene",
+      "placeholder": "Yazmaya başla..."
+    },
+    "diff": {
+      "name": "Metin Karşılaştırıcı",
+      "desc": "İki metin arasındaki farkları bulun (Diff Checker).",
+      "header": "Metin Farkı Bulucu",
+      "subtext": "İki metni yapıştırın, sistem aradaki eklenen veya silinen kelimeleri anında renkli olarak göstersin.",
+      "original": "Orijinal Metin",
+      "modified": "Değişmiş Metin",
+      "placeholder_old": "Eski metni buraya yapıştırın...",
+      "placeholder_new": "Yeni metni buraya yapıştırın...",
+      "result_title": "Karşılaştırma Sonucu",
+      "waiting_result": "Sonuçları görmek için yukarıdaki alanlara metin girin...",
+      "deleted": "Silinenler",
+      "added": "Eklenenler"
+    },
+    "fancy_font": {
+      "name": "Şekilli Nick Yazma",
+      "desc": "Instagram ve oyunlar için havalı, şekilli yazılar oluşturun.",
+      "header": "Şekilli Yazı Oluşturucu",
+      "subtext": "Metninizi yazın, onlarca farklı stil arasından beğendiğinizi kopyalayın.",
+      "placeholder": "Buraya nick veya metin yazın..."
+    },
+    "speedtest": {
+      "name": "İnternet Hız Testi",
+      "desc": "İnternet hızınızı (Download, Upload, Ping) profesyonelce ölçün.",
+      "header": "Gelişmiş İnternet Hız Testi",
+      "subtext": "Bağlantı kalitenizi saniyeler içinde analiz edin. İndirme hızı, yükleme hızı ve gecikme (Ping) değerlerinizi en hassas sunucularla ölçün.",
+      "download": "İNDİRME",
+      "upload": "YÜKLEME",
+      "ping": "GECİKME (Ping)",
+      "server": "Sunucu",
+      "start_btn": "Testi Başlat",
+      "restart_btn": "Tekrar Test Et",
+      "go_text": "GO",
+      "start_label": "BAŞLAT",
+      "locating_title": "En İyi Sunucu Bulunuyor...",
+      "locating_desc": "Konumunuza en yakın sunucu taranıyor",
+      "label_download": "İndirme Testi",
+      "label_upload": "Yükleme Testi",
+      "test_completed": "Test Tamamlandı!",
+      "connection_label": "Bağlantı:",
+      "network_name": "M-Lab Network",
+      "server_auto": "Otomatik Seçiliyor...",
+      "gauge_unit": "Mbps",
+      "status_connecting": "Bağlanıyor...",
+      "status_download": "İndirme...",
+      "status_upload": "Yükleme...",
+      "error_msg": "Bağlantı hatası oluştu.",
+      "mlab_notice": "Test, bağımsız ölçüm ağı Measurement Lab (M-Lab) sunucularıyla yapılır. Testi başlattığınızda IP adresiniz ve sonuçlarınız M-Lab tarafından açık veri olarak yayınlanır.",
+      "mlab_policy": "M-Lab gizlilik politikası"
+    },
+    "tweet_gen": {
+      "name": "Sosyal Medya Gönderi Oluşturucu",
+      "desc": "Sahte Tweet (X) veya Instagram gönderileri oluşturun.",
+      "header": "Sosyal Medya Gönderi Oluşturucu",
+      "subtext": "Platformu seç, profilini düzenle, içeriği gir ve anında gerçekçi bir sosyal medya görüntüsü oluştur.",
+      "platform_select": "Platform Seçin",
+      "platform_x": "X (Twitter)",
+      "platform_insta": "Instagram",
+      "settings_appearance": "Görünüm Modu",
+      "mode_light": "Aydınlık",
+      "mode_dim": "Loş",
+      "mode_dark": "Karanlık",
+      "settings_profile": "Profil Bilgileri",
+      "placeholder_name": "İsim",
+      "placeholder_username": "Kullanıcı Adı",
+      "label_verified": "Mavi Tik Göster",
+      "settings_content": "Gönderi İçeriği",
+      "label_post_image": "Gönderi Görseli (Instagram İçin)",
+      "placeholder_content": "Açıklama / Tweet yaz...",
+      "settings_stats": "İstatistikler & Tarih",
+      "placeholder_time": "Saat",
+      "placeholder_date": "Tarih",
+      "placeholder_retweets": "Retweet",
+      "placeholder_quotes": "Alıntı",
+      "placeholder_likes": "Beğeni",
+      "placeholder_bookmarks": "Kaydetme",
+      "placeholder_views": "Görüntülenme",
+      "placeholder_location": "Konum (Örn: İstanbul, TR)",
+      "btn_download": "Resim Olarak İndir",
+      "label_views": "Görüntülenme",
+      "label_retweets": "Retweet",
+      "label_quotes": "Alıntı",
+      "label_likes": "Beğeni",
+      "label_bookmarks": "Yer İşareti",
+      "preview_note": "Önizleme yukarıdaki gibidir. İndir butonuna basarak kaydedebilirsiniz.",
+      "content": {
+        "title": "Sahte Sosyal Medya Gönderisi Nasıl Oluşturulur?",
+        "p1": "Toolio ile artık sadece Tweet değil, Instagram gönderileri de oluşturabilirsiniz! İster komik bir tweet, ister influencer gibi görünen bir Instagram postu tasarlayın. Photoshop bilmenize gerek yok.",
+        "h2": "Hangi Platformlar Destekleniyor?",
+        "li1_title": "X (Twitter):",
+        "li1": "Klasik tweet formatı. Retweet, beğeni ve görüntülenme sayılarını özelleştirebilirsiniz.",
+        "li2_title": "Instagram:",
+        "li2": "Kare fotoğraf paylaşımı formatı. Gönderi görseli yükleyebilir, konum ekleyebilir ve beğeni sayılarını değiştirebilirsiniz.",
+        "li3_title": "Karanlık Mod:",
+        "li3": "Her iki platform için de Aydınlık (Light), Loş (Dim) ve Karanlık (Dark) mod seçenekleri mevcuttur.",
+        "h_guide": "Kullanım Rehberi",
+        "guide_p": "1. Üstten platformu (X veya Instagram) seçin.\n2. Profil fotoğrafınızı ve gönderi görselinizi yükleyin.\n3. Yazıları ve sayıları düzenleyin.\n4. İndir butonuna basarak yüksek kaliteli PNG alın."
+      }
+    }
+  }
+}

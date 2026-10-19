@@ -1,0 +1,1173 @@
+{
+  "pdf_merge": {
+    "seo_title": "PDF Birleştirme – Ücretsiz Online PDF Birleştirici",
+    "meta": "Birden fazla PDF dosyasını istediğiniz sırayla tek PDF'te birleştirin. Dosyalar sunucuya yüklenmez, tarayıcınızda birleştirilir. Ücretsiz ve üyeliksiz.",
+    "intro": "PDF Birleştirici, ayrı ayrı duran PDF dosyalarını tek bir belgede toplamanızı sağlar. Bir başvuru için kimlik fotokopisi, diploma ve özgeçmişi tek dosyada göndermek, bir raporun bölümlerini birleştirmek ya da taranmış sayfaları bir araya getirmek gibi işler için idealdir. Dosyaları istediğiniz sıraya dizer, tek tıkla birleştirirsiniz.\n\nBirleştirme işlemi açık kaynak pdf-lib kütüphanesiyle doğrudan tarayıcınızda yapılır. Belgeleriniz hiçbir sunucuya gönderilmez; bu yüzden sözleşme, fatura veya kişisel belgeler gibi gizli dosyalarınızı da gönül rahatlığıyla birleştirebilirsiniz. Sayfaların içeriği, çözünürlüğü ve metin seçilebilirliği olduğu gibi korunur.",
+    "steps": [
+      "\"PDF dosyalarını buraya sürükleyin veya seçin\" alanına tıklayın ya da dosyalarınızı bu alana sürükleyip bırakın. Birden fazla dosyayı aynı anda seçebilirsiniz.",
+      "Listeye eklenen dosyaların sırasını, her dosyanın yanındaki yukarı ve aşağı ok butonlarıyla düzenleyin. Birleştirilmiş PDF'te sayfalar bu sırayla yer alır.",
+      "Yanlış eklediğiniz bir dosyayı çöp kutusu simgesiyle listeden çıkarın. Unuttuğunuz dosyaları sonradan da ekleyebilirsiniz.",
+      "En az iki dosya eklendiğinde \"PDF'leri Birleştir ve İndir\" butonuna basın.",
+      "Birleştirilen belge \"toolio-merged.pdf\" adıyla cihazınıza indirilir. Dilerseniz dosyanın adını indirdikten sonra değiştirebilirsiniz."
+    ],
+    "uses": [
+      "İş ve okul başvurularında istenen belgeleri tek bir PDF olarak göndermek.",
+      "Muhasebe için bir aya ait faturaları ya da dekontları tek dosyada arşivlemek.",
+      "Tarayıcıdan ayrı ayrı taranmış sayfaları tek bir belge haline getirmek.",
+      "Ders notlarını, sunum çıktılarını veya rapor bölümlerini birleştirerek paylaşmayı kolaylaştırmak."
+    ],
+    "tips": [
+      "Parola korumalı (şifreli) PDF'ler birleştirilemez. Önce PDF okuyucunuzda parolayı kaldırıp dosyayı yeniden kaydedin.",
+      "Çok büyük veya yüzlerce sayfalık dosyalar, cihazınızın belleğine bağlı olarak daha uzun sürebilir. Telefonda zorlanırsanız işlemi bilgisayarda deneyin.",
+      "Belgelerin yalnızca bazı sayfalarına ihtiyacınız varsa, birleştirmeden önce bu sayfaları ayrı bir PDF olarak kaydedin; araç dosyaların tüm sayfalarını ekler.",
+      "Resimleri PDF'e eklemek istiyorsanız önce JPG'den PDF'e aracıyla PDF'e çevirin, ardından burada diğer belgelerle birleştirin."
+    ],
+    "faq": [
+      {
+        "q": "Dosyalarım bir sunucuya yükleniyor mu?",
+        "a": "Hayır. Birleştirme tamamen tarayıcınızda gerçekleşir. Dosyalarınız cihazınızdan çıkmaz ve Toolio tarafından görülmez."
+      },
+      {
+        "q": "Kaç dosyayı birleştirebilirim?",
+        "a": "Araçta sabit bir dosya sınırı yoktur. Pratikte sınırı cihazınızın belleği belirler; onlarca dosyayı sorunsuz birleştirebilirsiniz."
+      },
+      {
+        "q": "Birleştirince kalite düşer mi?",
+        "a": "Hayır. Sayfalar yeniden sıkıştırılmadan kopyalandığı için metinler, resimler ve bağlantılar orijinal kalitesinde kalır."
+      },
+      {
+        "q": "Telefondan kullanabilir miyim?",
+        "a": "Evet. Güncel bir mobil tarayıcıyla dosyalarınızı seçip birleştirebilir, sonucu telefonunuza indirebilirsiniz."
+      }
+    ]
+  },
+  "jpg_to_pdf": {
+    "seo_title": "JPG'den PDF'e Çevirme – Resimleri PDF Yapın",
+    "meta": "JPG ve PNG resimlerinizi tek bir PDF dosyasında birleştirin. Her resim ayrı bir A4 sayfaya yerleşir. Tarayıcıda çalışır, dosya yüklemez, ücretsizdir.",
+    "intro": "JPG'den PDF'e aracı, telefonunuzla çektiğiniz belge fotoğraflarını, ekran görüntülerini veya taranmış resimleri tek bir PDF dosyasına dönüştürür. Her resim ayrı bir A4 sayfaya, oranı bozulmadan ve sayfaya ortalanarak yerleştirilir. Böylece fotoğraflarla dolu bir klasör yerine paylaşması ve yazdırması kolay tek bir belgeniz olur.\n\nDönüştürme jsPDF kütüphanesiyle tarayıcınızda yapılır; resimleriniz internete yüklenmez. Bu sayede kimlik, ruhsat veya fatura fotoğrafları gibi kişisel görselleri de güvenle PDF'e çevirebilirsiniz.",
+    "steps": [
+      "\"Resimleri buraya sürükleyin veya seçin\" alanından bir veya daha fazla JPG ya da PNG dosyası seçin.",
+      "Eklenen resimler küçük önizlemeler halinde listelenir. İstemediğiniz bir resmi üzerine gelip çarpı butonuyla kaldırın.",
+      "Eksik kalan resimler varsa \"Ekle\" kutusuyla listeye yeni resimler ekleyin. Resimler eklediğiniz sırayla PDF sayfalarına yerleşir.",
+      "\"PDF Olarak İndir\" butonuna basın.",
+      "Oluşan \"toolio-images.pdf\" dosyası cihazınıza indirilir; her resim ayrı bir sayfadadır."
+    ],
+    "uses": [
+      "Telefonla fotoğrafı çekilen belgeleri resmi kurumlara veya işverene PDF olarak göndermek.",
+      "Ödev, el yazısı not veya çizim fotoğraflarını tek dosyada teslim etmek.",
+      "Ekran görüntülerinden oluşan bir kılavuzu veya hata raporunu düzenli bir belgeye dönüştürmek.",
+      "Fiş ve fatura fotoğraflarını masraf raporu için tek PDF'te toplamak."
+    ],
+    "tips": [
+      "Sayfa sırası, resimleri eklediğiniz sıraya göre belirlenir. Belirli bir sıra istiyorsanız resimleri o sırayla seçin.",
+      "Belge fotoğraflarını düz bir zeminde, iyi ışıkta ve tepeden çekmek okunabilirliği ciddi şekilde artırır.",
+      "Çok yüksek çözünürlüklü fotoğraflar PDF boyutunu büyütür. E-postayla göndermeden önce resimleri Resim Sıkıştırma aracıyla küçültebilirsiniz.",
+      "Oluşan PDF'i başka PDF'lerle birleştirmek isterseniz PDF Birleştirici aracını kullanabilirsiniz."
+    ],
+    "faq": [
+      {
+        "q": "Hangi resim formatları destekleniyor?",
+        "a": "JPG/JPEG ve PNG dosyaları desteklenir. Diğer formatlar için önce Resim Dönüştürücü ile JPG'e çevirebilirsiniz."
+      },
+      {
+        "q": "Resimler sayfaya nasıl yerleşiyor?",
+        "a": "Her resim A4 boyutlu dikey bir sayfaya, en-boy oranı korunarak sığdırılır ve sayfanın ortasına yerleştirilir."
+      },
+      {
+        "q": "Kaç resim ekleyebilirim?",
+        "a": "Belirli bir sınır yoktur. Çok sayıda büyük fotoğraf eklediğinizde işlem süresi cihazınızın gücüne bağlı olarak uzayabilir."
+      },
+      {
+        "q": "Resimlerim kaydediliyor mu?",
+        "a": "Hayır. Resimler yalnızca tarayıcınızın belleğinde işlenir ve sayfayı kapattığınızda silinir."
+      }
+    ]
+  },
+  "docx_converter": {
+    "seo_title": "Word'den PDF'e Çevirme – DOCX Dosyasını PDF Yapın",
+    "meta": "Word (.docx) belgenizi önizleyin ve A4 PDF olarak indirin. Dönüştürme tarayıcınızda yapılır, belge sunucuya yüklenmez. Ücretsiz, kayıt gerektirmez.",
+    "intro": "Word'den PDF'e aracı, Microsoft Word veya benzeri programlarla hazırlanmış .docx belgelerini PDF formatına dönüştürür. Belgeniz önce tarayıcıda görüntülenir, siz kontrol ettikten sonra A4 boyutunda PDF olarak indirilir. Bilgisayarınızda Word yüklü olmasa bile belgeyi PDF'e çevirebilirsiniz.\n\nDönüştürme sırasında belge docx-preview kütüphanesiyle tarayıcınızda görüntülenir ve html2pdf ile PDF'e aktarılır. Dosyanız hiçbir sunucuya gönderilmez. Bu yöntem basit ve orta karmaşıklıktaki belgeler (dilekçe, özgeçmiş, ödev, rapor) için iyi sonuç verir; çok karmaşık sayfa düzenlerinde küçük farklılıklar olabilir.",
+    "steps": [
+      "\"Word Dosyasını Buraya Sürükleyin\" alanına .docx uzantılı belgenizi bırakın ya da tıklayarak seçin.",
+      "Belge birkaç saniye içinde sayfanın altında önizleme olarak görüntülenir. Yazı tiplerini, tabloları ve resimleri kontrol edin.",
+      "Her şey yolundaysa \"PDF Olarak İndir\" butonuna basın.",
+      "PDF, belgenizle aynı adla (uzantısı .pdf olarak) cihazınıza indirilir.",
+      "Başka bir belge dönüştürmek için \"Yeni Belge Dönüştür\" butonunu kullanın."
+    ],
+    "uses": [
+      "Özgeçmişinizi, düzeninin bozulmadan açılması için PDF olarak göndermek.",
+      "Dilekçe, başvuru formu veya resmi yazıları kurumlara PDF olarak iletmek.",
+      "Ödev ve raporları öğretmen veya yöneticinin istediği PDF formatında teslim etmek.",
+      "Word yüklü olmayan bir bilgisayarda .docx belgesini görüntüleyip PDF'e çevirmek."
+    ],
+    "tips": [
+      "Araç yalnızca .docx uzantısını destekler. Eski .doc dosyalarını önce Word, LibreOffice veya Google Dokümanlar'da .docx olarak kaydedin.",
+      "Oluşan PDF'te sayfalar görüntü olarak yer alır; bu nedenle metin seçme ve arama özellikleri sınırlı olabilir. Metnin seçilebilir olması gerekiyorsa Word'deki \"PDF olarak kaydet\" seçeneğini tercih edin.",
+      "Belgede bilgisayarınızda bulunmayan özel bir yazı tipi kullanıldıysa, önizlemede benzer bir yazı tipiyle gösterilir. Önizlemeyi mutlaka kontrol edin.",
+      "Çok sayfalı belgelerde sayfa geçişlerini indirdikten sonra kontrol etmeniz önerilir."
+    ],
+    "faq": [
+      {
+        "q": "Belgem bir sunucuya gönderiliyor mu?",
+        "a": "Hayır. Belge tarayıcınızda okunur, görüntülenir ve PDF'e dönüştürülür. Hiçbir aşamada internete yüklenmez."
+      },
+      {
+        "q": "PDF'teki metni neden seçemiyorum?",
+        "a": "Bu araç sayfaları görüntü olarak PDF'e aktarır. Görünüm korunur ancak metin seçilebilir olmaz. Seçilebilir metin için Word'ün kendi PDF dışa aktarma özelliğini kullanabilirsiniz."
+      },
+      {
+        "q": ".doc uzantılı eski dosyaları çevirebilir miyim?",
+        "a": "Doğrudan çeviremezsiniz. Dosyayı önce bir kelime işlemcide açıp .docx olarak kaydetmeniz gerekir."
+      },
+      {
+        "q": "Kâğıt boyutu nedir?",
+        "a": "PDF, her kenarda 10 mm boşluk bırakılarak dikey A4 boyutunda oluşturulur."
+      }
+    ]
+  },
+  "compressor": {
+    "seo_title": "Resim Sıkıştırma – Fotoğraf Boyutunu Küçültme",
+    "meta": "JPG, PNG ve WebP resimlerin dosya boyutunu tarayıcınızda küçültün. Önce/sonra boyutunu görün, sıkıştırılmış resmi indirin. Yükleme yok, ücretsiz.",
+    "intro": "Resim Sıkıştırma aracı, fotoğraflarınızın dosya boyutunu gözle görülür bir kalite kaybı olmadan küçültür. Telefon kameralarıyla çekilen fotoğraflar çoğu zaman birkaç megabayt boyutundadır; bu da e-posta eklerinde, web sitelerinde ve form yüklemelerinde sorun çıkarır. Araç resmi en fazla 1920 piksel genişlik veya yüksekliğe ölçekler ve boyutunu yaklaşık 1 MB'ın altına indirmeyi hedefler.\n\nSıkıştırma, browser-image-compression kütüphanesiyle tarayıcınızın arka plan işçisinde (web worker) yapılır. Fotoğrafınız sunucuya yüklenmez; işlem bittiğinde orijinal ve yeni boyutu ile ne kadar yer kazandığınızı yüzde olarak görürsünüz.",
+    "steps": [
+      "\"Resmi buraya sürükleyin veya seçin\" alanından sıkıştırmak istediğiniz fotoğrafı seçin.",
+      "Resmin önizlemesi ve orijinal dosya boyutu görüntülenir.",
+      "\"Sıkıştır\" butonuna basın. İşlem genellikle birkaç saniye sürer.",
+      "Sonuç ekranında yeni dosya boyutunu ve kazanılan alanı yüzde olarak kontrol edin.",
+      "\"İndir\" butonuyla sıkıştırılmış resmi cihazınıza kaydedin. Başka bir resim için \"Farklı Resim Seç\" butonunu kullanın."
+    ],
+    "uses": [
+      "Web sitesi veya blog görsellerini küçülterek sayfaların daha hızlı açılmasını sağlamak.",
+      "Boyut sınırı olan resmi başvuru formlarına ve e-Devlet benzeri sistemlere fotoğraf yüklemek.",
+      "E-posta eki sınırına takılmadan çok sayıda fotoğraf göndermek.",
+      "Telefonda veya bulut depolamada yer açmak için fotoğraf arşivini küçültmek."
+    ],
+    "tips": [
+      "Araç uzun kenarı 1920 pikselden büyük resimleri bu boyuta küçültür. Baskı için yüksek çözünürlüğe ihtiyacınız varsa orijinal dosyayı saklayın.",
+      "Zaten küçük ve iyi sıkıştırılmış resimlerde kazanç az olabilir; bu normaldir.",
+      "PNG formatındaki fotoğraflar genellikle JPG'e göre çok daha büyüktür. Şeffaflık gerekmiyorsa, önce Resim Dönüştürücü ile JPG'e çevirip sonra sıkıştırmak daha fazla yer kazandırır.",
+      "Sıkıştırılmış dosya yeni bir dosya olarak indirilir; orijinal resminiz değişmez."
+    ],
+    "faq": [
+      {
+        "q": "Fotoğraflarım bir sunucuya yükleniyor mu?",
+        "a": "Hayır. Sıkıştırma tamamen tarayıcınızda yapılır ve resimleriniz cihazınızdan çıkmaz."
+      },
+      {
+        "q": "Hangi formatları sıkıştırabilirim?",
+        "a": "Tarayıcınızın açabildiği JPG, PNG ve WebP gibi yaygın resim formatlarını sıkıştırabilirsiniz."
+      },
+      {
+        "q": "Kalite ne kadar düşer?",
+        "a": "Araç, gözle fark edilmesi zor bir kalite seviyesini hedefler. Çoğu fotoğrafta ekranda belirgin bir fark görülmez, ancak çok yakınlaştırıldığında küçük kayıplar olabilir."
+      },
+      {
+        "q": "Birden fazla resmi aynı anda sıkıştırabilir miyim?",
+        "a": "Şu anda araç resimleri tek tek sıkıştırır. Her resmi indirdikten sonra \"Farklı Resim Seç\" ile sıradakine geçebilirsiniz."
+      }
+    ]
+  },
+  "image_converter": {
+    "seo_title": "Resim Dönüştürücü – PNG, JPG ve WebP Çevirme",
+    "meta": "PNG, JPG ve WebP resimleri birbirine dönüştürün. WebP'yi JPG'e, PNG'yi JPG'e veya JPG'yi WebP'ye çevirin. Tarayıcıda çalışır, ücretsizdir.",
+    "intro": "Resim Dönüştürücü, en yaygın üç web formatı olan PNG, JPG (JPEG) ve WebP arasında hızlıca dönüşüm yapmanızı sağlar. İnternetten indirdiğiniz bir WebP görseli açamadığınızda, bir sitenin yalnızca JPG kabul ettiği durumlarda veya sitenizdeki görselleri daha hafif WebP formatına geçirmek istediğinizde işinizi görür.\n\nDönüştürme, tarayıcınızın Canvas altyapısıyla cihazınızda yapılır. Resim sunucuya gönderilmez; seçtiğiniz formatta yeni bir dosya oluşturulup doğrudan indirilir.",
+    "steps": [
+      "\"Resim Yükle veya Sürükle\" alanından PNG, JPG veya WebP formatında bir resim seçin.",
+      "Resmin önizlemesi ekranda görünür. Yanlış resmi seçtiyseniz kaldırıp yenisini ekleyin.",
+      "\"Hedef Format\" bölümünden JPG, PNG veya WEBP seçeneklerinden birini işaretleyin.",
+      "\"İndir\" butonuna basın; dönüştürülmüş resim \"converted-image\" adıyla cihazınıza kaydedilir."
+    ],
+    "uses": [
+      "WebP formatındaki görselleri, eski programların ve sitelerin açabileceği JPG formatına çevirmek.",
+      "Ekran görüntülerini (PNG) daha küçük boyutlu JPG'e dönüştürüp paylaşmak.",
+      "Web sitesi görsellerini daha hafif WebP formatına geçirerek sayfa hızını artırmak.",
+      "Yalnızca belirli bir formatı kabul eden form ve platformlara uygun dosya hazırlamak."
+    ],
+    "tips": [
+      "JPG formatı şeffaflığı desteklemez. Şeffaf arka planlı bir PNG'yi JPG'e çevirdiğinizde arka plan beyaz olur.",
+      "Logolar, ekran görüntüleri ve keskin kenarlı grafikler için PNG; fotoğraflar için JPG veya WebP genellikle daha uygundur.",
+      "Dönüştürme yüksek kalite ayarıyla yapılır. Dosya boyutunu daha da küçültmek isterseniz sonucu Resim Sıkıştırma aracından geçirebilirsiniz.",
+      "Resmin piksel boyutları dönüştürme sırasında değişmez."
+    ],
+    "faq": [
+      {
+        "q": "WebP'yi JPG'e nasıl çeviririm?",
+        "a": "WebP dosyanızı yükleyin, hedef format olarak JPG'yi seçin ve İndir butonuna basın. Dosya birkaç saniye içinde JPG olarak indirilir."
+      },
+      {
+        "q": "Dönüştürme kaliteyi düşürür mü?",
+        "a": "JPG ve WebP kayıplı formatlardır; dönüştürme yüksek kalite ayarıyla yapıldığı için fark genellikle gözle görülmez. PNG'ye dönüşüm kayıpsızdır."
+      },
+      {
+        "q": "Resmim bir yere yükleniyor mu?",
+        "a": "Hayır. Dönüştürme tarayıcınızda yapılır ve resim cihazınızdan çıkmaz."
+      },
+      {
+        "q": "HEIC (iPhone) fotoğraflarını çevirebilir miyim?",
+        "a": "Araç PNG, JPG ve WebP dosyalarını kabul eder. iPhone'da Ayarlar > Kamera > Formatlar bölümünden \"En Uyumlu\" seçeneğini açarak fotoğrafları doğrudan JPG olarak kaydedebilirsiniz."
+      }
+    ]
+  },
+  "qr_generator": {
+    "seo_title": "QR Kod Oluşturucu – Ücretsiz ve Renkli QR Kod",
+    "meta": "Web sitesi bağlantısı veya metin için ücretsiz QR kod oluşturun. Renklerini ve boyutunu seçin, PNG olarak indirin. Süresi dolmaz, kayıt gerekmez.",
+    "intro": "QR Kod Oluşturucu, bir web adresini veya herhangi bir metni telefon kamerasıyla okutulabilen bir QR koda dönüştürür. Menü, kartvizit, afiş, ürün etiketi veya sunum gibi basılı ve dijital materyallerde insanları tek dokunuşla bir sayfaya yönlendirmenin en pratik yoludur.\n\nOluşturduğunuz QR kodlar statiktir: bilgi doğrudan kodun içine yazılır, arada bir yönlendirme servisi yoktur. Bu nedenle kodların süresi dolmaz, tarama sayısı sınırlanmaz ve kimse taramalarınızı takip etmez. Kod tarayıcınızda oluşturulur.",
+    "steps": [
+      "\"Web Sitesi / Metin\" kutusuna QR koda dönüştürmek istediğiniz bağlantıyı (ör. https://ornek.com) veya metni yazın.",
+      "QR kod siz yazdıkça anında güncellenir ve önizlemede görünür.",
+      "\"Ön Renk\" ve \"Arka Renk\" seçicileriyle kodun renklerini markanıza uygun hale getirin.",
+      "\"Boyut\" kaydırıcısıyla kodun piksel boyutunu 128 ile 384 piksel arasında ayarlayın.",
+      "\"PNG Olarak İndir\" butonuna basarak QR kodu cihazınıza kaydedin ve dilediğiniz yerde kullanın."
+    ],
+    "uses": [
+      "Restoran ve kafelerde dijital menüye yönlendiren masa kartları hazırlamak.",
+      "Kartvizit, broşür ve afişlere web sitesi veya sosyal medya bağlantısı eklemek.",
+      "Etkinlik davetiyelerinde konum ya da kayıt formu bağlantısı paylaşmak.",
+      "Sunum slaytlarında katılımcıların kaynaklara telefonla hızlıca ulaşmasını sağlamak."
+    ],
+    "tips": [
+      "Okunabilirlik için ön rengi koyu, arka rengi açık seçin. Düşük kontrastlı renk kombinasyonları bazı telefonlarda okunmayabilir.",
+      "Baskıdan önce QR kodu farklı telefonlarla okutarak test edin.",
+      "Bağlantıyı \"https://\" ile birlikte yazmak, telefonların kodu web adresi olarak tanımasını kolaylaştırır.",
+      "Metin uzadıkça QR kod daha sık desenli hale gelir. Uzun bağlantılar yerine kısa ve sade adresler daha kolay okunur."
+    ],
+    "faq": [
+      {
+        "q": "Oluşturduğum QR kodun süresi doluyor mu?",
+        "a": "Hayır. Kodlar statiktir; bağlantı doğrudan kodun içinde saklanır. Bağlantı çalıştığı sürece QR kod da çalışır."
+      },
+      {
+        "q": "QR kodu sonradan düzenleyebilir miyim?",
+        "a": "Statik QR kodlar sonradan değiştirilemez. Bağlantınız değişirse yeni bir kod oluşturmanız gerekir."
+      },
+      {
+        "q": "Ticari amaçla kullanabilir miyim?",
+        "a": "Evet. Oluşturduğunuz QR kodları kişisel veya ticari projelerinizde ücretsiz kullanabilirsiniz."
+      },
+      {
+        "q": "Taramaları takip ediyor musunuz?",
+        "a": "Hayır. Kod doğrudan sizin bağlantınıza gider; Toolio taramaları görmez ve kaydetmez."
+      }
+    ]
+  },
+  "signature": {
+    "seo_title": "Online İmza Oluşturucu – Şeffaf PNG İmza",
+    "meta": "Fare veya parmağınızla imzanızı çizin, renk ve kalınlığını seçin, şeffaf arka planlı PNG olarak indirin. Tarayıcıda çalışır, imzanız kaydedilmez.",
+    "intro": "Online İmza Oluşturucu, kendi el imzanızı dijital ortamda çizip şeffaf arka planlı bir PNG görseli olarak kaydetmenizi sağlar. Bu görseli e-posta imzalarına, Word veya PDF belgelerine, teklif ve formlara ekleyebilirsiniz. Bilgisayarda fareyle, telefon ve tablette parmağınızla ya da kalemle çizim yapabilirsiniz.\n\nİmzanız yalnızca tarayıcınızdaki çizim alanında oluşturulur ve sunucuya gönderilmez. Önemli bir not: Bu araç imzanızın bir görüntüsünü oluşturur; e-İmza veya nitelikli elektronik imza gibi yasal geçerliliği olan bir imza türü değildir.",
+    "steps": [
+      "Beyaz \"Buraya Çizin\" alanında fareyi basılı tutarak veya parmağınızla imzanızı atın.",
+      "Renk seçeneklerinden siyah, mavi, kırmızı veya yeşil kalemi seçin.",
+      "\"Kalınlık\" kaydırıcısıyla çizginin kalınlığını ayarlayın; değişiklik sonraki çizgilerde uygulanır.",
+      "Beğenmediyseniz \"Temizle\" butonuyla alanı sıfırlayıp yeniden çizin.",
+      "\"İmzayı İndir\" butonuna basın; imzanız \"toolio-signature.png\" adıyla şeffaf arka planlı olarak indirilir."
+    ],
+    "uses": [
+      "E-posta imzanıza el yazısı imza görseli eklemek.",
+      "Kendi hazırladığınız teklif, fatura veya formlara imza görseli yerleştirmek.",
+      "Dijital sertifika ve davetiye tasarımlarında imza alanını doldurmak.",
+      "Taranmış imza yerine daha temiz ve şeffaf bir imza görseli elde etmek."
+    ],
+    "tips": [
+      "Dokunmatik ekranlarda daha doğal bir imza için kalem (stylus) kullanabilir veya telefonu yatay tutarak çizim alanını genişletebilirsiniz.",
+      "Belgelerde en profesyonel görünüm genellikle koyu mavi veya siyah renkle elde edilir.",
+      "İndirilen PNG şeffaf olduğundan, belgeye eklediğinizde arkasında beyaz kutu oluşmaz.",
+      "İmza görselinizi yalnızca kendi belgelerinizde kullanın ve güvenmediğiniz kişilerle paylaşmayın."
+    ],
+    "faq": [
+      {
+        "q": "Bu imza yasal olarak geçerli mi?",
+        "a": "Bu araç imzanızın bir görüntüsünü oluşturur. Resmi işlemlerde yasal geçerlilik için genellikle e-İmza veya mobil imza gibi nitelikli elektronik imzalar gerekir. Hangi imzanın kabul edildiğini ilgili kuruma danışın."
+      },
+      {
+        "q": "İmzam kaydediliyor mu?",
+        "a": "Hayır. İmza yalnızca tarayıcınızdaki çizim alanında oluşturulur ve indirdiğiniz dosya dışında hiçbir yerde saklanmaz."
+      },
+      {
+        "q": "İmzayı Word belgesine nasıl eklerim?",
+        "a": "Word'de Ekle > Resimler menüsünden indirdiğiniz PNG dosyasını seçin, ardından boyutunu ayarlayıp \"Metnin önünde\" yerleşimini kullanın."
+      },
+      {
+        "q": "Arka plan neden şeffaf?",
+        "a": "Şeffaf arka plan sayesinde imza, beyaz olmayan sayfalara veya formlara eklendiğinde arkasında kutu görünmez ve doğal durur."
+      }
+    ]
+  },
+  "color_palette": {
+    "seo_title": "Renk Paleti Oluşturucu – Rastgele Renk Uyumları",
+    "meta": "Tek tuşla rastgele 5 renkli paletler oluşturun, beğendiğiniz renkleri kilitleyin ve HEX kodlarını kopyalayın. Tasarımcılar için ücretsiz renk aracı.",
+    "intro": "Renk Paleti Oluşturucu, web tasarımı, sunum, logo, sosyal medya görseli veya ev dekorasyonu için ilham verecek renk kombinasyonlarını hızlıca keşfetmenizi sağlar. Her seferinde beş renkten oluşan rastgele bir palet üretir; beğendiğiniz renkleri kilitleyerek diğerlerini yenilemeye devam edebilirsiniz.\n\nHer rengin HEX kodu (ör. #4F46E5) ekranda görünür ve tek tıkla panoya kopyalanır. Bu kodları Figma, Photoshop, Canva, CSS dosyaları veya PowerPoint gibi programlara doğrudan yapıştırabilirsiniz.",
+    "steps": [
+      "Sayfa açıldığında beş renkten oluşan ilk palet otomatik olarak oluşturulur.",
+      "Yeni bir palet için \"Oluştur\" butonuna basın veya klavyede Boşluk (Space) tuşuna dokunun.",
+      "Beğendiğiniz bir rengin üzerindeki kilit simgesine tıklayın; kilitli renkler yeni paletlerde değişmez.",
+      "Kilitlemediğiniz renkleri, istediğiniz uyumu bulana kadar yenilemeye devam edin.",
+      "Bir rengin HEX koduna tıklayarak kodu panoya kopyalayın ve tasarım programınıza yapıştırın."
+    ],
+    "uses": [
+      "Yeni bir web sitesi, uygulama veya marka için renk teması belirlemek.",
+      "Sunum ve rapor grafiklerinde uyumlu renkler kullanmak.",
+      "Sosyal medya gönderileri ve kapak görselleri için ilham bulmak.",
+      "Tasarım öğrencilerinin renk kombinasyonları üzerinde pratik yapması."
+    ],
+    "tips": [
+      "Önce markanızın ana rengini bulup kilitleyin, ardından diğer renkleri buna göre yenileyin.",
+      "Metin ve arka plan renklerinin yeterli kontrasta sahip olmasına dikkat edin; açık gri üzerine beyaz yazı gibi kombinasyonlar okunmayı zorlaştırır.",
+      "Paletler rastgele üretildiği için bazı renkler birbirine uymayabilir. Kilit özelliğini kullanarak uyumlu bir set oluşturana kadar deneyin.",
+      "Bir paletteki 1-2 rengi vurgu için, geri kalanını nötr tonlar olarak kullanmak genellikle daha dengeli bir tasarım sağlar."
+    ],
+    "faq": [
+      {
+        "q": "HEX kodu nedir?",
+        "a": "HEX kodu, bir rengin kırmızı, yeşil ve mavi değerlerini on altılık sistemde gösteren altı haneli bir koddur (ör. #FF5733). Web ve tasarım programlarında renkleri tanımlamak için kullanılır."
+      },
+      {
+        "q": "Klavye kısayolu var mı?",
+        "a": "Evet. Boşluk (Space) tuşuna bastığınızda kilitli olmayan renkler yenilenir."
+      },
+      {
+        "q": "Paletlerim kaydediliyor mu?",
+        "a": "Hayır. Beğendiğiniz paletleri kaybetmemek için HEX kodlarını kopyalayıp not almanızı öneririz."
+      },
+      {
+        "q": "Renkleri ticari projelerde kullanabilir miyim?",
+        "a": "Evet. Renkler kimsenin mülkiyetinde değildir; oluşturduğunuz paletleri dilediğiniz projede kullanabilirsiniz."
+      }
+    ]
+  },
+  "meme": {
+    "seo_title": "Meme Oluşturucu – Resme Üst ve Alt Yazı Ekleme",
+    "meta": "Kendi resminizi yükleyin, klasik üst ve alt yazıları ekleyin, yazı boyutu ve rengini ayarlayın, meme'i JPG olarak indirin. Ücretsiz ve tarayıcı tabanlı.",
+    "intro": "Meme Oluşturucu, kendi fotoğrafınıza veya bir görsele internet kültürünün klasikleşmiş üst ve alt yazı stilini eklemenizi sağlar. Kalın, büyük harfli ve siyah kenarlıklı yazılar her türlü fotoğrafta okunaklı kalır. Arkadaş gruplarında, sosyal medyada veya sunumlarda espri yapmak için saniyeler içinde paylaşılabilir görseller oluşturabilirsiniz.\n\nResminiz tarayıcınızda bir çizim alanına (canvas) yerleştirilir ve yazılar bunun üzerine çizilir. Görseliniz sunucuya yüklenmez; hazır olduğunda JPG olarak cihazınıza indirilir.",
+    "steps": [
+      "\"Resim Yükle\" butonuyla cihazınızdan bir fotoğraf seçin.",
+      "\"Üst Yazı\" ve \"Alt Yazı\" kutularına metinlerinizi yazın; önizleme anında güncellenir ve yazılar otomatik olarak büyük harfe çevrilir.",
+      "\"Yazı Boyutu\" ayarıyla metnin büyüklüğünü resmin boyutuna göre ayarlayın.",
+      "\"Yazı Rengi\" seçiciyle klasik beyaz yerine farklı bir renk deneyebilirsiniz.",
+      "\"Meme'i İndir\" butonuna basın; görsel \"toolio-meme.jpg\" adıyla indirilir."
+    ],
+    "uses": [
+      "Arkadaş ve iş grupları için eğlenceli görseller hazırlamak.",
+      "Sosyal medya paylaşımlarında dikkat çekici, esprili içerikler üretmek.",
+      "Eğitim ve sunumlarda konuyu akılda kalıcı hale getiren görseller eklemek.",
+      "Kendi fotoğraflarınızdan kişiselleştirilmiş tebrik görselleri oluşturmak."
+    ],
+    "tips": [
+      "Kısa ve vurucu metinler en iyi sonucu verir; uzun cümleler resmin dışına taşabilir.",
+      "Çok geniş resimler 800 piksel genişliğe ölçeklenir. Yazı boyutunu bu genişliğe göre ayarlayın.",
+      "Açık renkli fotoğraflarda beyaz yazı, siyah kenarlık sayesinde okunaklı kalır; yine de koyu bir yazı rengi denemek isteyebilirsiniz.",
+      "Başkalarına ait fotoğrafları kullanırken telif ve kişilik haklarına dikkat edin; insanları küçük düşürecek içeriklerden kaçının."
+    ],
+    "faq": [
+      {
+        "q": "Kendi resmimi kullanmak zorunda mıyım?",
+        "a": "Evet, araç hazır şablon sunmaz; cihazınızdaki herhangi bir resmi yükleyerek meme oluşturursunuz."
+      },
+      {
+        "q": "Resmim kaydediliyor mu?",
+        "a": "Hayır. Resim yalnızca tarayıcınızda işlenir ve hiçbir sunucuya gönderilmez."
+      },
+      {
+        "q": "Hangi yazı tipi kullanılıyor?",
+        "a": "Meme'lerin klasik yazı tipi olan Impact kullanılır. Cihazınızda Impact yoksa benzer kalın bir yazı tipi devreye girer."
+      },
+      {
+        "q": "Türkçe karakterler çalışıyor mu?",
+        "a": "Evet. Ç, Ğ, İ, Ö, Ş ve Ü gibi Türkçe karakterler yazılarda sorunsuz görünür."
+      }
+    ]
+  },
+  "word_counter": {
+    "seo_title": "Kelime Sayacı – Online Kelime ve Karakter Sayma",
+    "meta": "Metninizdeki kelime, karakter, cümle ve paragraf sayısını yazarken anında görün. Ödev, makale ve sosyal medya için ücretsiz kelime sayacı.",
+    "intro": "Kelime Sayacı, yazdığınız veya yapıştırdığınız metnin kelime, karakter, cümle ve paragraf sayısını anında hesaplar. Ödevlerde istenen kelime sınırını tutturmak, bir makaleyi editörün beklediği uzunluğa getirmek ya da sosyal medya ve SEO açıklamalarında karakter sınırına uymak için pratik bir yardımcıdır.\n\nSayım siz yazdıkça otomatik olarak güncellenir; herhangi bir butona basmanız gerekmez. Metniniz yalnızca tarayıcınızda işlenir, hiçbir yere kaydedilmez veya gönderilmez.",
+    "steps": [
+      "\"Metnini Buraya Yapıştır\" alanına yazmaya başlayın veya başka bir yerden kopyaladığınız metni yapıştırın.",
+      "Üstteki kartlarda kelime, karakter, cümle ve paragraf sayıları anında güncellenir.",
+      "Metni düzenledikçe sayıların değişimini takip ederek hedef uzunluğa ulaşın.",
+      "Metni kopyalamak için kopyala butonunu, yeni bir metne başlamak için temizle butonunu kullanın."
+    ],
+    "uses": [
+      "Öğrencilerin ödev, kompozisyon ve tezlerde kelime sınırına uyması.",
+      "Yazarların ve editörlerin makale, blog yazısı veya basın bülteni uzunluğunu kontrol etmesi.",
+      "Sosyal medya gönderileri, reklam metinleri ve meta açıklamalar için karakter sınırını takip etmek.",
+      "Çevirmenlerin ve metin yazarlarının iş tekliflerini kelime sayısına göre hazırlaması."
+    ],
+    "tips": [
+      "Kelimeler boşluklara göre sayılır; tire ile birleştirilmiş ifadeler (ör. \"yüz-yüze\") tek kelime kabul edilir.",
+      "Karakter sayısına boşluklar ve satır sonları da dahildir.",
+      "Cümleler nokta, ünlem ve soru işaretine göre sayılır; \"Dr.\" veya \"vb.\" gibi kısaltmalar cümle sayısını artırabilir.",
+      "Paragraf sayısının doğru çıkması için paragraflar arasında bir boş satır bırakın."
+    ],
+    "faq": [
+      {
+        "q": "Metnim kaydediliyor mu?",
+        "a": "Hayır. Metniniz yalnızca tarayıcınızda sayılır; sayfayı kapattığınızda silinir ve hiçbir sunucuya gönderilmez."
+      },
+      {
+        "q": "Karakter sayısına boşluklar dahil mi?",
+        "a": "Evet. Gösterilen karakter sayısı boşlukları ve satır sonlarını da içerir."
+      },
+      {
+        "q": "Word'deki sayımla neden küçük farklar oluyor?",
+        "a": "Her program kelime ve cümleyi biraz farklı tanımlar. Örneğin bazı programlar sayıları veya tek başına duran noktalama işaretlerini farklı sayabilir. Farklar genellikle çok küçüktür."
+      },
+      {
+        "q": "Uzun metinleri sayabilir mi?",
+        "a": "Evet. Birkaç sayfalık, hatta kitap bölümü uzunluğundaki metinleri de rahatlıkla sayabilirsiniz."
+      }
+    ]
+  },
+  "case_converter": {
+    "seo_title": "Büyük Küçük Harf Dönüştürücü – Metin Düzeni Değiştirme",
+    "meta": "Metni BÜYÜK HARF, küçük harf, Baş Harfleri Büyük, cümle düzeni veya URL (slug) formatına çevirin. Türkçe i/İ dönüşümlerini doğru yapar. Ücretsiz.",
+    "intro": "Metin Dönüştürücü, yazdığınız metnin harf düzenini tek tıkla değiştirir. Yanlışlıkla Caps Lock açıkken yazılmış bir paragrafı düzeltmek, başlıkların her kelimesinin baş harfini büyütmek ya da bir başlığı web adresinde kullanılabilecek \"url-formatina\" çevirmek için idealdir.\n\nTürkçede \"i\" harfinin büyüğü \"İ\", \"ı\" harfinin büyüğü \"I\" olduğu için pek çok araç Türkçe metinlerde hatalı sonuç verir. Toolio, site dili Türkçeyken bu dönüşümleri Türkçe kurallarına göre yapar. Metniniz tarayıcınızda işlenir.",
+    "steps": [
+      "Dönüştürmek istediğiniz metni metin kutusuna yazın veya yapıştırın.",
+      "İstediğiniz biçimin butonuna basın: BÜYÜK HARF, küçük harf, Baş Harfler Büyük, Cümle düzeni veya URL Formatı (Slug).",
+      "Metin kutusundaki içerik seçtiğiniz biçime anında dönüşür. Gerekirse başka bir biçim butonuna basarak tekrar değiştirebilirsiniz.",
+      "Sonucu kopyala butonuyla panoya alın ve kullanmak istediğiniz yere yapıştırın."
+    ],
+    "uses": [
+      "Caps Lock açıkken yazılmış metinleri tekrar yazmadan düzeltmek.",
+      "Rapor, sunum ve blog başlıklarını \"Baş Harfler Büyük\" formatına getirmek.",
+      "Blog yazıları ve ürün sayfaları için Türkçe karaktersiz, tireli URL (slug) oluşturmak.",
+      "Excel'den veya formlardan gelen düzensiz büyük-küçük harfli isim listelerini toparlamak."
+    ],
+    "tips": [
+      "URL Formatı (Slug) seçeneği; ç, ğ, ı, ö, ş ve ü harflerini c, g, i, o, s ve u'ya çevirir, boşlukları tireye dönüştürür ve diğer özel karakterleri kaldırır.",
+      "Cümle düzeni; nokta, ünlem ve soru işaretinden sonra gelen ilk harfi büyütür. Özel isimleri (ör. İstanbul, Ahmet) dönüştürmeden sonra kontrol etmeniz gerekebilir.",
+      "Dönüştürme metnin kendisini değiştirir. Orijinal metne ihtiyacınız varsa önce bir kopyasını alın.",
+      "İngilizce metinlerde doğru \"I/i\" dönüşümü için sitenin dilini İngilizceye çevirebilirsiniz."
+    ],
+    "faq": [
+      {
+        "q": "Türkçe karakterlerde sorun çıkar mı?",
+        "a": "Hayır. Site Türkçe kullanılırken \"i → İ\" ve \"ı → I\" dönüşümleri Türkçe kurallarına göre yapılır."
+      },
+      {
+        "q": "Slug nedir?",
+        "a": "Slug, bir başlığın web adresinde kullanılan, küçük harfli ve kelimeleri tireyle ayrılmış halidir. Örneğin \"Çiçek Bakımı İpuçları\" başlığı \"cicek-bakimi-ipuclari\" olur."
+      },
+      {
+        "q": "Metnim kaydediliyor mu?",
+        "a": "Hayır. Dönüştürme tarayıcınızda yapılır ve metniniz hiçbir yere gönderilmez."
+      },
+      {
+        "q": "Baş Harfler Büyük ile Cümle düzeni arasındaki fark nedir?",
+        "a": "Baş Harfler Büyük her kelimenin ilk harfini büyütür (Bugün Hava Güzel). Cümle düzeni yalnızca cümlelerin ilk harfini büyütür (Bugün hava güzel)."
+      }
+    ]
+  },
+  "diff": {
+    "seo_title": "Metin Karşılaştırma – İki Metin Arasındaki Farkı Bulma",
+    "meta": "İki metni yan yana yapıştırın, eklenen ve silinen kelimeleri renkli olarak anında görün. Sözleşme, makale ve kod değişikliklerini kolayca karşılaştırın.",
+    "intro": "Metin Karşılaştırıcı (Diff Checker), bir metnin iki farklı sürümü arasındaki değişiklikleri kelime kelime gösterir. Eklenen kelimeler yeşil, silinen kelimeler kırmızı renkle işaretlenir. Böylece uzun bir sözleşmenin yeni sürümünde neyin değiştiğini, bir makaleye editörün yaptığı düzeltmeleri veya bir yapılandırma dosyasındaki farkları satır satır okumadan görebilirsiniz.\n\nKarşılaştırma, yaygın olarak kullanılan açık kaynak \"diff\" algoritmasıyla tarayıcınızda yapılır. Metinleriniz sunucuya gönderilmez; gizli belgeleri de güvenle karşılaştırabilirsiniz.",
+    "steps": [
+      "Metnin eski veya ilk sürümünü \"Orijinal Metin\" kutusuna yapıştırın.",
+      "Yeni veya değiştirilmiş sürümü \"Değişmiş Metin\" kutusuna yapıştırın.",
+      "\"Karşılaştırma Sonucu\" bölümünde farklar siz yazdıkça anında görüntülenir.",
+      "Yeşil vurgulu kelimeler yeni metne eklenenleri, kırmızı ve üstü çizili kelimeler silinenleri gösterir.",
+      "Yeni bir karşılaştırma için temizle butonuyla iki kutuyu birden boşaltın."
+    ],
+    "uses": [
+      "Sözleşme ve teklif metinlerinin yeni sürümlerinde yapılan değişiklikleri kontrol etmek.",
+      "Editör veya öğretmen tarafından düzeltilmiş bir yazıdaki değişiklikleri görmek.",
+      "Kod parçaları ve yapılandırma dosyaları arasındaki farkları hızlıca tespit etmek.",
+      "Çevirilerde veya kopyalanan metinlerde atlanmış ya da değiştirilmiş kelimeleri bulmak."
+    ],
+    "tips": [
+      "Karşılaştırma kelime düzeyinde yapılır; tek bir harf değişse bile kelimenin tamamı değişmiş olarak işaretlenir.",
+      "Boşluk ve satır sonu farkları da değişiklik olarak görülebilir. Sadece içerik farkıyla ilgileniyorsanız metinleri benzer biçimde yapıştırın.",
+      "Çok uzun metinlerde sonucu daha kolay okumak için metni bölümler halinde karşılaştırabilirsiniz.",
+      "Word belgelerini karşılaştırırken metni Word'den kopyalayıp yapıştırmanız yeterlidir; biçimlendirme dikkate alınmaz."
+    ],
+    "faq": [
+      {
+        "q": "Metinlerim bir yere kaydediliyor mu?",
+        "a": "Hayır. Karşılaştırma tarayıcınızda yapılır ve metinleriniz hiçbir sunucuya gönderilmez."
+      },
+      {
+        "q": "Satır satır mı, kelime kelime mi karşılaştırıyor?",
+        "a": "Araç kelime düzeyinde karşılaştırma yapar; bu sayede bir cümle içindeki küçük değişiklikler bile kolayca görülür."
+      },
+      {
+        "q": "Kod karşılaştırmak için kullanabilir miyim?",
+        "a": "Evet. Kısa kod parçaları ve yapılandırma dosyaları için uygundur. Çok büyük projelerde Git gibi sürüm kontrol araçları daha uygun olacaktır."
+      },
+      {
+        "q": "Biçimlendirme farkları (kalın, renk) görünür mü?",
+        "a": "Hayır. Araç yalnızca düz metni karşılaştırır; yazı tipi, renk veya kalınlık gibi biçim farkları dikkate alınmaz."
+      }
+    ]
+  },
+  "tts": {
+    "seo_title": "Metin Seslendirme – Yazıyı Sesli Okuma (TTS)",
+    "meta": "Yazdığınız metni tarayıcınızın seslerini kullanarak sesli dinleyin. Ses, hız ve tonu ayarlayın; Türkçe ve İngilizce metinleri ücretsiz seslendirin.",
+    "intro": "Metin Seslendirme (Text-to-Speech) aracı, yazdığınız veya yapıştırdığınız metni sesli olarak okur. Uzun bir yazıyı göz yormadan dinlemek, yabancı dil öğrenirken telaffuzu duymak, kendi yazdığınız bir metni dinleyerek hataları yakalamak ya da okuma güçlüğü yaşayan kişilere destek olmak için kullanabilirsiniz.\n\nAraç, tarayıcınızın yerleşik Web Speech API özelliğini kullanır. Hangi seslerin listelendiği işletim sisteminize ve tarayıcınıza bağlıdır; Türkçe bir ses varsa otomatik olarak seçilir. Konuşma hızını ve ses tonunu kendi tercihinize göre ayarlayabilirsiniz.",
+    "steps": [
+      "Seslendirmek istediğiniz metni metin kutusuna yazın veya yapıştırın.",
+      "\"Ses Seçimi\" listesinden metnin diline uygun bir ses seçin (ör. Türkçe metin için Türkçe ses).",
+      "\"Konuşma Hızı\" ve \"Ses Tonu\" kaydırıcılarıyla okuma hızını ve tonunu 0,5 ile 2 arasında ayarlayın.",
+      "\"Oku\" butonuna basarak dinlemeye başlayın.",
+      "Okumayı geçici olarak durdurmak için \"Duraklat\", tamamen bitirmek için \"Durdur\" butonunu kullanın."
+    ],
+    "uses": [
+      "Uzun makale ve raporları ekrana bakmadan dinlemek.",
+      "Yabancı dil öğrenirken kelime ve cümlelerin telaffuzunu duymak.",
+      "Yazdığınız metni sesli dinleyerek akıcılığı ve yazım hatalarını kontrol etmek.",
+      "Görme veya okuma güçlüğü yaşayan kişilerin metinlere erişimini kolaylaştırmak."
+    ],
+    "tips": [
+      "Metnin dili ile seçilen sesin dili aynı olmalıdır; aksi halde telaffuz anlaşılmaz olabilir.",
+      "Listede Türkçe ses yoksa Windows'ta Ayarlar > Saat ve dil > Konuşma bölümünden Türkçe ses paketi yükleyebilir veya Chrome/Edge tarayıcısını deneyebilirsiniz.",
+      "Noktalama işaretleri seslendirmede doğal duraklamalar sağlar; uzun ve noktasız metinler daha mekanik duyulabilir.",
+      "Bazı tarayıcılar çok uzun metinleri bir süre sonra kesebilir. Böyle bir durumda metni bölümler halinde seslendirin."
+    ],
+    "faq": [
+      {
+        "q": "Sesi MP3 olarak indirebilir miyim?",
+        "a": "Hayır. Tarayıcıların konuşma özelliği sesi doğrudan hoparlöre verir ve dosya olarak kaydetmeye izin vermez. Araç yalnızca dinleme amaçlıdır."
+      },
+      {
+        "q": "Neden Türkçe ses göremiyorum?",
+        "a": "Sesler işletim sisteminiz ve tarayıcınız tarafından sağlanır. Cihazınızda Türkçe ses yüklü değilse listede görünmez. Farklı bir tarayıcı denemek veya sistem ayarlarından Türkçe ses eklemek genellikle sorunu çözer."
+      },
+      {
+        "q": "Metnim bir sunucuya gönderiliyor mu?",
+        "a": "Toolio metninizi almaz. Ancak seçtiğiniz sese göre bazı tarayıcılar (ör. çevrim içi Google veya Microsoft sesleri) metni seslendirmek için kendi bulut hizmetlerini kullanabilir."
+      },
+      {
+        "q": "Telefonda çalışır mı?",
+        "a": "Evet. Güncel Android ve iOS tarayıcıları konuşma özelliğini destekler; kullanılabilir sesler cihaza göre değişir."
+      }
+    ]
+  },
+  "markdown_editor": {
+    "seo_title": "Markdown Editörü – Canlı Önizlemeli Online Editör",
+    "meta": "Markdown yazın, sonucu yan panelde anında görün. Başlık, liste, tablo, kod bloğu ve bağlantı desteği. README ve not yazımı için ücretsiz online editör.",
+    "intro": "Markdown Editörü, Markdown söz dizimiyle yazdığınız metni anında biçimlendirilmiş haliyle gösterir. Solda yazarken sağda başlıkların, listelerin, tabloların ve kod bloklarının nasıl görüneceğini canlı olarak izlersiniz. GitHub README dosyaları, teknik dokümantasyon, blog taslakları veya kişisel notlar hazırlamak için idealdir.\n\nEditör, GitHub tarzı Markdown (GFM) eklentisiyle tablolar, üstü çizili metin ve görev listeleri gibi gelişmiş özellikleri de destekler. Yazdıklarınız tarayıcınızda işlenir ve hiçbir yere gönderilmez.",
+    "steps": [
+      "Sol taraftaki \"Yaz (Markdown)\" alanına metninizi Markdown söz dizimiyle yazın. Örnek metin, temel kullanımları gösterir.",
+      "Sağdaki \"Önizleme\" panelinde biçimlendirilmiş sonucu anında görün.",
+      "Başlık için # işaretini, kalın yazı için **iki yıldızı**, italik için *tek yıldızı*, liste için satır başına - veya 1. ekleyin.",
+      "Tablolar için | işaretiyle sütunları ayırın; kod blokları için metni üç ters tırnak (```) arasına alın.",
+      "Yeni bir belgeye başlamak için temizle butonunu kullanın. Bitirdiğinizde Markdown metnini kopyalayıp dosyanıza yapıştırın."
+    ],
+    "uses": [
+      "GitHub ve GitLab projeleri için README.md dosyası hazırlamak.",
+      "Teknik dokümantasyon ve kurulum kılavuzu taslakları yazmak.",
+      "Markdown destekleyen blog platformları için yazı hazırlamak.",
+      "Markdown söz dizimini öğrenirken sonucu anında görerek pratik yapmak."
+    ],
+    "tips": [
+      "Bir başlığın düzgün görünmesi için # işaretinden sonra bir boşluk bırakın (\"# Başlık\").",
+      "Satır sonu oluşturmak için iki satır arasında bir boş satır bırakın; tek Enter yeni paragraf oluşturmaz.",
+      "Kod bloğunu açarken dil adını yazmak (ör. ```javascript) okunabilirliği artırır.",
+      "Editör içeriği otomatik kaydetmez. Uzun metinler üzerinde çalışırken düzenli olarak kopyalayıp bir dosyaya kaydedin."
+    ],
+    "faq": [
+      {
+        "q": "Markdown nedir?",
+        "a": "Markdown, düz metin içinde basit işaretlerle (#, *, - gibi) biçimlendirme yapmayı sağlayan hafif bir işaretleme dilidir. GitHub, Reddit, Notion ve birçok not uygulaması tarafından desteklenir."
+      },
+      {
+        "q": "Tablo yapabilir miyim?",
+        "a": "Evet. GitHub tarzı Markdown desteği sayesinde | işaretleriyle oluşturduğunuz tablolar önizlemede düzgün tablo olarak görünür."
+      },
+      {
+        "q": "Yazdıklarım kaydediliyor mu?",
+        "a": "Hayır. Metniniz yalnızca tarayıcınızda bulunur ve sayfa yenilendiğinde kaybolur. Önemli içerikleri kopyalayıp saklamayı unutmayın."
+      },
+      {
+        "q": "Önizlemede HTML kodu çalışır mı?",
+        "a": "Güvenlik nedeniyle önizlemede ham HTML etiketleri işlenmez; Markdown söz dizimini kullanmanız önerilir."
+      }
+    ]
+  },
+  "lorem_ipsum": {
+    "seo_title": "Lorem Ipsum Oluşturucu – Yer Tutucu Metin ve Metin Çoğaltıcı",
+    "meta": "İstediğiniz sayıda Lorem Ipsum paragrafı oluşturun veya kendi metninizi çoğaltın. Tasarım ve web projeleri için ücretsiz yer tutucu metin aracı.",
+    "intro": "Lorem Ipsum, tasarımcıların ve yazılımcıların gerçek içerik henüz hazır değilken sayfa düzenini görmek için kullandığı standart yer tutucu metindir. Kökeni Çiçero'nun MÖ 45 yılında yazdığı \"De Finibus Bonorum et Malorum\" adlı esere dayanır ve 1500'lerden beri matbaacılıkta deneme metni olarak kullanılır. Anlamsız görünmesi, okuyucunun dikkatini içerik yerine tasarıma yöneltir.\n\nToolio'nun Lorem Ipsum aracı istediğiniz sayıda klasik Lorem Ipsum paragrafı üretir. Ayrıca kendi metninizi girerek onu istediğiniz kadar tekrar eden bir metin çoğaltıcı olarak da kullanabilirsiniz.",
+    "steps": [
+      "\"Tekrar Sayısı\" alanından kaç paragraf istediğinizi seçin.",
+      "Klasik Lorem Ipsum için \"Özel Kaynak Metin\" kutusunu boş bırakın; kendi metninizi çoğaltmak istiyorsanız metninizi bu kutuya yazın.",
+      "\"Oluştur\" butonuna basın; metin aşağıdaki alanda görüntülenir.",
+      "\"Kopyala\" butonuyla oluşan metni panoya alın ve tasarımınıza, kodunuza veya belgenize yapıştırın."
+    ],
+    "uses": [
+      "Web sitesi ve uygulama arayüzü tasarımlarında içerik alanlarını doldurmak.",
+      "Dergi, broşür ve sunum şablonlarında yazı yerleşimini test etmek.",
+      "Yazılımcıların form, veritabanı ve sayfa yüklerini örnek metinle denemesi.",
+      "Kendi cümlenizi çoğaltarak uzun test metinleri veya tekrar eden listeler oluşturmak."
+    ],
+    "tips": [
+      "Yayına almadan önce tüm Lorem Ipsum metinlerini gerçek içerikle değiştirdiğinizden emin olun; yer tutucu metinle yayınlanan sayfalar ziyaretçilere ve arama motorlarına kötü bir izlenim verir.",
+      "Tasarımın gerçek metin uzunluğuna dayanıklı olup olmadığını görmek için farklı paragraf sayılarıyla deneme yapın.",
+      "Türkçe içerik için hazırlanan tasarımlarda, Türkçe kelimelerin genellikle daha uzun olduğunu göz önünde bulundurun.",
+      "Özel kaynak metin alanı, aynı satırı onlarca kez tekrarlamanız gereken test senaryolarında da işinize yarar."
+    ],
+    "faq": [
+      {
+        "q": "Lorem Ipsum ne anlama geliyor?",
+        "a": "Metin, Latince bir eserden alınmış ancak kelimeleri karıştırılmış ve kısaltılmış olduğu için anlamlı cümleler oluşturmaz. \"Lorem ipsum dolor sit amet\" kabaca \"acının kendisini seven kimse yoktur\" anlamına gelen bir cümleden türetilmiştir."
+      },
+      {
+        "q": "Neden anlamlı bir metin yerine Lorem Ipsum kullanılır?",
+        "a": "Okunabilir bir metin, tasarımı değerlendiren kişinin dikkatini içeriğe çeker. Lorem Ipsum ise gerçek bir metne benzer harf dağılımına sahip olduğu halde okunmadığı için tasarıma odaklanmayı kolaylaştırır."
+      },
+      {
+        "q": "Kaç paragraf oluşturabilirim?",
+        "a": "Tek seferde 1 ile 100 arasında paragraf oluşturabilirsiniz."
+      },
+      {
+        "q": "Kendi metnimi çoğaltabilir miyim?",
+        "a": "Evet. Özel Kaynak Metin kutusuna yazdığınız metin, seçtiğiniz sayı kadar tekrarlanır."
+      }
+    ]
+  },
+  "fancy_font": {
+    "seo_title": "Şekilli Yazı Oluşturucu – Instagram ve Oyunlar İçin Nick Yazma",
+    "meta": "Yazınızı gotik, el yazısı, daire içinde, ters yazı gibi 8 farklı stile çevirin ve tek tıkla kopyalayın. Instagram biyografisi ve oyun nickleri için ücretsiz.",
+    "intro": "Şekilli Yazı Oluşturucu, normal metninizi Unicode karakter setindeki özel harflerle farklı stillere dönüştürür. Ortaya çıkan yazılar aslında bir yazı tipi değil, özel karakterlerdir; bu sayede kopyalayıp Instagram biyografinize, TikTok profilinize, WhatsApp durumunuza veya oyunlardaki kullanıcı adınıza yapıştırdığınızda da stilini korur.\n\nAraçta çift çizgili (outline), kalın el yazısı (script), gotik (Fraktur), daire içinde (bubble), küçük büyük harf (small caps), kare, geniş ve ters çevrilmiş yazı olmak üzere sekiz farklı stil bulunur. Yazdıkça tüm stiller aynı anda önizlenir.",
+    "steps": [
+      "Metin kutusuna kullanıcı adınızı, takma adınızı veya dönüştürmek istediğiniz metni yazın.",
+      "Aşağıdaki listede metninizin tüm stillerdeki halleri anında görüntülenir.",
+      "Beğendiğiniz stilin yanındaki kopyala butonuna basın; metin panoya kopyalanır.",
+      "Kopyaladığınız yazıyı Instagram, TikTok, Discord, oyun veya mesajlaşma uygulamasındaki ilgili alana yapıştırın."
+    ],
+    "uses": [
+      "Instagram ve TikTok biyografilerinde dikkat çekici başlıklar oluşturmak.",
+      "Oyunlarda ve Discord sunucularında benzersiz kullanıcı adları (nick) seçmek.",
+      "Sosyal medya gönderilerinde vurgu yapmak istenen kelimeleri öne çıkarmak.",
+      "Mesajlaşma uygulamalarında eğlenceli ve farklı görünen metinler paylaşmak."
+    ],
+    "tips": [
+      "Türkçeye özgü ç, ğ, ı, ö, ş ve ü harflerinin çoğu stil için Unicode karşılığı yoktur; bu harfler normal görünümünde kalır.",
+      "Bazı oyunlar ve platformlar kullanıcı adlarında özel karakterlere izin vermez. Kaydetmeden önce platformun kurallarını kontrol edin.",
+      "Ekran okuyucular şekilli karakterleri doğru okuyamayabilir; önemli bilgileri (iletişim, adres) şekilli yazıyla paylaşmaktan kaçının.",
+      "Bazı eski cihazlarda veya yazı tiplerinde özel karakterler kutu (□) olarak görünebilir."
+    ],
+    "faq": [
+      {
+        "q": "Bu yazılar neden her yerde çalışıyor?",
+        "a": "Çünkü bunlar bir yazı tipi değil, Unicode standardında tanımlı ayrı karakterlerdir. Unicode'u destekleyen her uygulama bu karakterleri gösterebilir."
+      },
+      {
+        "q": "Türkçe karakterler neden değişmiyor?",
+        "a": "Unicode'daki matematiksel ve dekoratif harf setleri çoğunlukla yalnızca İngiliz alfabesini kapsar. Bu nedenle ç, ğ, ı, ö, ş ve ü harflerinin şekilli karşılıkları bulunmaz."
+      },
+      {
+        "q": "Instagram'da şekilli yazı kullanmak hesabıma zarar verir mi?",
+        "a": "Hayır. Instagram bu karakterlerin kullanımını engellemez. Ancak arama sonuçlarında şekilli yazılmış kelimeler normal kelimeler gibi bulunamayabilir."
+      },
+      {
+        "q": "Kaç farklı stil var?",
+        "a": "Şu anda sekiz stil bulunur: Outline, Bold Script, Fraktur, Bubbles, Small Caps, Square, Wide ve Upside Down (ters yazı)."
+      }
+    ]
+  },
+  "password_gen": {
+    "seo_title": "Şifre Oluşturucu – Güçlü ve Rastgele Şifre Üretme",
+    "meta": "6-30 karakter uzunluğunda, büyük-küçük harf, rakam ve sembol içeren güçlü şifreler oluşturun. Şifreler tarayıcınızda üretilir, hiçbir yere kaydedilmez.",
+    "intro": "Şifre Oluşturucu, tahmin edilmesi son derece zor, rastgele şifreler üretir. Doğum tarihi, isim veya \"123456\" gibi kolay şifreler saniyeler içinde kırılabilir; aynı şifreyi birden fazla sitede kullanmak ise tek bir sızıntıda tüm hesaplarınızı riske atar. Her hesap için ayrı ve güçlü bir şifre kullanmak, çevrim içi güvenliğinizin temelidir.\n\nÜretilen şifreler büyük harf, küçük harf, rakam ve !@#$%^&* sembollerinden oluşur. Şifreler, tarayıcınızın kriptografik olarak güvenli rastgele sayı üreteci (Web Crypto API) ile cihazınızda oluşturulur; hiçbir sunucuya gönderilmez ve kaydedilmez.",
+    "steps": [
+      "Sayfa açıldığında 16 karakterlik güçlü bir şifre otomatik olarak üretilir.",
+      "\"Uzunluk\" kaydırıcısıyla şifre uzunluğunu 6 ile 30 karakter arasında ayarlayın; uzunluk değiştikçe yeni şifre üretilir.",
+      "Farklı bir şifre istiyorsanız \"Yenile\" butonuna basın.",
+      "Şifrenin üzerine tıklayarak panoya kopyalayın.",
+      "Şifreyi kullanacağınız hesaba yapıştırın ve bir şifre yöneticisine kaydedin."
+    ],
+    "uses": [
+      "Yeni açtığınız e-posta, sosyal medya ve alışveriş hesapları için benzersiz şifreler oluşturmak.",
+      "Eski ve zayıf şifrelerinizi güçlü şifrelerle değiştirmek.",
+      "Wi-Fi ağınız için tahmin edilmesi zor bir parola belirlemek.",
+      "Sistem yöneticilerinin ve yazılımcıların test hesapları veya geçici erişimler için şifre üretmesi."
+    ],
+    "tips": [
+      "Önemli hesaplarda en az 12, tercihen 16 veya daha uzun şifreler kullanın. Her ek karakter şifreyi kırmayı katlanarak zorlaştırır.",
+      "Aynı şifreyi asla birden fazla hesapta kullanmayın.",
+      "Güçlü şifreleri ezberlemek zordur; Bitwarden, 1Password veya tarayıcınızın şifre yöneticisi gibi güvenilir bir şifre yöneticisi kullanın.",
+      "Mümkün olan her hesapta iki adımlı doğrulamayı (2FA) açın; şifreniz ele geçirilse bile hesabınız korunur."
+    ],
+    "faq": [
+      {
+        "q": "Oluşturulan şifreler kaydediliyor mu?",
+        "a": "Hayır. Şifreler tamamen tarayıcınızda üretilir; Toolio şifrelerinizi görmez, kaydetmez ve hiçbir yere göndermez."
+      },
+      {
+        "q": "Şifreler ne kadar rastgele?",
+        "a": "Şifreler, tarayıcının kriptografik güvenlik için tasarlanmış rastgele sayı üreteci (crypto.getRandomValues) ile oluşturulur ve her karakter eşit olasılıkla seçilir."
+      },
+      {
+        "q": "Hangi karakterler kullanılıyor?",
+        "a": "Büyük harfler (A-Z), küçük harfler (a-z), rakamlar (0-9) ve ! @ # $ % ^ & * sembolleri kullanılır."
+      },
+      {
+        "q": "Bazı siteler sembolleri kabul etmiyor, ne yapmalıyım?",
+        "a": "Böyle bir durumda şifreyi kopyaladıktan sonra kabul edilmeyen sembolü bir harf veya rakamla değiştirebilir, kaybedilen gücü telafi etmek için şifreyi biraz daha uzun tutabilirsiniz."
+      }
+    ]
+  },
+  "json_formatter": {
+    "seo_title": "JSON Düzenleyici – JSON Formatlama, Doğrulama ve Sıkıştırma",
+    "meta": "JSON verinizi okunaklı hale getirin (beautify), tek satıra sıkıştırın (minify) ve geçerliliğini kontrol edin. Veriler tarayıcıda işlenir. Ücretsiz.",
+    "intro": "JSON Düzenleyici, yazılımcıların ve veri ile çalışan herkesin sık ihtiyaç duyduğu üç işi tek ekranda yapar: tek satırlık karmaşık JSON'u girintili ve okunaklı hale getirir (beautify), okunaklı JSON'u tek satıra sıkıştırır (minify) ve verinin geçerli bir JSON olup olmadığını kontrol eder.\n\nAPI yanıtlarını incelemek, yapılandırma dosyalarını düzenlemek veya bir veri setindeki hatayı bulmak için idealdir. İşlemler tarayıcınızda yapıldığından API anahtarları ve müşteri verileri gibi hassas bilgiler içeren JSON'ları da güvenle düzenleyebilirsiniz.",
+    "steps": [
+      "Düzenlemek istediğiniz JSON verisini \"Giriş (Raw JSON)\" alanına yapıştırın.",
+      "Okunaklı, 4 boşluk girintili bir çıktı için \"Formatla (Beautify)\" butonuna basın.",
+      "Boşlukları kaldırıp veriyi tek satıra indirmek için \"Sıkıştır (Minify)\" butonunu kullanın.",
+      "JSON geçersizse \"Geçersiz JSON formatı!\" uyarısı görünür; tırnak, virgül ve parantezleri kontrol edip tekrar deneyin.",
+      "Sonucu kopyala butonuyla panoya alın veya temizle butonuyla yeni bir veriye başlayın."
+    ],
+    "uses": [
+      "API'lerden gelen tek satırlık yanıtları okunaklı hale getirip incelemek.",
+      "package.json, tsconfig.json gibi yapılandırma dosyalarındaki söz dizimi hatalarını bulmak.",
+      "JSON verisini küçültüp istek gövdesi veya veritabanı alanı olarak kullanmak.",
+      "Veri analistlerinin ve test uzmanlarının örnek veri setlerini düzenlemesi."
+    ],
+    "tips": [
+      "JSON'da anahtarlar ve metin değerleri çift tırnak (\") içinde olmalıdır; tek tırnak geçersizdir.",
+      "Son öğeden sonra virgül bırakmak (trailing comma) JSON'u geçersiz kılar; en sık yapılan hatalardan biridir.",
+      "JSON yorum satırlarını (// veya /* */) desteklemez. Yorum içeren dosyaları formatlamadan önce yorumları kaldırın.",
+      "Çok büyük JSON dosyaları tarayıcıda yavaşlamaya neden olabilir; böyle durumlarda veriyi parçalar halinde inceleyin."
+    ],
+    "faq": [
+      {
+        "q": "JSON nedir?",
+        "a": "JSON (JavaScript Object Notation), verileri anahtar-değer çiftleri ve listeler halinde saklamaya yarayan, insanlar ve bilgisayarlar tarafından kolayca okunabilen bir veri formatıdır. Web API'lerinde en yaygın kullanılan formattır."
+      },
+      {
+        "q": "Verilerim bir sunucuya gönderiliyor mu?",
+        "a": "Hayır. Formatlama ve doğrulama tarayıcınızın yerleşik JSON özellikleriyle yapılır; veriniz cihazınızdan çıkmaz."
+      },
+      {
+        "q": "Minify ne işe yarar?",
+        "a": "Minify, okunabilirlik için eklenen boşluk ve satır sonlarını kaldırarak veriyi küçültür. Bu, ağ üzerinden gönderilen veri miktarını azaltır."
+      },
+      {
+        "q": "Hatanın hangi satırda olduğunu gösteriyor mu?",
+        "a": "Araç verinin geçersiz olduğunu bildirir ancak satır numarası vermez. Sık yapılan hatalar eksik tırnak, fazladan virgül ve kapanmamış parantezlerdir."
+      }
+    ]
+  },
+  "base64_converter": {
+    "seo_title": "Base64 Encode Decode – Online Base64 Dönüştürücü",
+    "meta": "Metni Base64 formatına kodlayın (encode) veya Base64 verisini çözün (decode). Türkçe karakterler ve emojiler dahil UTF-8 desteği. Tarayıcıda çalışır.",
+    "intro": "Base64 Dönüştürücü, metinleri Base64 formatına kodlamanızı (encode) ve Base64 ile kodlanmış verileri tekrar okunabilir metne çevirmenizi (decode) sağlar. Base64; e-posta ekleri, veri URL'leri, API kimlik doğrulama başlıkları ve JSON içinde ikili veri taşıma gibi pek çok yerde karşınıza çıkar.\n\nAraç UTF-8 uyumludur; Türkçe karakterler ve emojiler içeren metinler de doğru şekilde kodlanır ve çözülür. Dönüşüm siz yazdıkça otomatik yapılır ve tamamen tarayıcınızda gerçekleşir.",
+    "steps": [
+      "Üstteki sekmelerden \"Şifrele (Encode)\" veya \"Çöz (Decode)\" modunu seçin.",
+      "Encode modunda düz metninizi, Decode modunda Base64 verisini giriş alanına yazın veya yapıştırın.",
+      "Sonuç, çıkış alanında anında görüntülenir.",
+      "Decode modunda girdi geçerli bir Base64 değilse uyarı mesajı gösterilir; verinin eksiksiz kopyalandığından emin olun.",
+      "Sonucu kopyala butonuyla panoya alın."
+    ],
+    "uses": [
+      "API isteklerinde kullanılan Basic Authentication başlıklarını hazırlamak veya çözümlemek.",
+      "JWT token'ların veya yapılandırma dosyalarındaki Base64 kodlu değerlerin içeriğini görmek.",
+      "Metin verisini, özel karakterlerden etkilenmeden URL veya JSON içinde taşımak.",
+      "Yazılım geliştirme ve hata ayıklama sırasında kodlanmış verileri hızlıca kontrol etmek."
+    ],
+    "tips": [
+      "Base64 bir şifreleme yöntemi değildir; kodlanmış veri herkes tarafından kolayca çözülebilir. Şifre gibi gizli bilgileri korumak için kullanmayın.",
+      "Base64 kodlaması veriyi yaklaşık üçte bir oranında büyütür.",
+      "JWT token'larında kullanılan \"Base64URL\" çeşidi, + ve / yerine - ve _ karakterlerini kullanır; çözmeden önce bu karakterleri değiştirmeniz gerekebilir.",
+      "Araç metin dönüşümü içindir; resim veya dosyaları Base64'e çevirmez."
+    ],
+    "faq": [
+      {
+        "q": "Base64 nedir?",
+        "a": "Base64, ikili verileri yalnızca 64 güvenli karakter (A-Z, a-z, 0-9, + ve /) kullanarak metin olarak temsil eden bir kodlama yöntemidir. Metin tabanlı sistemlerde verinin bozulmadan taşınmasını sağlar."
+      },
+      {
+        "q": "Base64 güvenli bir şifreleme midir?",
+        "a": "Hayır. Base64 yalnızca bir kodlamadır; anahtar gerektirmez ve herkes tarafından çözülebilir. Gizlilik için gerçek şifreleme yöntemleri kullanılmalıdır."
+      },
+      {
+        "q": "Türkçe karakterler bozulur mu?",
+        "a": "Hayır. Araç metni UTF-8 olarak kodladığı için ç, ğ, ı, ö, ş, ü ve emojiler doğru şekilde korunur."
+      },
+      {
+        "q": "Verilerim kaydediliyor mu?",
+        "a": "Hayır. Kodlama ve çözme işlemleri tarayıcınızda yapılır; girdiğiniz veriler hiçbir yere gönderilmez."
+      }
+    ]
+  },
+  "percentage_calc": {
+    "seo_title": "Yüzde Hesaplama – Yüzde Bulma, Oran ve Değişim Hesaplama",
+    "meta": "Bir sayının yüzdesini bulun, bir sayının diğerinin yüzde kaçı olduğunu ve iki değer arasındaki yüzde artış/azalışı hesaplayın. Ücretsiz yüzde hesaplayıcı.",
+    "intro": "Yüzde Hesaplama aracı, günlük hayatta en sık karşılaşılan üç yüzde problemini tek sayfada çözer: bir sayının yüzde kaçının ne ettiğini bulmak (ör. 250'nin %18'i), bir sayının diğerinin yüzde kaçı olduğunu hesaplamak (ör. 45, 60'ın yüzde kaçı?) ve iki değer arasındaki yüzde değişimi bulmak (ör. fiyat 80'den 100'e çıktıysa artış oranı).\n\nMaaş zammı, sınav başarı oranı, kâr marjı, KDV, faiz veya fiyat değişimi gibi hesaplamalarda formülleri hatırlamanıza gerek kalmaz. Değerleri girip Hesapla butonuna basmanız yeterlidir.",
+    "steps": [
+      "Çözmek istediğiniz soruya uygun hesaplayıcıyı seçin: Yüzde Bulma, Oran Bulma veya Değişim Oranı.",
+      "Yüzde Bulma için önce sayıyı, sonra yüzde değerini girin (ör. 250 sayısının %18'i).",
+      "Oran Bulma için parça değeri ve bütün değeri girin (ör. 45 sayısı, 60 sayısının yüzde kaçıdır?).",
+      "Değişim Oranı için eski değeri ve yeni değeri girin (ör. 80'den 100'e değişim).",
+      "\"Hesapla\" butonuna basın; sonuç kutunun altında görüntülenir."
+    ],
+    "uses": [
+      "Maaş zammı veya fiyat artışının yüzde kaç olduğunu hesaplamak.",
+      "Sınav, anket veya satış hedeflerinde başarı oranını bulmak.",
+      "Kâr marjı, komisyon, bahşiş veya vergi tutarını hesaplamak.",
+      "Hisse senedi, döviz veya kripto para fiyatlarındaki yüzde değişimi takip etmek."
+    ],
+    "tips": [
+      "Yüzde Bulma formülü: Sonuç = Sayı × Yüzde ÷ 100. Örneğin 250 × 18 ÷ 100 = 45.",
+      "Oran Bulma formülü: Oran = Parça ÷ Bütün × 100. Örneğin 45 ÷ 60 × 100 = %75.",
+      "Değişim Oranı formülü: (Yeni − Eski) ÷ Eski × 100. Sonuç negatifse değer azalmış demektir; 100'den 80'e düşüş %-20'dir.",
+      "%20 artışın ardından gelen %20 düşüş başlangıç değerine geri götürmez: 100 → 120 → 96 olur. Art arda yüzdeleri toplamak yerine sırayla hesaplayın."
+    ],
+    "faq": [
+      {
+        "q": "Bir sayının yüzdesi nasıl hesaplanır?",
+        "a": "Sayıyı yüzde değeriyle çarpıp 100'e bölersiniz. Örneğin 1.200 TL'nin %15'i: 1.200 × 15 ÷ 100 = 180 TL."
+      },
+      {
+        "q": "Yüzde artış nasıl bulunur?",
+        "a": "Yeni değerden eski değeri çıkarın, sonucu eski değere bölün ve 100 ile çarpın. Örneğin 80'den 100'e artış: (100 − 80) ÷ 80 × 100 = %25."
+      },
+      {
+        "q": "Ondalıklı sayılar girebilir miyim?",
+        "a": "Evet. Ondalık ayırıcı olarak nokta kullanabilirsiniz (ör. 12.5)."
+      },
+      {
+        "q": "KDV hesaplamak için kullanabilir miyim?",
+        "a": "Evet. Örneğin bir tutarın %20 KDV'sini Yüzde Bulma ile hesaplayabilirsiniz. İndirim ve KDV'yi birlikte hesaplamak için İndirim Hesaplama aracı daha pratiktir."
+      }
+    ]
+  },
+  "discount_calculator": {
+    "seo_title": "İndirim Hesaplama – Yüzde İndirim, Ekstra İndirim ve KDV",
+    "meta": "Etiket fiyatı ve indirim oranını girin; ödeyeceğiniz tutarı ve kazancınızı görün. Ekstra (çifte) indirim ve KDV/vergi ekleme seçenekleriyle ücretsiz.",
+    "intro": "İndirim Hesaplama aracı, alışverişte bir ürünün indirimli fiyatını ve ne kadar tasarruf ettiğinizi saniyeler içinde gösterir. Etiket fiyatını ve indirim oranını girmeniz yeterlidir. Kampanyalarda sık görülen \"indirimli fiyata ek %10 indirim\" gibi çifte indirimleri ve KDV hariç fiyatlara eklenecek vergiyi de hesaba katabilirsiniz.\n\nSonuçta ödenecek tutarın yanı sıra her indirimin ve verginin tutarını gösteren ayrıntılı bir döküm görürsünüz. Türk lirası, dolar, euro ve sterlin para birimleri arasından seçim yapabilirsiniz.",
+    "steps": [
+      "Para birimini (₺, $, €, £) seçin ve \"Etiket Fiyatı\" alanına ürünün indirimsiz fiyatını girin.",
+      "\"1. İndirim Oranı (%)\" alanına indirim yüzdesini yazın.",
+      "Kampanyada ek indirim varsa \"Ekstra İndirim Ekle\" seçeneğini açıp ikinci oranı girin.",
+      "Fiyat KDV hariçse \"Vergi Ekle\" seçeneğini açıp vergi oranını girin (ör. %20).",
+      "\"Hesapla\" butonuna basın; ödenecek tutar, toplam kazanç ve hesaplama detayları görüntülenir. Sonucu kopyalayarak paylaşabilirsiniz."
+    ],
+    "uses": [
+      "Kampanya ve indirim dönemlerinde ürünün gerçek fiyatını hızlıca görmek.",
+      "Farklı mağazaların indirim tekliflerini karşılaştırmak.",
+      "Esnaf ve satıcıların müşteriye uygulayacakları indirimli fiyatı hesaplaması.",
+      "KDV hariç teklif fiyatlarının vergi dahil son tutarını bulmak."
+    ],
+    "tips": [
+      "Ekstra indirim, ilk indirim uygulanmış fiyat üzerinden hesaplanır. Bu yüzden %20 + %10 indirim, %30 değil toplamda %28 indirime denk gelir.",
+      "Vergi, indirimler uygulandıktan sonraki fiyat üzerine eklenir.",
+      "Türkiye'de mağaza etiketlerindeki fiyatlara KDV genellikle dahildir; vergi seçeneğini yalnızca fiyat KDV hariç verildiyse kullanın.",
+      "İndirim oranları 0 ile 100 arasında olmalıdır; aksi halde araç uyarı gösterir."
+    ],
+    "faq": [
+      {
+        "q": "İndirimli fiyat nasıl hesaplanır?",
+        "a": "Etiket fiyatı × (1 − indirim oranı ÷ 100). Örneğin 500 TL'lik ürüne %20 indirim: 500 × 0,80 = 400 TL."
+      },
+      {
+        "q": "%20 ve ardından %10 indirim toplam kaç yüzde eder?",
+        "a": "Toplam %28 eder. 100 TL'lik ürün önce 80 TL'ye, sonra 80 TL'nin %10'u düşülerek 72 TL'ye iner."
+      },
+      {
+        "q": "Toplam Kazanç neyi gösterir?",
+        "a": "Etiket fiyatı ile ödeyeceğiniz son tutar arasındaki farkı gösterir. Vergi eklediyseniz bu fark vergi kadar azalır."
+      },
+      {
+        "q": "Hesaplamalar kaydediliyor mu?",
+        "a": "Hayır. Tüm hesaplamalar tarayıcınızda yapılır ve hiçbir yere gönderilmez."
+      }
+    ]
+  },
+  "unit_converter": {
+    "seo_title": "Birim Çevirici – Uzunluk, Ağırlık ve Sıcaklık Dönüştürme",
+    "meta": "Metre, kilometre, inç, feet ve mil; kilogram, gram, pound ve ons; Celsius, Fahrenheit ve Kelvin arasında anında dönüşüm yapın. Ücretsiz birim çevirici.",
+    "intro": "Birim Çevirici, uzunluk, ağırlık ve sıcaklık birimlerini birbirine anında dönüştürür. Yurt dışından alışveriş yaparken inç veya pound cinsinden verilen ölçüleri anlamak, yemek tariflerindeki ons değerini grama çevirmek ya da Fahrenheit cinsinden hava sıcaklığını Celsius'a dönüştürmek için idealdir.\n\nUzunlukta metre, kilometre, santimetre, milimetre, feet, inç ve mil; ağırlıkta kilogram, gram, miligram, pound ve ons; sıcaklıkta Celsius, Fahrenheit ve Kelvin birimleri desteklenir. Sonuç, değeri yazdığınız anda hesaplanır.",
+    "steps": [
+      "Üstten dönüştürmek istediğiniz kategoriyi seçin: Uzunluk, Ağırlık veya Sıcaklık.",
+      "\"Dönüştürülecek\" alanına değeri girin ve yanındaki listeden kaynak birimi seçin.",
+      "\"Hedef Birim\" listesinden sonucu görmek istediğiniz birimi seçin.",
+      "Sonuç anında görüntülenir. Birimlerin yerini değiştirmek için ortadaki çift ok butonuna basın."
+    ],
+    "uses": [
+      "Yurt dışı alışverişlerinde ekran (inç), ayakkabı ve kıyafet ölçülerini anlamak.",
+      "Yemek tariflerindeki pound ve ons değerlerini grama çevirmek.",
+      "Seyahatte mil cinsinden mesafeleri ve Fahrenheit cinsinden sıcaklıkları anlamak.",
+      "Öğrencilerin fizik ve kimya ödevlerinde birim dönüşümü yapması."
+    ],
+    "tips": [
+      "1 inç = 2,54 cm, 1 feet = 30,48 cm ve 1 mil ≈ 1,609 km'dir.",
+      "1 pound (lb) ≈ 453,6 gram, 1 ons (oz) ≈ 28,35 gramdır.",
+      "Sıcaklık dönüşümleri oranla değil formülle yapılır: °F = °C × 9/5 + 32 ve K = °C + 273,15.",
+      "Ondalıklı değerler için nokta kullanın (ör. 5.5)."
+    ],
+    "faq": [
+      {
+        "q": "1 inç kaç santimetredir?",
+        "a": "1 inç tam olarak 2,54 santimetredir. Örneğin 55 inçlik bir televizyonun köşegeni yaklaşık 139,7 cm'dir."
+      },
+      {
+        "q": "Fahrenheit Celsius'a nasıl çevrilir?",
+        "a": "Fahrenheit değerinden 32 çıkarıp sonucu 5/9 ile çarpın. Örneğin 98,6 °F = (98,6 − 32) × 5/9 = 37 °C."
+      },
+      {
+        "q": "1 kg kaç pound eder?",
+        "a": "1 kilogram yaklaşık 2,205 pound'dur."
+      },
+      {
+        "q": "Hacim veya alan birimleri var mı?",
+        "a": "Şu anda uzunluk, ağırlık ve sıcaklık kategorileri desteklenmektedir. Yeni kategoriler kullanıcı taleplerine göre eklenebilir."
+      }
+    ]
+  },
+  "pomodoro": {
+    "seo_title": "Pomodoro Sayacı – Online Odaklanma ve Çalışma Zamanlayıcısı",
+    "meta": "25 dakika odaklanma, 5 dakika mola: Pomodoro tekniğiyle verimli çalışın. Süreleri ayarlayın, görevinizi yazın, süre dolunca sesli uyarı alın. Ücretsiz.",
+    "intro": "Pomodoro Sayacı, 1980'lerin sonunda Francesco Cirillo tarafından geliştirilen Pomodoro Tekniği'ni uygulamanızı sağlayan bir zamanlayıcıdır. Teknik basittir: 25 dakika boyunca tek bir işe odaklanırsınız, ardından 5 dakika kısa mola verirsiniz. Dört çalışma turundan sonra 15-30 dakikalık uzun bir mola yaparsınız.\n\nBu düzen, büyük işleri yönetilebilir parçalara böler, erteleme alışkanlığını azaltır ve zihinsel yorgunluğu önler. Toolio'nun sayacında çalışma ve mola sürelerini kendinize göre ayarlayabilir, üzerinde çalıştığınız görevi not edebilirsiniz. Sayaç çalışırken kalan süre tarayıcı sekmesinin başlığında da görünür.",
+    "steps": [
+      "Üzerinde çalışacağınız işi \"Şu an ne üzerinde çalışıyorsun?\" kutusuna yazın.",
+      "\"Çalışma\" modunun seçili olduğundan emin olun ve \"Başlat\" butonuna basın.",
+      "Süre bitene kadar yalnızca bu işe odaklanın; bildirimleri ve dikkat dağıtıcıları kapatın.",
+      "Süre dolduğunda sesli uyarı çalar. \"Kısa Mola\"ya geçip 5 dakika dinlenin.",
+      "Dört çalışma turundan sonra \"Uzun Mola\" verin. Süreleri \"Süre Ayarları\" bölümünden dakika olarak değiştirebilirsiniz."
+    ],
+    "uses": [
+      "Sınavlara hazırlanan öğrencilerin düzenli ve verimli ders çalışması.",
+      "Uzaktan çalışanların gün içindeki odaklanma sürelerini yönetmesi.",
+      "Yazarların ve yazılımcıların uzun projeleri küçük, ölçülebilir parçalara bölmesi.",
+      "Ev işleri veya kişisel projeler gibi ertelenen görevlere başlamayı kolaylaştırmak."
+    ],
+    "tips": [
+      "Bir pomodoro sırasında aklınıza başka bir iş gelirse not alın ve mola veya sonraki tura bırakın.",
+      "Molalarda ekrandan uzaklaşın; kısa bir yürüyüş, esneme veya su içmek zihni daha iyi dinlendirir.",
+      "25 dakika size uzun geliyorsa 15 dakikayla başlayıp süreyi zamanla artırabilirsiniz.",
+      "Sayaç arka plandaki sekmelerde de doğru çalışır; ancak sesli uyarıyı duyabilmek için tarayıcı sekmesini kapatmayın ve sesi açık tutun."
+    ],
+    "faq": [
+      {
+        "q": "Pomodoro Tekniği nedir?",
+        "a": "Çalışma süresini genellikle 25 dakikalık odaklanma turlarına ve aralarında kısa molalara bölen bir zaman yönetimi yöntemidir. Adını, Cirillo'nun kullandığı domates şeklindeki mutfak zamanlayıcısından alır (pomodoro, İtalyancada domates demektir)."
+      },
+      {
+        "q": "Süreleri değiştirebilir miyim?",
+        "a": "Evet. Süre Ayarları bölümünden çalışma, kısa mola ve uzun mola sürelerini dakika olarak belirleyebilirsiniz."
+      },
+      {
+        "q": "Sekme arka plandayken sayaç durur mu?",
+        "a": "Hayır. Sayaç bitiş zamanına göre hesaplandığı için başka sekmelere geçtiğinizde de doğru süreyi gösterir."
+      },
+      {
+        "q": "Süre dolduğunda nasıl haberim olacak?",
+        "a": "Sesli bir uyarı çalar ve ekranda \"Süre Doldu!\" bildirimi görünür. Uyarı sesi Google'ın ses kütüphanesinden yüklenir; sesin çalması için cihazınızın sesi açık olmalıdır."
+      }
+    ]
+  },
+  "speedtest": {
+    "seo_title": "İnternet Hız Testi – İndirme, Yükleme ve Ping Ölçümü",
+    "meta": "İnternet bağlantınızın indirme ve yükleme hızını (Mbps) ve gecikmesini (ping) ölçün. Bağımsız M-Lab sunucularıyla ücretsiz, reklamsız hız testi.",
+    "intro": "İnternet Hız Testi, bağlantınızın üç temel değerini ölçer: indirme hızı (web sayfası, video ve dosyaların size ne kadar hızlı geldiği), yükleme hızı (dosya ve görüntülü görüşme verilerinin sizden ne kadar hızlı gittiği) ve gecikme yani ping (sunucuya ulaşan bir sinyalin geri dönme süresi). Hızlar megabit/saniye (Mbps), gecikme milisaniye (ms) cinsinden gösterilir.\n\nÖlçümler, Google ve birçok araştırma kurumunun desteklediği bağımsız ölçüm ağı Measurement Lab (M-Lab) sunucularıyla, açık NDT7 protokolü kullanılarak yapılır. Araç size en yakın sunucuları bulur ve en düşük gecikmeye sahip olanı otomatik seçer.",
+    "steps": [
+      "Daha doğru bir sonuç için bağlantıyı kullanan indirme, video ve oyun gibi uygulamaları kapatın.",
+      "Ortadaki \"GO / BAŞLAT\" butonuna basın; araç önce size en yakın M-Lab sunucusunu bulur.",
+      "İndirme testi, ardından yükleme testi otomatik olarak yapılır. Göstergelerde anlık hızı takip edin.",
+      "Test bitince indirme, yükleme ve ping değerleriniz ile bağlanılan sunucunun konumu görüntülenir.",
+      "Sonucu doğrulamak için \"Tekrar Test Et\" butonuyla testi birkaç kez tekrarlayabilirsiniz."
+    ],
+    "uses": [
+      "İnternet sağlayıcınızın taahhüt ettiği hızı alıp almadığınızı kontrol etmek.",
+      "Yavaşlık veya kopma sorunlarında sorunun bağlantıdan kaynaklanıp kaynaklanmadığını anlamak.",
+      "Modem yerini değiştirdikten veya yeni bir paket aldıktan sonra farkı ölçmek.",
+      "Online oyun ve görüntülü görüşme için ping değerinin yeterli olup olmadığını görmek."
+    ],
+    "tips": [
+      "Wi-Fi yerine kablolu (Ethernet) bağlantıyla test etmek, hattınızın gerçek hızını daha doğru gösterir.",
+      "Akşam saatleri gibi yoğun dönemlerde hızlar düşebilir. Farklı saatlerde test ederek ortalama bir fikir edinin.",
+      "VPN açıkken yapılan testler VPN sunucusunun hızını da yansıtır; gerçek hızınızı ölçmek için VPN'i kapatın.",
+      "Ping değeri 20 ms altında çok iyi, 20-50 ms arası iyi, 100 ms üzeri ise oyun ve görüntülü görüşmeler için yüksek kabul edilir."
+    ],
+    "faq": [
+      {
+        "q": "Mbps ile MB/s arasındaki fark nedir?",
+        "a": "Hız testleri megabit/saniye (Mbps) kullanır. Dosya indirme programları ise genellikle megabayt/saniye (MB/s) gösterir. 1 bayt 8 bit olduğundan 100 Mbps yaklaşık 12,5 MB/s eder."
+      },
+      {
+        "q": "Sonuçlar neden diğer hız testlerinden farklı?",
+        "a": "Her test farklı sunucular ve ölçüm yöntemleri kullanır. M-Lab, sağlayıcıdan bağımsız sunucularla gerçek internet koşullarını ölçer; sağlayıcıların kendi testleri ise genellikle kendi ağlarındaki sunucuları kullanır."
+      },
+      {
+        "q": "Test verilerim nereye gidiyor?",
+        "a": "Testi başlattığınızda IP adresiniz ve ölçüm sonuçlarınız M-Lab tarafından işlenir ve internet araştırmalarına katkı amacıyla açık veri olarak yayınlanır. Toolio bu verileri saklamaz. Ayrıntılar için M-Lab gizlilik politikasına bakabilirsiniz."
+      },
+      {
+        "q": "Test ne kadar internet kotası harcar?",
+        "a": "Bağlantı hızınıza göre değişir; hızlı bağlantılarda tek bir test birkaç yüz megabayt veri kullanabilir. Kotalı mobil bağlantılarda bunu göz önünde bulundurun."
+      }
+    ]
+  },
+  "typing": {
+    "seo_title": "Klavye Hız Testi – 1 Dakikada Kaç Kelime Yazıyorsunuz?",
+    "meta": "1 dakikalık klavye hız testiyle dakikadaki kelime sayınızı (WPM) ölçün. Türkçe ve İngilizce kelimelerle 10 parmak yazma pratiği yapın. Ücretsiz.",
+    "intro": "Klavye Hız Testi, bir dakika içinde kaç kelimeyi doğru yazabildiğinizi ölçer ve sonucu dakikadaki kelime sayısı (WPM – words per minute) olarak gösterir. Ekrana rastgele sıralanmış yaygın kelimeler gelir; siz yazdıkça doğru ve yanlış kelimeler renklerle işaretlenir.\n\nSite dili Türkçe olduğunda Türkçe, İngilizce olduğunda İngilizce kelimelerle test yapılır. Düzenli pratik yaparak 10 parmak yazma becerinizi geliştirebilir, ilerlemenizi her denemede görebilirsiniz.",
+    "steps": [
+      "Klavye hızı testinin yazma alanına tıklayın.",
+      "Ekrandaki ilk kelimeyi yazmaya başladığınızda 60 saniyelik süre otomatik olarak başlar.",
+      "Her kelimeyi yazdıktan sonra boşluk (Space) tuşuna basarak sonraki kelimeye geçin.",
+      "Yazdığınız harfler kelimeyle uyuşmadığında yazma kutusu kırmızıya döner; böylece hatanızı kelimeyi bitirmeden fark edersiniz.",
+      "Süre dolduğunda WPM skorunuz ile doğru ve yanlış kelime sayılarınız görüntülenir. \"Tekrar Dene\" ile yeni bir teste başlayın."
+    ],
+    "uses": [
+      "İş başvurularında istenen klavye hızına ne kadar yakın olduğunuzu görmek.",
+      "Öğrencilerin ve yeni başlayanların 10 parmak yazma pratiği yapması.",
+      "Yazılımcıların, yazarların ve ofis çalışanlarının yazma verimliliğini artırması.",
+      "Arkadaşlarla eğlenceli bir hız yarışması yapmak."
+    ],
+    "tips": [
+      "Hızdan önce doğruluğa odaklanın; hatasız yazmaya alıştıkça hızınız kendiliğinden artar.",
+      "Parmaklarınızı ana sırada (Türkçe F klavyede U-İ-E-A, Q klavyede A-S-D-F ve J-K-L-Ş tuşlarında) tutun ve klavyeye bakmamaya çalışın.",
+      "Günde 10-15 dakikalık düzenli pratik, haftada bir yapılan uzun çalışmalardan daha etkilidir.",
+      "Ortalama bir kullanıcı dakikada 35-40 kelime yazar; 60 WPM ve üzeri profesyonel düzey kabul edilir."
+    ],
+    "faq": [
+      {
+        "q": "WPM nasıl hesaplanıyor?",
+        "a": "WPM, doğru yazdığınız kelime sayısının geçen süreye (dakika cinsinden) bölünmesiyle hesaplanır. Yanlış yazılan kelimeler skora dahil edilmez."
+      },
+      {
+        "q": "Test kaç saniye sürüyor?",
+        "a": "Test 60 saniye sürer ve ilk tuşa bastığınızda başlar."
+      },
+      {
+        "q": "İngilizce kelimelerle test yapabilir miyim?",
+        "a": "Evet. Sayfanın üst kısmındaki dil butonuyla siteyi İngilizceye çevirdiğinizde test İngilizce kelimelerle yapılır."
+      },
+      {
+        "q": "Telefonda kullanılabilir mi?",
+        "a": "Teknik olarak çalışır, ancak test fiziksel klavye ile yazma hızını ölçmek için tasarlanmıştır. En anlamlı sonucu bilgisayar klavyesiyle alırsınız."
+      }
+    ]
+  },
+  "screen_recorder": {
+    "seo_title": "Online Ekran Kaydedici – Program İndirmeden Ekran Videosu",
+    "meta": "Tüm ekranınızı, bir pencereyi veya tarayıcı sekmesini program kurmadan kaydedin. Süre sınırı ve filigran yok, video tarayıcıda oluşur. Ücretsiz.",
+    "intro": "Online Ekran Kaydedici, bilgisayarınızın ekranını herhangi bir program veya eklenti kurmadan video olarak kaydetmenizi sağlar. Tüm ekranı, tek bir uygulama penceresini ya da yalnızca bir tarayıcı sekmesini kaydedebilirsiniz. Eğitim videoları, yazılım hatalarını gösteren kayıtlar veya kısa sunumlar hazırlamak için pratik bir çözümdür.\n\nKayıt, tarayıcıların ekran paylaşım (Screen Capture API) ve kayıt (MediaRecorder API) özellikleriyle tamamen cihazınızda yapılır. Video hiçbir sunucuya yüklenmez, süre sınırı ve filigran yoktur. Kayıt bittiğinde önizleyip .webm formatında indirebilirsiniz.",
+    "steps": [
+      "\"Kaydı Başlat\" butonuna basın.",
+      "Tarayıcının açtığı pencerede kaydetmek istediğiniz şeyi seçin: tüm ekran, bir pencere veya bir sekme. Sesi de kaydetmek istiyorsanız varsa \"sesi paylaş\" seçeneğini işaretleyin.",
+      "\"Paylaş\" butonuna bastığınızda kayıt başlar. Göstermek istediklerinizi ekranda gerçekleştirin.",
+      "Bitirdiğinizde Toolio'daki \"Durdur\" butonuna veya tarayıcının \"Paylaşımı durdur\" çubuğuna basın.",
+      "Kaydı önizleyin ve \"Videoyu İndir\" butonuyla cihazınıza kaydedin. Yeni bir kayıt için \"Yeni Kayıt\" butonunu kullanın."
+    ],
+    "uses": [
+      "Bir programın veya web sitesinin nasıl kullanıldığını anlatan eğitim videoları hazırlamak.",
+      "Yazılım hatalarını destek ekibine veya geliştiricilere görüntülü olarak göstermek.",
+      "Öğretmenlerin ve öğrencilerin ders anlatımı ya da proje sunumu kaydetmesi.",
+      "Bir online toplantının veya web seminerinin kendi notlarınız için kaydını almak (katılımcıların iznini alarak)."
+    ],
+    "tips": [
+      "Bu özellik masaüstü tarayıcılarında (Chrome, Edge, Firefox, Opera) çalışır; mobil tarayıcılar ekran kaydını genellikle desteklemez.",
+      "Sekme sesi kaydı en iyi Chrome ve Edge'de çalışır. Mikrofon sesiniz kayda dahil edilmez.",
+      "Kayıt başlamadan önce ekranınızdaki kişisel bildirimleri, şifreleri ve gizli bilgileri kapatın.",
+      "Uzun kayıtlar cihazınızın belleğinde tutulur. Çok uzun kayıtlar yerine birkaç kısa kayıt almak daha güvenlidir.",
+      "WebM dosyasını MP4'e çevirmeniz gerekirse VLC Player'ın Dönüştür özelliğini kullanabilirsiniz."
+    ],
+    "faq": [
+      {
+        "q": "Kayıt süresi sınırlı mı?",
+        "a": "Hayır. Toolio herhangi bir süre sınırı koymaz. Pratikteki sınır, cihazınızın kullanılabilir belleğidir."
+      },
+      {
+        "q": "Videoda filigran var mı?",
+        "a": "Hayır. İndirdiğiniz videoda Toolio logosu veya filigran bulunmaz."
+      },
+      {
+        "q": "Video bir sunucuya yükleniyor mu?",
+        "a": "Hayır. Kayıt tarayıcınızda oluşturulur ve yalnızca siz indirdiğinizde cihazınıza kaydedilir."
+      },
+      {
+        "q": "Kayıt hangi formatta?",
+        "a": "Kayıtlar WebM formatındadır. Chrome, Firefox, Edge ve VLC Player ile açılabilir; YouTube gibi platformlar da WebM dosyalarını kabul eder."
+      }
+    ]
+  },
+  "counter": {
+    "seo_title": "Online Sayaç ve Zikirmatik – Tıkla ve Say",
+    "meta": "Klavye kısayollu, sesli ve titreşimli online sayaç. Artış miktarını ayarlayın, yön tuşları ve boşluk tuşuyla sayın. Zikir, envanter ve oyun puanı için.",
+    "intro": "Akıllı Sayaç, bir şeyi tek tek saymanız gereken her durumda kullanabileceğiniz basit ama işlevsel bir dijital sayaçtır. Büyük artı butonuna dokunarak veya klavye kısayollarıyla sayabilir, her sayımda isteğe bağlı olarak kısa bir tık sesi ve titreşim alabilirsiniz. Zikirmatik, envanter sayımı, etkinlik girişlerindeki kişi sayımı, spor tekrarları veya oyun puanları için idealdir.\n\nArtış miktarını 1'den 100'e kadar ayarlayabildiğiniz için ikişer, beşer veya onar sayabilirsiniz. Sayaç tamamen tarayıcınızda çalışır.",
+    "steps": [
+      "Saymaya başlamak için büyük artı (+) butonuna dokunun veya klavyede Yukarı Ok ya da Boşluk tuşuna basın.",
+      "Yanlışlıkla fazla saydıysanız eksi (−) butonunu veya Aşağı Ok tuşunu kullanın.",
+      "\"Artış Miktarı\" alanından her basışta kaç sayı artacağını belirleyin.",
+      "Ses ve titreşim butonlarıyla geri bildirimleri açıp kapatın.",
+      "Sayacı sıfırlamak için \"Sıfırla\" butonuna veya klavyede R tuşuna basın."
+    ],
+    "uses": [
+      "Zikir ve tesbih çekmek için dijital zikirmatik olarak kullanmak.",
+      "Depo, mağaza veya kütüphanede ürün ve envanter sayımı yapmak.",
+      "Etkinlik, toplantı veya mekân girişlerinde kişi saymak.",
+      "Spor antrenmanlarında tekrar ve set sayısını takip etmek."
+    ],
+    "tips": [
+      "Bilgisayarda klavye kısayolları en hızlı yöntemdir: Boşluk veya Yukarı Ok artırır, Aşağı Ok azaltır, R sıfırlar.",
+      "Titreşim özelliği yalnızca titreşimi destekleyen telefon ve tarayıcılarda (çoğunlukla Android) çalışır.",
+      "Sayaç değeri kaydedilmez; sayfayı yenilediğinizde sıfırlanır. Uzun sayımlarda sonucu ara ara not alın.",
+      "Telefonda kullanırken ekranın kendiliğinden kapanmaması için ekran zaman aşımı süresini uzatabilirsiniz."
+    ],
+    "faq": [
+      {
+        "q": "Zikirmatik olarak kullanılabilir mi?",
+        "a": "Evet. Büyük butonu ve titreşim desteği sayesinde telefonunuzda dijital zikirmatik olarak rahatlıkla kullanabilirsiniz."
+      },
+      {
+        "q": "Sayaç değeri kaydediliyor mu?",
+        "a": "Hayır. Sayaç değeri yalnızca açık olan sayfada tutulur; sayfa yenilendiğinde veya kapatıldığında sıfırlanır."
+      },
+      {
+        "q": "Geriye doğru sayabilir miyim?",
+        "a": "Evet. Eksi butonu veya Aşağı Ok tuşuyla sayıyı belirlediğiniz artış miktarı kadar azaltabilirsiniz."
+      },
+      {
+        "q": "Ses çalmıyor, neden?",
+        "a": "Ses butonunun açık olduğundan ve cihazınızın sessiz modda olmadığından emin olun. Bazı tarayıcılar ilk dokunuştan önce ses çalınmasına izin vermez."
+      }
+    ]
+  },
+  "decision_wheel": {
+    "seo_title": "Karar Çarkı – Çarkıfelek ile Rastgele Seçim Yapın",
+    "meta": "Seçeneklerinizi yazın, çarkı çevirin, rastgele bir sonuç seçilsin. Kura, çekiliş, oyun ve kararsız kaldığınız anlar için ücretsiz online karar çarkı.",
+    "intro": "Karar Çarkı, kararsız kaldığınız anlarda seçeneklerinizi renkli bir çarka yerleştirip rastgele birini seçmenizi sağlar. Akşam yemeğinde ne yeneceğine, toplantıda kimin söz alacağına, sınıfta hangi öğrencinin cevap vereceğine veya arkadaş grubunda kimin çay ısmarlayacağına eğlenceli ve tarafsız bir şekilde karar verebilirsiniz.\n\nSeçenekleri her satıra bir tane gelecek şekilde yazmanız yeterlidir. Çark birkaç tam tur atıp yavaşlayarak durur ve kazanan seçenek ekranda konfeti eşliğinde duyurulur.",
+    "steps": [
+      "\"Seçenekler\" kutusuna seçeneklerinizi her satıra bir tane olacak şekilde yazın. Çark siz yazdıkça güncellenir.",
+      "Sıralamayı değiştirmek isterseniz \"Karıştır\" butonunu kullanın.",
+      "Seçenek kutusunun altındaki büyük \"ÇEVİR\" butonuna basın.",
+      "Çark durduğunda kazanan seçenek ekranda gösterilir. \"Tamam\" ile pencereyi kapatıp yeniden çevirebilirsiniz.",
+      "Tamamen yeni bir liste için \"Listeyi Temizle\" butonuna basın."
+    ],
+    "uses": [
+      "Yemek, film veya hafta sonu planı seçerken kararsızlığı gidermek.",
+      "Öğretmenlerin sınıfta söz alacak öğrenciyi veya grup sırasını belirlemesi.",
+      "Ekip toplantılarında sunum sırasını veya görev dağılımını adil şekilde yapmak.",
+      "Arkadaş arasında küçük çekilişler ve oyunlar düzenlemek."
+    ],
+    "tips": [
+      "Çarkın çevrilebilmesi için en az iki seçenek gerekir.",
+      "Çark üzerinde uzun seçeneklerin yalnızca ilk 15 karakteri görünür; kısa ifadeler kullanmak çarkı daha okunaklı yapar.",
+      "Bir seçeneğin şansını artırmak isterseniz aynı seçeneği birden fazla satıra yazabilirsiniz.",
+      "Para veya değerli ödüller içeren resmi çekilişler için noter veya resmi çekiliş yöntemleri tercih edilmelidir; bu araç eğlence ve günlük kararlar içindir."
+    ],
+    "faq": [
+      {
+        "q": "Çark gerçekten rastgele mi?",
+        "a": "Evet. Her çevirmede dönüş açısı tarayıcının rastgele sayı üreteciyle belirlenir; her seçeneğin eşit büyüklükte dilimi ve eşit olasılığı vardır."
+      },
+      {
+        "q": "Kaç seçenek ekleyebilirim?",
+        "a": "Belirli bir sınır yoktur, ancak çok fazla seçenek eklendiğinde dilimler küçülür ve yazılar okunması zorlaşır. 2-20 arası seçenek en iyi görünümü sağlar."
+      },
+      {
+        "q": "Kazanan seçenek listeden çıkarılıyor mu?",
+        "a": "Hayır. Liste aynen kalır. Kazananı bir sonraki turda hariç tutmak istiyorsanız o satırı kutudan silmeniz yeterlidir."
+      },
+      {
+        "q": "Listem kaydediliyor mu?",
+        "a": "Hayır. Seçenekler yalnızca açık olan sayfada tutulur; sayfayı yenilediğinizde varsayılan listeye döner."
+      }
+    ]
+  }
+}

@@ -6,20 +6,16 @@ import { FileText, Trash2, Code, Eye } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import AdBanner from "../../components/AdBanner";
 
-const MarkdownEditor = () => {
-  const { t } = useTranslation();
+const DEFAULT_TEXT_TR = `# Merhaba Dünya! 👋
 
-  // Varsayılan bir örnek metinle başlatalım
-  const defaultText = `# Merhaba Dünya! 👋
-
-Bu bir **Markdown** editörüdür. 
+Bu bir **Markdown** editörüdür.
 Burada yazdıklarını anlık olarak sağ tarafta görebilirsin.
 
 ## Neler Yapabilirsin?
 
 1. Listeler oluşturabilirsin
 2. **Kalın** veya *İtalik* yazabilirsin
-3. [Link ekleyebilirsin](https://google.com)
+3. [Bağlantı ekleyebilirsin](https://toolio.com.tr)
 4. Kod bloğu ekleyebilirsin:
 
 \`\`\`javascript
@@ -34,7 +30,37 @@ console.log("Kodlar çok havalı görünür!");
 | Emojiler | ✅ |
 `;
 
-  const [markdown, setMarkdown] = useState(defaultText);
+const DEFAULT_TEXT_EN = `# Hello World! 👋
+
+This is a **Markdown** editor.
+Whatever you type here appears instantly on the right.
+
+## What can you do?
+
+1. Create lists
+2. Write in **bold** or *italic*
+3. [Add links](https://toolio.com.tr)
+4. Add code blocks:
+
+\`\`\`javascript
+console.log("Code looks great!");
+\`\`\`
+
+> Quoting is easy too!
+
+| Feature | Status |
+|---------|--------|
+| Tables | ✅ |
+| Emoji | ✅ |
+`;
+
+const MarkdownEditor = () => {
+  const { t, i18n } = useTranslation();
+
+  // Sitenin diline göre örnek metinle başla
+  const [markdown, setMarkdown] = useState(() =>
+    (i18n.resolvedLanguage || "tr") === "en" ? DEFAULT_TEXT_EN : DEFAULT_TEXT_TR,
+  );
 
   const clearText = () => setMarkdown("");
 
@@ -94,34 +120,6 @@ console.log("Kodlar çok havalı görünür!");
         {/* Reklam Alanı 1 */}
         <AdBanner slot="5544332211" className="mb-12" />
 
-        {/* --- ZENGİN İÇERİK (SEO) ALANI (YENİ EKLENDİ) --- */}
-        <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 mb-8">
-          <article className="prose prose-indigo prose-lg text-gray-600 max-w-none">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">
-              {t("tools.markdown_editor.content.title")}
-            </h2>
-            <p className="mb-6 leading-relaxed">
-              {t("tools.markdown_editor.content.intro")}
-            </p>
-
-            <h3 className="text-xl font-bold text-gray-800 mb-3">
-              {t("tools.markdown_editor.content.syntax_title")}
-            </h3>
-            <ul className="list-disc pl-5 space-y-2 mb-6">
-              <li>{t("tools.markdown_editor.content.syntax_list_1")}</li>
-              <li>{t("tools.markdown_editor.content.syntax_list_2")}</li>
-              <li>{t("tools.markdown_editor.content.syntax_list_3")}</li>
-              <li>{t("tools.markdown_editor.content.syntax_list_4")}</li>
-            </ul>
-
-            <h3 className="text-xl font-bold text-gray-800 mb-3">
-              {t("tools.markdown_editor.content.why_title")}
-            </h3>
-            <p className="leading-relaxed">
-              {t("tools.markdown_editor.content.why_text")}
-            </p>
-          </article>
-        </div>
 
         {/* Reklam Alanı 2 */}
         <AdBanner slot="9988776655" className="mt-8" />

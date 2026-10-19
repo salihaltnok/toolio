@@ -160,33 +160,6 @@ const PercentageCalculator = () => {
         {/* REKLAM 2 */}
         <AdBanner slot="9988776655" className="mb-12" />
 
-        {/* --- ZENGİN İÇERİK ALANI --- */}
-        <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
-          <article className="prose prose-indigo prose-lg text-gray-600 max-w-none">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">
-              {t("tools.percentage_calc.content.title")}
-            </h2>
-            <p className="mb-6 leading-relaxed">
-              {t("tools.percentage_calc.content.intro")}
-            </p>
-
-            <h3 className="text-xl font-bold text-gray-800 mb-3">
-              {t("tools.percentage_calc.content.areas_title")}
-            </h3>
-            <ul className="list-disc pl-5 space-y-2 mb-6">
-              <li>{t("tools.percentage_calc.content.areas_list_1")}</li>
-              <li>{t("tools.percentage_calc.content.areas_list_2")}</li>
-              <li>{t("tools.percentage_calc.content.areas_list_3")}</li>
-            </ul>
-
-            <h3 className="text-xl font-bold text-gray-800 mb-3">
-              {t("tools.percentage_calc.content.why_title")}
-            </h3>
-            <p className="leading-relaxed">
-              {t("tools.percentage_calc.content.why_text")}
-            </p>
-          </article>
-        </div>
       </div>
     </>
   );
@@ -202,6 +175,11 @@ const Input = ({ name, val, onChange, ph }) => (
     className="w-full md:w-32 p-3 border border-gray-300 rounded-lg text-center font-bold focus:ring-2 focus:ring-indigo-500 outline-none"
   />
 );
+
+const ResultLabel = () => {
+  const { t } = useTranslation();
+  return t("tools.percentage_calc.result");
+};
 
 const CalcCard = ({
   title,
@@ -231,7 +209,9 @@ const CalcCard = ({
     {/* Sonuç Alanı */}
     {result !== null && (
       <div className="w-full md:w-48 bg-gray-50 p-4 rounded-xl border border-gray-200 text-center animate-fade-in">
-        <div className="text-sm text-gray-500 mb-1">Sonuç</div>
+        <div className="text-sm text-gray-500 mb-1">
+          <ResultLabel />
+        </div>
         <div
           className={`text-2xl font-bold ${
             isChange

@@ -36,7 +36,7 @@ const Counter = () => {
           const audio = new Audio(CLICK_SOUND);
           audio.currentTime = 0; // Hızlı basıldığında sesin başa sarmasını sağlar
           audio.volume = 0.5; // Ses seviyesi %50
-          audio.play().catch((e) => console.error("Ses çalma hatası:", e));
+          audio.play().catch(() => {});
         } catch (e) {
           console.error("Audio nesnesi oluşturulamadı", e);
         }
@@ -185,33 +185,6 @@ const Counter = () => {
           <AdBanner slot="1122334455" className="mt-8" />
         </div>
 
-        {/* --- ZENGİN İÇERİK (SEO) ALANI (YENİ EKLENDİ) --- */}
-        <div className="mt-12 bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
-          <article className="prose prose-pink prose-lg text-gray-600 max-w-none">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">
-              {t("tools.counter.content.title")}
-            </h2>
-            <p className="mb-6 leading-relaxed">
-              {t("tools.counter.content.intro")}
-            </p>
-
-            <h3 className="text-xl font-bold text-gray-800 mb-3">
-              {t("tools.counter.content.features_title")}
-            </h3>
-            <ul className="list-disc pl-5 space-y-2 mb-6">
-              <li>{t("tools.counter.content.features_list_1")}</li>
-              <li>{t("tools.counter.content.features_list_2")}</li>
-              <li>{t("tools.counter.content.features_list_3")}</li>
-            </ul>
-
-            <h3 className="text-xl font-bold text-gray-800 mb-3">
-              {t("tools.counter.content.areas_title")}
-            </h3>
-            <p className="leading-relaxed">
-              {t("tools.counter.content.areas_text")}
-            </p>
-          </article>
-        </div>
       </div>
     </>
   );

@@ -1,0 +1,783 @@
+{
+  "navbar": {
+    "home": "Tools",
+    "about": "About",
+    "search_placeholder": "Search tools...",
+    "no_results": "No results found.",
+    "switch_language": "Switch language",
+    "menu": "Menu"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error_title": "Something went wrong",
+    "error_desc": "There was a problem loading this page. Reloading the page usually fixes it.",
+    "reload": "Reload page",
+    "breadcrumb": "Breadcrumb",
+    "cancel": "Cancel",
+    "error_generic": "Something went wrong. Please try again.",
+    "invalid_image": "Please upload a valid image file.",
+    "invalid_docx": "Please upload a valid .docx file.",
+    "docx_render_error": "The file could not be displayed. Please make sure it is not corrupted.",
+    "pdf_encrypted_error": "The PDFs could not be merged. One of the files may be password-protected or corrupted.",
+    "result_placeholder": "The result will appear here...",
+    "click_to_copy": "Click to copy"
+  },
+  "home": {
+    "title": "Free Web Tools",
+    "subtitle": "From merging PDFs and compressing images to generating passwords and counting words, use practical everyday tools right in your browser, with no sign-up required.",
+    "h1": "Toolio: Free Online Tools",
+    "meta_title": "Toolio – Free Online Tools for PDF, Images, Text & Calculations",
+    "meta_desc": "Merge PDFs, convert JPG to PDF, compress images, generate passwords, count words and more. Toolio tools are free, need no account and process your files in your browser.",
+    "search_placeholder": "Search tools... (e.g. PDF, password, image)",
+    "no_results_title": "No results",
+    "no_results_desc": "We couldn't find a tool matching \"{{term}}\".",
+    "show_all": "Show all tools",
+    "seo_title": "What is Toolio and what is it for?",
+    "seo_p1": "Toolio is a free tools website that brings together the small but important tasks students, office workers, designers, developers and content creators run into every day. You don't need to install software or create an account to combine the pages of a contract into a single PDF, shrink phone photos so they fit in an email, check the word count of an essay or generate a strong password.",
+    "seo_p2": "Most tools run entirely in your browser: the PDF, Word and image files you add, and the text you type, are not sent to Toolio's servers. Processing happens on your device and the result is downloaded straight to you. Every tool page includes a step-by-step guide, practical tips and answers to frequently asked questions.",
+    "feature1_title": "Your files stay on your device",
+    "feature1_desc": "Tasks like merging PDFs, converting Word to PDF and compressing images happen inside your browser, without uploading anything to a server.",
+    "feature2_title": "Free, no sign-up",
+    "feature2_desc": "No tool requires an account, an email address or a payment. There are no usage limits.",
+    "feature3_title": "Works on any device",
+    "feature3_desc": "Toolio works on computers, tablets and phones with an up-to-date browser. No installation or extension needed.",
+    "seo_more": "If you'd like to know how Toolio works, who builds it and how it is funded,",
+    "seo_more_link": "visit the About page."
+  },
+  "categories": {
+    "pdf": "PDF & Document Tools",
+    "pdf_desc": "Merge PDFs, turn images into PDFs and save Word documents as PDF.",
+    "image": "Image & Design Tools",
+    "image_desc": "Compress and convert images, create QR codes and signatures, explore color palettes.",
+    "text": "Text & Writing Tools",
+    "text_desc": "Count words, change letter case, compare two texts or listen to text read aloud.",
+    "dev": "Developer & Security Tools",
+    "dev_desc": "Generate strong passwords, format JSON, encode and decode Base64.",
+    "calc": "Calculators & Converters",
+    "calc_desc": "Work out percentages and discounts, convert length, weight and temperature units.",
+    "daily": "Productivity & Everyday Tools",
+    "daily_desc": "Focus with Pomodoro, measure your internet speed, test your typing speed."
+  },
+  "guide_ui": {
+    "about_tool": "About the {{tool}}",
+    "how_to": "How to use the {{tool}}",
+    "uses": "Who uses it, and when?",
+    "tips": "Tips and things to know",
+    "faq": "Frequently asked questions",
+    "related": "You might also find these useful"
+  },
+  "not_found": {
+    "title": "Page not found",
+    "desc": "This address may have moved, been removed or never existed. You can reach every tool from the home page.",
+    "back_home": "Back to home",
+    "popular": "Popular tools"
+  },
+  "footer": {
+    "desc": "Toolio offers free online tools that speed up your PDF, image, text and calculation tasks. Tools run in your browser, no sign-up needed.",
+    "quick_links": "Popular Tools",
+    "legal": "Company",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use",
+    "contact": "Contact",
+    "language": "Language",
+    "rights": "All rights reserved.",
+    "home": "Home",
+    "send_email": "Send Email",
+    "bottom_note": "Made in Istanbul."
+  },
+  "about": {
+    "page_title": "About",
+    "hero_title": "About Toolio",
+    "hero_desc": "Simple, fast and privacy-friendly free tools for everyday digital tasks.",
+    "story_title": "Why Toolio exists",
+    "story_p1": "Having to download software, sign up or upload your file to an unknown server just to merge two PDFs or shrink a photo is frustrating. Toolio was born out of that frustration.",
+    "story_p2": "Today the site offers {{count}} tools across PDF, image, text, developer, calculator and productivity categories. Each tool is designed to do one job well, and every tool page includes a guide explaining how to use it.",
+    "fast_title": "Fast",
+    "fast_desc": "Because processing happens directly on your device rather than depending on your upload speed, results are usually ready within seconds.",
+    "secure_title": "Privacy-friendly",
+    "secure_desc": "Your PDF, Word and image files are not uploaded to Toolio's servers; they are processed in your browser and downloaded only to your device.",
+    "free_title": "Free",
+    "free_desc": "No hidden fees, trials or mandatory accounts. The site is supported by the ads shown on its pages.",
+    "modern_title": "Modern and open",
+    "modern_desc": "Toolio is built with the standard web technologies of modern browsers and widely used open-source libraries.",
+    "tech_stack_title": "Technologies we use",
+    "meta_desc": "What Toolio is, how the tools work, why your files never leave your device and how the site is funded.",
+    "story_p3": "The tools are free and you don't need an account to use them. New tools and improvements are added regularly based on user feedback.",
+    "how_title": "How do the tools work?",
+    "how_intro": "Toolio's tools are written in JavaScript that runs inside your browser. When you open a page, the code it needs is loaded to your device; everything you do afterwards happens on your device.",
+    "how_list": [
+      "The PDF merge, JPG to PDF, Word to PDF, image compressor and image converter tools do not send your files to a server. The file is processed in your browser's memory and the result is downloaded to you.",
+      "Whatever you type into text tools such as the word counter, diff checker, JSON formatter, Base64 converter and password generator is not saved or transmitted anywhere.",
+      "The internet speed test connects to servers of Measurement Lab (M-Lab), an independent research network, in order to take measurements. By its nature this tool uses your internet connection; details are in the Privacy Policy.",
+      "The text-to-speech tool uses your browser's own speech engine. Depending on the voice you choose, some browsers may synthesize the text with their own cloud services.",
+      "Ads may be shown on the site through Google AdSense. Ads are placed so that they don't get in the way of using the tools."
+    ],
+    "who_title": "Who builds Toolio?",
+    "who_desc": "Toolio is a personal project built and maintained by an independent software developer based in Istanbul. All tools, texts and guides on the site are created as part of this project and updated based on user feedback. If you find a bug or want to suggest a new tool, you can reach out directly through the contact page.",
+    "ads_title": "How is Toolio funded?",
+    "ads_desc": "To cover server, domain and development costs, Google AdSense ads may be displayed on the pages. Ads keep the tools free for everyone. For detailed information about ads and cookies, see:",
+    "tech_stack_desc": "Toolio is built on the following open-source technologies and browser APIs:",
+    "stack_list": [
+      "React",
+      "Vite",
+      "Tailwind CSS",
+      "pdf-lib",
+      "jsPDF",
+      "docx-preview",
+      "browser-image-compression",
+      "Web Speech API",
+      "MediaRecorder API",
+      "Canvas API"
+    ],
+    "contact_title": "Get in touch",
+    "contact_desc": "Questions, suggestions and bug reports are always welcome."
+  },
+  "contact": {
+    "page_title": "Contact",
+    "hero_desc": "Have a question, suggestion or bug report? Write to us.",
+    "info_title": "Get in Touch",
+    "info_desc": "Your feedback helps us improve Toolio. Use the email address below for questions about the tools, bug reports, new tool suggestions and partnerships.",
+    "form_name": "Your Full Name",
+    "form_message": "Your Message",
+    "form_btn": "Send Message",
+    "faq_title": "Frequently asked questions",
+    "faq_desc": "We usually reply to emails within 1–2 business days.",
+    "form_placeholder_name": "Your Full Name",
+    "form_placeholder_email": "example@email.com",
+    "form_placeholder_message": "Type your message here...",
+    "email_label": "Email",
+    "location_label": "Location",
+    "mail_subject": "Toolio Contact",
+    "faq_badge": "FAQ",
+    "faq_list": [
+      {
+        "q": "Does Toolio cost anything?",
+        "a": "No. All tools on the site are free and require no account. Costs are covered by the ads shown on the pages."
+      },
+      {
+        "q": "Where do my uploaded files go?",
+        "a": "Files you add to the PDF, Word and image tools are not uploaded to Toolio's servers; they are processed in your browser and the result is downloaded directly to your device. When you close the page, the files are cleared from browser memory as well."
+      },
+      {
+        "q": "A tool isn't working. What should I do?",
+        "a": "First try updating your browser and reloading the page. If the problem persists, email us the tool you were using, your browser and the error you saw, and we'll look into it as soon as possible."
+      },
+      {
+        "q": "Can I suggest a new tool?",
+        "a": "Of course. Just send a short email describing the tool you need and how you'd like it to work. Suggestions are given priority when planning new tools."
+      }
+    ],
+    "location_value": "Istanbul, Türkiye"
+  },
+  "privacy": {
+    "page_title": "Privacy Policy",
+    "last_updated": "Last updated",
+    "contact_note": "For privacy questions:",
+    "meta_desc": "Toolio privacy policy: in-browser file processing, server logs, cookies, Google AdSense ads, third-party services and your data protection rights.",
+    "summary": "This policy explains what information is processed when you use the website at toolio.com.tr (\"Toolio\", \"the site\"), why it is processed and what your rights are. In short: the files you add to the tools and the text you type are not sent to our servers; the site may use Google AdSense ads and related cookies.",
+    "sections": [
+      {
+        "title": "Data controller and scope",
+        "paragraphs": [
+          "This policy applies to the Toolio website. For any questions or requests about your personal data, contact us at info@toolio.com.tr.",
+          "The policy has been prepared with regard to Turkey's Personal Data Protection Law No. 6698 (KVKK) and, where applicable, the EU General Data Protection Regulation (GDPR)."
+        ]
+      },
+      {
+        "title": "Files and text you use in the tools",
+        "paragraphs": [
+          "Tools such as PDF merge, JPG to PDF, Word to PDF, image compressor, image converter, meme generator and signature generator process your files inside your browser. These files are not uploaded to, stored on or viewed by Toolio's servers.",
+          "Content you type into the word counter, diff checker, JSON formatter, Base64 converter, password generator and similar tools is also processed only on your device. When you close the page, this data is cleared from browser memory."
+        ]
+      },
+      {
+        "title": "Technical information processed automatically",
+        "paragraphs": [
+          "When you visit the site, the server hosting it keeps standard access logs, as every web server does. These logs may include your IP address, date and time, the requested page, browser and operating system information, and the referring page.",
+          "These logs are kept for a limited time solely to keep the site secure, prevent abuse and fix technical errors, and are not shared with third parties. The legal basis for this processing is our legitimate interest in operating the site securely."
+        ]
+      },
+      {
+        "title": "Information stored in your browser",
+        "paragraphs": [
+          "Toolio writes a small entry called \"i18nextLng\" to your browser's local storage (localStorage) to remember your chosen language. If a page fails to load after an update, a temporary flag is stored in session storage (sessionStorage) to prevent the page from reloading in an endless loop. This information never leaves your device and can be deleted from your browser settings."
+        ]
+      },
+      {
+        "title": "Cookies and Google AdSense ads",
+        "paragraphs": [
+          "Toolio may display ads through Google AdSense to cover its costs. Third-party vendors, including Google, use cookies to serve ads based on a user's prior visits to this website or other websites.",
+          "Google's use of advertising cookies enables it and its partners to serve ads to users based on their visit to this site and/or other sites on the Internet. Information collected through these cookies is subject to Google's own privacy policy.",
+          "You can opt out of personalized advertising by visiting Google Ads Settings. You can also opt out of a third-party vendor's use of cookies for personalized advertising by visiting www.aboutads.info. Visitors in the European Economic Area, the United Kingdom and Switzerland are offered a choice to accept or decline advertising cookies through Google's certified consent management message.",
+          "You can always delete or block cookies in your browser settings. Blocking cookies does not affect how the tools work; it only limits the personalization of the ads shown."
+        ],
+        "links": [
+          {
+            "label": "Google Ads Settings",
+            "href": "https://adssettings.google.com"
+          },
+          {
+            "label": "How Google uses information from sites that use its services",
+            "href": "https://policies.google.com/technologies/partner-sites"
+          },
+          {
+            "label": "About Google advertising cookies",
+            "href": "https://policies.google.com/technologies/ads"
+          },
+          {
+            "label": "www.aboutads.info",
+            "href": "https://www.aboutads.info/choices/"
+          }
+        ]
+      },
+      {
+        "title": "Third-party services",
+        "paragraphs": [
+          "Some tools connect to third-party services by their nature. These services are governed by their own privacy policies:"
+        ],
+        "list": [
+          "Internet Speed Test: Measurements are made against servers on the Measurement Lab (M-Lab) network. When you start a test, your IP address and test results are processed by M-Lab and, under M-Lab's policy, published publicly as open data. For this reason the test only runs when you press the start button.",
+          "Pomodoro Timer: The alert sound played when the timer ends is loaded from Google's sound library (actions.google.com). Your IP address is sent to Google with that request.",
+          "Text to Speech: Your browser's speech engine is used. Depending on the voice you choose (e.g. some online \"Google\" or \"Microsoft\" voices), your text may be synthesized by the browser vendor's cloud service.",
+          "Google AdSense: Content is loaded from Google's servers to display ads; details are explained in the section above."
+        ],
+        "links": [
+          {
+            "label": "M-Lab Privacy Policy",
+            "href": "https://www.measurementlab.net/privacy/"
+          },
+          {
+            "label": "Google Privacy Policy",
+            "href": "https://policies.google.com/privacy"
+          }
+        ]
+      },
+      {
+        "title": "Children's privacy",
+        "paragraphs": [
+          "Toolio is a general-audience website and is not directed at children under 13. We do not knowingly collect personal data from children."
+        ]
+      },
+      {
+        "title": "Your rights",
+        "paragraphs": [
+          "Under Article 11 of KVKK you have the right to learn whether your personal data is processed, to request information about it, to learn the purpose of processing and whether it is used accordingly, to know the third parties it is transferred to in Turkey or abroad, to request correction of incomplete or inaccurate data, to request deletion or destruction when the legal conditions are met, to object to an adverse outcome resulting solely from automated analysis, and to claim compensation for damages caused by unlawful processing.",
+          "To exercise these rights, email info@toolio.com.tr. Requests are concluded within 30 days at the latest. Users in the EU can also exercise their GDPR rights of access, rectification, erasure, restriction, objection and data portability through the same address."
+        ]
+      },
+      {
+        "title": "Changes to this policy",
+        "paragraphs": [
+          "This policy may be updated as the tools on the site or legal requirements change. The current version is always published on this page and the \"Last updated\" date at the top of the page is changed accordingly."
+        ]
+      }
+    ]
+  },
+  "terms": {
+    "page_title": "Terms of Use",
+    "meta_desc": "Toolio terms of use: scope of the service, acceptable use rules, disclaimer, intellectual property and governing law.",
+    "summary": "These terms govern your use of the website at toolio.com.tr and the tools on it. By using the site you accept these terms. If you do not accept them, please do not use the site.",
+    "sections": [
+      {
+        "title": "Description of the service",
+        "paragraphs": [
+          "Toolio is a website offering free, browser-based tools for PDF, image, text, calculation and productivity tasks. Most tools run only on your device and do not upload your files to a server.",
+          "Toolio reserves the right to change, improve, temporarily suspend or remove tools without prior notice."
+        ]
+      },
+      {
+        "title": "Acceptable use",
+        "paragraphs": [
+          "When using the site you agree to:"
+        ],
+        "list": [
+          "Use the tools only for purposes that comply with applicable law.",
+          "Not process or distribute content that infringes the copyright, trademark, privacy or personal rights of others.",
+          "Not use any tool, including the signature generator, to produce forged documents, signatures or records on behalf of others or to deceive anyone.",
+          "Not make automated requests, attacks or similar attempts that would harm the site, overload it or compromise its security."
+        ]
+      },
+      {
+        "title": "Responsibility for your content",
+        "paragraphs": [
+          "Files and text you add to the tools are processed on your device. You are responsible for having the right to process and share this content and for how you use the results."
+        ]
+      },
+      {
+        "title": "Disclaimer",
+        "paragraphs": [
+          "The tools are provided \"as is\" and \"as available\". We do not guarantee that results will be accurate, complete or uninterrupted. Especially for important documents, we recommend checking the output before using it and keeping a backup of your original files.",
+          "Results from the percentage, discount and unit calculators are for information only and are not a substitute for financial, legal or professional advice. Internet speed test results can vary with network conditions."
+        ]
+      },
+      {
+        "title": "Limitation of liability",
+        "paragraphs": [
+          "To the extent permitted by applicable law, Toolio cannot be held liable for data loss, loss of business or indirect damages arising from the use of, or inability to use, the site or the tools."
+        ]
+      },
+      {
+        "title": "Intellectual property",
+        "paragraphs": [
+          "The site's design, texts, guides, logo and source code belong to Toolio and may not be copied without permission. Open-source libraries used on the site are used under their own licenses.",
+          "Product and brand names mentioned on the site, such as Microsoft Word, PDF, YouTube and Instagram, belong to their respective owners; Toolio is not affiliated with or endorsed by these companies."
+        ]
+      },
+      {
+        "title": "Third-party links and ads",
+        "paragraphs": [
+          "The site may contain links to third-party websites and ads displayed through Google AdSense. Toolio is not responsible for the content, products or privacy practices of these websites and advertisers."
+        ]
+      },
+      {
+        "title": "Changes",
+        "paragraphs": [
+          "These terms may be updated from time to time. The current version is published on this page; continuing to use the site after changes means you accept the updated terms."
+        ]
+      },
+      {
+        "title": "Governing law",
+        "paragraphs": [
+          "These terms are governed by the laws of the Republic of Turkey. The courts and enforcement offices of Istanbul have jurisdiction over disputes."
+        ]
+      }
+    ]
+  },
+  "legal": {
+    "updated_date": "October 19, 2026"
+  },
+  "tools": {
+    "password_gen": {
+      "name": "Password Generator",
+      "desc": "Generate secure and random passwords.",
+      "length": "Length",
+      "generate_btn": "Refresh",
+      "copied_msg": "Copied!",
+      "placeholder": "Password will appear here"
+    },
+    "word_counter": {
+      "name": "Word Counter",
+      "desc": "Count words and characters in your text.",
+      "words": "Words",
+      "chars": "Characters",
+      "sentences": "Sentences",
+      "paragraphs": "Paragraphs",
+      "header_text": "Paste Your Text Here",
+      "placeholder": "Start typing or paste your text here...",
+      "copy_msg": "Text copied!",
+      "seo_desc": "Free online word, character, sentence and paragraph counter."
+    },
+    "json_formatter": {
+      "name": "JSON Formatter",
+      "desc": "Validate and beautify your JSON data.",
+      "header": "JSON Formatter",
+      "format_btn": "Beautify",
+      "minify_btn": "Minify",
+      "clear_btn": "Clear",
+      "input_label": "Input (Raw JSON)",
+      "output_label": "Output",
+      "error_msg": "Invalid JSON format!",
+      "copy_msg": "JSON copied!",
+      "placeholder_input": "{\"name\": \"Salih\"}",
+      "placeholder_output": "Result will appear here..."
+    },
+    "qr_generator": {
+      "name": "QR Code Generator",
+      "desc": "Create and download colorful QR codes.",
+      "header": "QR Code Generator",
+      "url_label": "Website / Text",
+      "fg_color": "Foreground Color",
+      "bg_color": "Background Color",
+      "size": "Size",
+      "download_btn": "Download as PNG"
+    },
+    "image_converter": {
+      "name": "Image Converter",
+      "desc": "Convert between PNG, JPG, and WEBP formats.",
+      "header": "Image Converter",
+      "upload_title": "Upload or Drop Image",
+      "upload_desc": "Supports PNG, JPG, WEBP",
+      "target_format": "Target Format",
+      "convert_btn": "Download",
+      "processing": "Processing...",
+      "privacy_note": "Your image is processed in your browser, not uploaded to a server."
+    },
+    "unit_converter": {
+      "name": "Unit Converter",
+      "desc": "Convert between length, weight, and temperature units.",
+      "header": "Unit Converter",
+      "select_category": "Select Category",
+      "length": "Length",
+      "weight": "Weight",
+      "temperature": "Temperature",
+      "from": "From",
+      "to": "To",
+      "result": "Result"
+    },
+    "color_palette": {
+      "name": "Color Palette",
+      "desc": "Generate perfect color combinations for your projects.",
+      "header": "Color Palette Generator",
+      "generate_btn": "Generate (Space)",
+      "copy_msg": "Color copied!",
+      "instruction": "Click lock to freeze, click code to copy.",
+      "locked": "Locked",
+      "unlocked": "Unlocked"
+    },
+    "markdown_editor": {
+      "name": "Markdown Editor",
+      "desc": "Write and preview your Markdown syntax in real-time.",
+      "header": "Markdown Editor",
+      "write": "Write (Markdown)",
+      "preview": "Preview",
+      "placeholder": "# Heading\n**Bold** and *italic* text...",
+      "copy_html": "Copy HTML",
+      "clear": "Clear"
+    },
+    "lorem_ipsum": {
+      "name": "Lorem Ipsum & Text Repeater",
+      "desc": "Generate standard Lorem Ipsum or repeat your own text.",
+      "header": "Lorem Ipsum Generator",
+      "count_label": "Repeat Count",
+      "source_label": "Custom Source Text (Optional)",
+      "source_placeholder": "If you type here, it will repeat this instead of Latin...",
+      "generate_btn": "Generate",
+      "copy_btn": "Copy",
+      "copy_msg": "Text copied!"
+    },
+    "case_converter": {
+      "name": "Case Converter",
+      "desc": "Convert text to uppercase, lowercase, title case, or slug format.",
+      "header": "Case Converter",
+      "placeholder": "Type or paste your text here...",
+      "uppercase": "UPPERCASE",
+      "lowercase": "lowercase",
+      "capitalize": "Capitalize Words",
+      "sentence_case": "Sentence case",
+      "slugify": "URL Format (Slug)",
+      "copy_msg": "Text copied!",
+      "slug_info": "URL Format (Slug) lowercases the text, converts accented letters to plain ones and turns spaces into dashes (-)."
+    },
+    "percentage_calc": {
+      "name": "Percentage Calculator",
+      "desc": "Calculate percentages, percentage increase/decrease and more.",
+      "header": "Percentage Calculator",
+      "calc_1_title": "Find Percentage",
+      "calc_1_between": "% of",
+      "calc_1_after": "is what?",
+      "calc_2_title": "Find Rate",
+      "calc_2_between": "is what percent of",
+      "calc_2_after": "?",
+      "calc_3_title": "Percentage Change",
+      "calc_3_between": "to",
+      "calc_3_after": "change rate?",
+      "result": "Result",
+      "calculate": "Calculate",
+      "placeholder_a": "Value A",
+      "placeholder_b": "Value B"
+    },
+    "base64_converter": {
+      "name": "Base64 Converter",
+      "desc": "Encode text to Base64 format or decode encrypted data.",
+      "header": "Base64 Converter",
+      "encode_tab": "Encode",
+      "decode_tab": "Decode",
+      "input_placeholder": "Type your text here...",
+      "output_placeholder": "Result will appear here...",
+      "copy_msg": "Result copied!",
+      "error_msg": "Invalid Base64 format! Please check your input."
+    },
+    "pomodoro": {
+      "name": "Pomodoro Timer",
+      "desc": "Focus, take a break, and boost your productivity.",
+      "header": "Pomodoro Timer",
+      "work": "Focus",
+      "short_break": "Short Break",
+      "long_break": "Long Break",
+      "start": "Start",
+      "pause": "Pause",
+      "reset": "Reset",
+      "task_placeholder": "What are you working on?",
+      "time_up": "Time is up!",
+      "settings": "Duration Settings (Minutes)",
+      "status_running": "TIMER RUNNING",
+      "status_paused": "PAUSED"
+    },
+    "discount_calculator": {
+      "name": "Advanced Discount Calculator",
+      "desc": "Calculate double discounts, tax, and detailed pricing.",
+      "header": "Discount Calculator",
+      "original_price": "Original Price",
+      "discount_rate": "1st Discount Rate (%)",
+      "second_discount_rate": "Extra Discount (%) (Optional)",
+      "tax_rate": "Tax / VAT Rate (%)",
+      "calculate_btn": "Calculate",
+      "final_price": "Final Price",
+      "saved_amount": "Total Savings",
+      "placeholder_price": "Ex: 500",
+      "placeholder_rate": "Ex: 20",
+      "currency": "Currency",
+      "enable_second_disc": "Add Extra Discount",
+      "enable_tax": "Add Tax",
+      "error_negative": "Value cannot be negative",
+      "error_max_100": "Rate cannot be more than 100",
+      "details": "Calculation Details",
+      "copy_btn": "Copy Result",
+      "result_placeholder": "Enter values to see results...",
+      "first_discount": "1st Discount",
+      "extra_discount": "Extra Discount"
+    },
+    "counter": {
+      "name": "Smart Counter",
+      "desc": "Online tally counter with keyboard support, sound, and vibration.",
+      "header": "Smart Counter",
+      "current_count": "Current Count",
+      "step_label": "Step Size",
+      "reset_btn": "Reset",
+      "sound_on": "Sound On",
+      "sound_off": "Sound Off",
+      "vibration_on": "Vibration On",
+      "vibration_off": "Vibration Off",
+      "keyboard_hint": "Tip: You can use arrow keys. (R: Reset)"
+    },
+    "decision_wheel": {
+      "name": "Decision Wheel",
+      "desc": "Can't decide? Enter options and spin the wheel.",
+      "header": "Decision Wheel",
+      "spin_btn": "SPIN",
+      "reset_btn": "Clear List",
+      "shuffle_btn": "Shuffle",
+      "input_label": "Options (One per line)",
+      "placeholder": "Pizza\nBurger\nSushi\nSalad",
+      "winner_title": "Winner:",
+      "winner_msg": "Congratulations! The choice is made.",
+      "close_btn": "Close",
+      "option_count": "{{count}} options",
+      "default_items": "Yes\nNo\nMaybe\nDefinitely"
+    },
+    "docx_converter": {
+      "name": "Word to PDF",
+      "desc": "Convert Word (DOCX) files to PDF.",
+      "header": "Word to PDF Converter",
+      "subtext": "Upload DOCX files and download as PDF in seconds. No server upload, 100% secure.",
+      "drop_title": "Drag & Drop Word File Here",
+      "drop_sub": "or click to select file (.docx)",
+      "processing": "Converting...",
+      "success": "Conversion Complete!",
+      "btn_download": "Download as PDF",
+      "btn_new": "Convert New Document",
+      "error_process": "An error occurred during conversion."
+    },
+    "jpg_to_pdf": {
+      "name": "JPG to PDF",
+      "desc": "Merge your images into a single PDF file.",
+      "header": "JPG to PDF Converter",
+      "subtext": "Convert unlimited images to PDF documents in seconds. Browser-based, fast, and secure.",
+      "drag_drop": "Drag and drop images here or select",
+      "add_more": "Add More",
+      "convert_btn": "Download as PDF",
+      "converting": "Creating PDF..."
+    },
+    "pdf_merge": {
+      "name": "PDF Merger",
+      "desc": "Combine multiple PDF files into a single document.",
+      "header": "PDF Merge Tool",
+      "subtext": "Upload your files, arrange their order, and merge with one click. 100% browser-based processing, files are never uploaded to a server.",
+      "drag_drop": "Drag and drop PDF files here or select",
+      "merge_btn": "Merge PDFs and Download",
+      "processing": "Merging...",
+      "min_warning": "You must select at least 2 files to merge."
+    },
+    "signature": {
+      "name": "Signature Generator",
+      "desc": "Create your digital signature online and download as PNG.",
+      "header": "Online Signature Generator",
+      "subtext": "Draw your signature using your mouse or finger, choose color, and download with transparent background.",
+      "draw_here": "Draw Here",
+      "color": "Color",
+      "width": "Thickness",
+      "clear_btn": "Clear",
+      "download_btn": "Download Signature",
+      "empty_warning": "Please draw a signature first."
+    },
+    "compressor": {
+      "name": "Image Compressor",
+      "desc": "Reduce image size without losing quality.",
+      "header": "Image Compressor Tool",
+      "subtext": "Optimize your images for websites or social media. Files are compressed in your browser without uploading to a server.",
+      "drag_drop": "Drag and drop image here or select",
+      "new_image": "Select New Image",
+      "compress_btn": "Compress",
+      "processing": "Processing...",
+      "result_title": "Great! Reduced",
+      "download_btn": "Download"
+    },
+    "youtube_thumb": {
+      "name": "YouTube Thumbnail Downloader",
+      "desc": "Download YouTube video thumbnails in HD quality.",
+      "header": "YouTube Thumbnail Downloader",
+      "subtext": "Paste the video link and download its cover image in the highest quality in seconds.",
+      "fetch_btn": "Find Image",
+      "error_url": "Invalid YouTube link!",
+      "content": {
+        "title": "YouTube Thumbnail Downloader Tool",
+        "p1": "Want to save the thumbnail of a YouTube video you like to your computer or phone? With Toolio, simply paste the video link.",
+        "h2": "Which Qualities Can I Download?",
+        "li1": "The highest available resolution. Usually 720p or 1080p.",
+        "li2": "Standard quality, ideal for blog posts.",
+        "li3": "Lower size, fast-loading version."
+      }
+    },
+    "tts": {
+      "name": "Text to Speech",
+      "desc": "Convert text to spoken voice audio.",
+      "header": "Text to Speech Converter (TTS)",
+      "subtext": "Paste your text, select a voice, and start listening. Completely free and browser-based.",
+      "voice_label": "Select Voice",
+      "speed_label": "Speed",
+      "pitch_label": "Pitch",
+      "placeholder": "Type text here to convert to speech...",
+      "play_btn": "Speak",
+      "pause_btn": "Pause",
+      "stop_btn": "Stop"
+    },
+    "screen_recorder": {
+      "name": "Screen Recorder",
+      "desc": "Record your screen video without downloading software.",
+      "header": "Online Screen Recorder",
+      "subtext": "Record your entire screen, a window, or a browser tab and download instantly. No time limits, no watermarks.",
+      "start_btn": "Start Recording",
+      "stop_btn": "Stop",
+      "download_btn": "Download Video",
+      "new_rec_btn": "New Recording",
+      "webm_note": "Note: Recordings are saved in .webm format. You can open them with Chrome, Firefox, Edge or VLC Player.",
+      "ready": "Ready to start recording"
+    },
+    "meme": {
+      "name": "Meme Generator",
+      "desc": "Create your own funny internet memes.",
+      "header": "Online Meme Generator",
+      "subtext": "Upload your image, add classic top and bottom text, and download instantly.",
+      "settings": "Text Settings",
+      "upload_btn": "Upload Image",
+      "top_text": "Top Text",
+      "bottom_text": "Bottom Text",
+      "font_size": "Font Size",
+      "color": "Text Color",
+      "download_btn": "Download Meme",
+      "preview_placeholder": "Use the button on the left to upload an image",
+      "top_placeholder": "TOP TEXT",
+      "bottom_placeholder": "BOTTOM TEXT"
+    },
+    "typing": {
+      "name": "Typing Speed Test",
+      "desc": "Test how many words you can type in 1 minute.",
+      "header": "Online Typing Speed Test",
+      "subtext": "Measure your typing speed, practice, and find out your WPM (Words Per Minute) score.",
+      "result_title": "Time's Up!",
+      "correct": "Correct Words",
+      "incorrect": "Wrong Words",
+      "restart_btn": "Try Again",
+      "placeholder": "Start typing..."
+    },
+    "diff": {
+      "name": "Diff Checker",
+      "desc": "Find differences between two texts.",
+      "header": "Text Diff Checker",
+      "subtext": "Paste two texts, and the system instantly highlights added or removed words in color.",
+      "original": "Original Text",
+      "modified": "Modified Text",
+      "placeholder_old": "Paste original text here...",
+      "placeholder_new": "Paste modified text here...",
+      "result_title": "Comparison Result",
+      "waiting_result": "Enter text above to see results...",
+      "deleted": "Removed",
+      "added": "Added"
+    },
+    "fancy_font": {
+      "name": "Fancy Font Generator",
+      "desc": "Generate cool and stylish text for Instagram and games.",
+      "header": "Fancy Text Generator",
+      "subtext": "Type your text, copy the style you like from dozens of options.",
+      "placeholder": "Type your nickname or text here..."
+    },
+    "speedtest": {
+      "name": "Internet Speed Test",
+      "desc": "Measure your internet speed (Download, Upload, Ping) professionally.",
+      "header": "Advanced Internet Speed Test",
+      "subtext": "Analyze your connection quality in seconds. Measure your Download, Upload, and Latency (Ping) values with the most precise servers.",
+      "download": "DOWNLOAD",
+      "upload": "UPLOAD",
+      "ping": "PING",
+      "server": "Server",
+      "start_btn": "Start Test",
+      "restart_btn": "Test Again",
+      "go_text": "GO",
+      "start_label": "START",
+      "locating_title": "Finding Best Server...",
+      "locating_desc": "Scanning for the nearest server to your location",
+      "label_download": "Download Test",
+      "label_upload": "Upload Test",
+      "test_completed": "Test Completed!",
+      "connection_label": "Connection:",
+      "network_name": "M-Lab Network",
+      "server_auto": "Auto Selecting...",
+      "gauge_unit": "Mbps",
+      "status_connecting": "Connecting...",
+      "status_download": "Downloading...",
+      "status_upload": "Uploading...",
+      "error_msg": "Connection error occurred.",
+      "mlab_notice": "The test runs against servers of the independent Measurement Lab (M-Lab) network. When you start a test, your IP address and results are published by M-Lab as open data.",
+      "mlab_policy": "M-Lab privacy policy"
+    },
+    "tweet_gen": {
+      "name": "Social Media Post Generator",
+      "desc": "Create Fake Tweet (X) or Instagram posts.",
+      "header": "Social Media Post Generator",
+      "subtext": "Choose platform, edit profile, enter content and instantly generate a realistic social media image.",
+      "platform_select": "Select Platform",
+      "platform_x": "X (Twitter)",
+      "platform_insta": "Instagram",
+      "settings_appearance": "Appearance Mode",
+      "mode_light": "Light",
+      "mode_dim": "Dim",
+      "mode_dark": "Dark",
+      "settings_profile": "Profile Info",
+      "placeholder_name": "Name",
+      "placeholder_username": "Username",
+      "label_verified": "Show Blue Tick",
+      "settings_content": "Post Content",
+      "label_post_image": "Post Image (For Instagram)",
+      "placeholder_content": "Write caption / tweet...",
+      "settings_stats": "Stats & Date",
+      "placeholder_time": "Time",
+      "placeholder_date": "Date",
+      "placeholder_retweets": "Retweets",
+      "placeholder_quotes": "Quotes",
+      "placeholder_likes": "Likes",
+      "placeholder_bookmarks": "Saves",
+      "placeholder_views": "Views",
+      "placeholder_location": "Location (e.g. Istanbul, TR)",
+      "btn_download": "Download Image",
+      "label_views": "Views",
+      "label_retweets": "Retweets",
+      "label_quotes": "Quotes",
+      "label_likes": "Likes",
+      "label_bookmarks": "Bookmarks",
+      "preview_note": "Preview is as above. Click the download button to save.",
+      "content": {
+        "title": "How to Create Fake Social Media Posts?",
+        "p1": "With Toolio, you can now create not only Tweets but also Instagram posts! Design a funny tweet or an influencer-like Instagram post. No Photoshop skills needed.",
+        "h2": "Supported Platforms",
+        "li1_title": "X (Twitter):",
+        "li1": "Classic tweet format. Customize retweets, likes, and view counts.",
+        "li2_title": "Instagram:",
+        "li2": "Square photo sharing format. Upload post image, add location, and change like counts.",
+        "li3_title": "Dark Mode:",
+        "li3": "Light, Dim, and Dark mode options are available for both platforms.",
+        "h_guide": "User Guide",
+        "guide_p": "1. Select platform (X or Instagram) from the top.\n2. Upload profile photo and post image.\n3. Edit text and numbers.\n4. Click Download to get high-quality PNG."
+      }
+    }
+  }
+}

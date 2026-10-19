@@ -191,33 +191,6 @@ const UnitConverter = () => {
         {/* REKLAM 2 */}
         <AdBanner slot="9988776655" className="mb-12" />
 
-        {/* --- ZENGİN İÇERİK ALANI --- */}
-        <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
-          <article className="prose prose-green prose-lg text-gray-600 max-w-none">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">
-              {t("tools.unit_converter.content.title")}
-            </h2>
-            <p className="mb-6 leading-relaxed">
-              {t("tools.unit_converter.content.intro")}
-            </p>
-
-            <h3 className="text-xl font-bold text-gray-800 mb-3">
-              {t("tools.unit_converter.content.units_title")}
-            </h3>
-            <ul className="list-disc pl-5 space-y-2 mb-6">
-              <li>{t("tools.unit_converter.content.units_list_1")}</li>
-              <li>{t("tools.unit_converter.content.units_list_2")}</li>
-              <li>{t("tools.unit_converter.content.units_list_3")}</li>
-            </ul>
-
-            <h3 className="text-xl font-bold text-gray-800 mb-3">
-              {t("tools.unit_converter.content.why_title")}
-            </h3>
-            <p className="leading-relaxed">
-              {t("tools.unit_converter.content.why_text")}
-            </p>
-          </article>
-        </div>
       </div>
     </>
   );

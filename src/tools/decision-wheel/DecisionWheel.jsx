@@ -9,8 +9,14 @@ const DecisionWheel = () => {
   const { t } = useTranslation();
 
   // Varsayılan seçenekler
-  const [items, setItems] = useState(["Evet", "Hayır", "Belki", "Kesinlikle"]);
-  const [inputText, setInputText] = useState("Evet\nHayır\nBelki\nKesinlikle");
+  const [inputText, setInputText] = useState(() =>
+    t("tools.decision_wheel.default_items"),
+  );
+  const [items, setItems] = useState(() =>
+    t("tools.decision_wheel.default_items")
+      .split("\n")
+      .filter((i) => i.trim() !== ""),
+  );
 
   const [rotation, setRotation] = useState(0);
   const [isSpinning, setIsSpinning] = useState(false);
@@ -135,7 +141,7 @@ const DecisionWheel = () => {
     try {
       const audio = new Audio(WIN_SOUND);
       audio.volume = 0.5;
-      audio.play();
+      audio.play().catch(() => {});
     } catch (e) {}
   };
 
@@ -249,31 +255,6 @@ const DecisionWheel = () => {
 
         <AdBanner slot="7778889990" className="mt-8" />
 
-        {/* --- ZENGİN İÇERİK (SEO) ALANI (YENİ EKLENDİ) --- */}
-        <div className="mt-12 bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
-          <article className="prose prose-purple prose-lg text-gray-600 max-w-none">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">
-              {t("tools.decision_wheel.content.title")}
-            </h2>
-            <p className="mb-6 leading-relaxed">
-              {t("tools.decision_wheel.content.intro")}
-            </p>
-
-            <h3 className="text-xl font-bold text-gray-800 mb-3">
-              {t("tools.decision_wheel.content.how_title")}
-            </h3>
-            <p className="mb-6 leading-relaxed">
-              {t("tools.decision_wheel.content.how_text")}
-            </p>
-
-            <h3 className="text-xl font-bold text-gray-800 mb-3">
-              {t("tools.decision_wheel.content.fairness_title")}
-            </h3>
-            <p className="leading-relaxed">
-              {t("tools.decision_wheel.content.fairness_text")}
-            </p>
-          </article>
-        </div>
 
         {/* MODAL: KAZANAN GÖSTERİMİ */}
         {winner && (

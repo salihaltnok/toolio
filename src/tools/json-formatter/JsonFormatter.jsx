@@ -141,26 +141,6 @@ const JsonFormatter = () => {
         {/* REKLAM 1 */}
         <AdBanner slot="1234567890" className="mb-12" />
 
-        {/* --- ZENGİN İÇERİK (SEO) ALANI (YENİ EKLENDİ) --- */}
-        <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 mb-8">
-          <article className="prose prose-indigo prose-lg text-gray-600 max-w-none">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">
-              {t("tools.json_formatter.content.title")}
-            </h2>
-            <p className="mb-6 leading-relaxed">
-              {t("tools.json_formatter.content.intro")}
-            </p>
-
-            <h3 className="text-xl font-bold text-gray-800 mb-3">
-              {t("tools.json_formatter.content.features_title")}
-            </h3>
-            <ul className="list-disc pl-5 space-y-2 mb-6">
-              <li>{t("tools.json_formatter.content.features_list_1")}</li>
-              <li>{t("tools.json_formatter.content.features_list_2")}</li>
-              <li>{t("tools.json_formatter.content.features_list_3")}</li>
-            </ul>
-          </article>
-        </div>
 
         {/* REKLAM 2 */}
         <AdBanner slot="9988776655" />

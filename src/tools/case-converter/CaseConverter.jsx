@@ -5,30 +5,38 @@ import { useTranslation } from "react-i18next";
 import AdBanner from "../../components/AdBanner";
 
 const CaseConverter = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [text, setText] = useState("");
   const [toast, setToast] = useState({ show: false, message: "" });
 
-  const toUpperCase = () => setText(text.toUpperCase());
-  const toLowerCase = () => setText(text.toLowerCase());
+  // Türkçede i/İ ve ı/I dönüşümlerinin doğru olması için dile göre locale
+  const locale = (i18n.resolvedLanguage || "tr") === "tr" ? "tr-TR" : "en-US";
+  const upper = (value) => value.toLocaleUpperCase(locale);
+  const lower = (value) => value.toLocaleLowerCase(locale);
+
+  const toUpperCase = () => setText(upper(text));
+  const toLowerCase = () => setText(lower(text));
   const toCapitalize = () => {
-    const words = text.split(" ");
-    const newText = words
-      .map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
-      .join(" ");
+    const newText = text
+      .split(/(\s+)/)
+      .map((word) => (word ? upper(word.charAt(0)) + lower(word.slice(1)) : word))
+      .join("");
     setText(newText);
   };
   const toSentenceCase = () => {
-    const newText = text
-      .toLowerCase()
-      .replace(/(^\s*\w|[\.\!\?]\s*\w)/g, (c) => c.toUpperCase());
+    const newText = lower(text).replace(/(^\s*\p{L}|[.!?]\s*\p{L})/gu, (c) =>
+      upper(c),
+    );
     setText(newText);
   };
   const toSlugify = () => {
-    const newText = text
-      .toLowerCase()
+    const trMap = { ç: "c", ğ: "g", ı: "i", ö: "o", ş: "s", ü: "u", â: "a", î: "i", û: "u" };
+    const newText = lower(text)
+      .replace(/[çğıöşüâîû]/g, (c) => trMap[c])
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
       .trim()
-      .replace(/[^\w\s-]/g, "")
+      .replace(/[^a-z0-9\s-]/g, "")
       .replace(/[\s_-]+/g, "-")
       .replace(/^-+|-+$/g, "");
     setText(newText);
@@ -125,43 +133,6 @@ const CaseConverter = () => {
 
         <AdBanner slot="9988776655" className="mt-8 mb-12" />
 
-        {/* --- ZENGİN İÇERİK ALANI --- */}
-        <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
-          <article className="prose prose-orange prose-lg text-gray-600 max-w-none">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">
-              {t("tools.case_converter.content.title")}
-            </h2>
-            <p className="mb-6 leading-relaxed">
-              {t("tools.case_converter.content.intro")}
-            </p>
-
-            <h3 className="text-xl font-bold text-gray-800 mb-3">
-              {t("tools.case_converter.content.modes_title")}
-            </h3>
-            <ul className="list-disc pl-5 space-y-2 mb-6">
-              <li>
-                <strong>{t("tools.case_converter.uppercase")}:</strong>{" "}
-                {t("tools.case_converter.content.modes_list_1")}
-              </li>
-              <li>
-                <strong>{t("tools.case_converter.lowercase")}:</strong>{" "}
-                {t("tools.case_converter.content.modes_list_2")}
-              </li>
-              <li>
-                <strong>{t("tools.case_converter.capitalize")}:</strong>{" "}
-                {t("tools.case_converter.content.modes_list_3")}
-              </li>
-              <li>
-                <strong>{t("tools.case_converter.slugify")}:</strong>{" "}
-                {t("tools.case_converter.content.modes_list_4")}
-              </li>
-            </ul>
-
-            <div className="bg-orange-50 p-4 rounded-lg border-l-4 border-orange-500 text-sm text-orange-800">
-              {t("tools.case_converter.content.privacy_note")}
-            </div>
-          </article>
-        </div>
 
         {/* Toast */}
         <div

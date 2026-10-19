@@ -1,0 +1,1173 @@
+{
+  "pdf_merge": {
+    "seo_title": "Merge PDF – Free Online PDF Combiner",
+    "meta": "Combine multiple PDF files into one in the order you choose. Files are merged in your browser and never uploaded. Free, no sign-up required.",
+    "intro": "The PDF Merger lets you combine separate PDF files into a single document. It's ideal for sending an ID copy, diploma and CV as one file for an application, joining the chapters of a report, or putting scanned pages back together. You arrange the files in the order you want and merge them with one click.\n\nMerging is done directly in your browser with the open-source pdf-lib library. Your documents are never sent to a server, so you can safely combine confidential files such as contracts, invoices or personal paperwork. Page content, resolution and selectable text are preserved exactly as they are.",
+    "steps": [
+      "Click the \"Drag and drop PDF files here or select\" area, or drop your files onto it. You can select several files at once.",
+      "Reorder the files using the up and down arrow buttons next to each one. Pages appear in the merged PDF in this order.",
+      "Remove any file you added by mistake with the trash icon. You can also add forgotten files later.",
+      "Once at least two files are listed, press \"Merge PDFs and Download\".",
+      "The merged document is downloaded to your device as \"toolio-merged.pdf\". You can rename it afterwards if you like."
+    ],
+    "uses": [
+      "Sending the documents required for a job or school application as a single PDF.",
+      "Archiving a month's invoices or receipts in one file for bookkeeping.",
+      "Turning pages that were scanned one by one into a single document.",
+      "Combining lecture notes, slide handouts or report sections to make sharing easier."
+    ],
+    "tips": [
+      "Password-protected (encrypted) PDFs cannot be merged. Remove the password in your PDF reader and save the file again first.",
+      "Very large files or documents with hundreds of pages may take longer depending on your device's memory. If your phone struggles, try a computer.",
+      "If you only need some pages of a document, save those pages as a separate PDF before merging; the tool adds every page of each file.",
+      "To add images, first convert them with the JPG to PDF tool and then merge them here with your other documents."
+    ],
+    "faq": [
+      {
+        "q": "Are my files uploaded to a server?",
+        "a": "No. Merging happens entirely in your browser. Your files never leave your device and are never seen by Toolio."
+      },
+      {
+        "q": "How many files can I merge?",
+        "a": "There is no fixed file limit. In practice the limit is your device's memory; merging dozens of files works fine."
+      },
+      {
+        "q": "Does merging reduce quality?",
+        "a": "No. Pages are copied without being recompressed, so text, images and links keep their original quality."
+      },
+      {
+        "q": "Can I use it on my phone?",
+        "a": "Yes. With an up-to-date mobile browser you can select your files, merge them and download the result to your phone."
+      }
+    ]
+  },
+  "jpg_to_pdf": {
+    "seo_title": "JPG to PDF – Convert Images to PDF Online",
+    "meta": "Combine JPG and PNG images into a single PDF file. Each image is placed on its own A4 page. Runs in your browser, no uploads, completely free.",
+    "intro": "The JPG to PDF tool turns photos of documents taken with your phone, screenshots or scanned images into a single PDF file. Each image is placed on its own A4 page, centered and scaled without distorting its proportions. Instead of a folder full of photos, you get one document that is easy to share and print.\n\nConversion is done in your browser with the jsPDF library; your images are never uploaded. That means you can safely convert personal images such as photos of IDs, permits or invoices.",
+    "steps": [
+      "Choose one or more JPG or PNG files in the \"Drag and drop images here or select\" area.",
+      "The added images appear as small previews. Hover over an image you don't want and remove it with the × button.",
+      "Add more images with the \"Add More\" box if anything is missing. Images are placed on PDF pages in the order you add them.",
+      "Press \"Download as PDF\".",
+      "The resulting \"toolio-images.pdf\" is downloaded to your device, with each image on a separate page."
+    ],
+    "uses": [
+      "Sending phone photos of documents to an employer or a government office as a PDF.",
+      "Submitting photos of homework, handwritten notes or drawings as a single file.",
+      "Turning a set of screenshots into a tidy how-to guide or bug report.",
+      "Collecting receipt and invoice photos into one PDF for an expense report."
+    ],
+    "tips": [
+      "Page order follows the order in which you add images. If you need a specific order, select the images in that order.",
+      "Photographing documents on a flat surface, in good light and from directly above greatly improves readability.",
+      "Very high-resolution photos make the PDF larger. Shrink them with the Image Compressor before emailing.",
+      "If you want to combine the result with other PDFs, use the PDF Merger tool."
+    ],
+    "faq": [
+      {
+        "q": "Which image formats are supported?",
+        "a": "JPG/JPEG and PNG files are supported. For other formats, convert them to JPG with the Image Converter first."
+      },
+      {
+        "q": "How are images placed on the page?",
+        "a": "Each image is fitted onto a portrait A4 page while keeping its aspect ratio and centered on the page."
+      },
+      {
+        "q": "How many images can I add?",
+        "a": "There is no set limit. With many large photos, processing may take longer depending on your device."
+      },
+      {
+        "q": "Are my images saved anywhere?",
+        "a": "No. Images are processed only in your browser's memory and are discarded when you close the page."
+      }
+    ]
+  },
+  "docx_converter": {
+    "seo_title": "Word to PDF – Convert DOCX to PDF Online",
+    "meta": "Preview your Word (.docx) document and download it as an A4 PDF. Conversion happens in your browser and the file is never uploaded. Free, no sign-up.",
+    "intro": "The Word to PDF tool converts .docx documents created in Microsoft Word or similar programs into PDF format. Your document is first displayed in the browser and, after you check it, downloaded as an A4 PDF. You can convert documents to PDF even on a computer without Word installed.\n\nThe document is rendered in your browser with the docx-preview library and exported to PDF with html2pdf. Your file is never sent to a server. This approach works well for simple to moderately complex documents such as letters, CVs, assignments and reports; very complex layouts may show minor differences.",
+    "steps": [
+      "Drop your .docx file onto the \"Drag & Drop Word File Here\" area, or click to select it.",
+      "Within a few seconds the document is shown as a preview at the bottom of the page. Check fonts, tables and images.",
+      "If everything looks right, press \"Download as PDF\".",
+      "The PDF is downloaded with the same name as your document, with a .pdf extension.",
+      "Use \"Convert New Document\" to convert another file."
+    ],
+    "uses": [
+      "Sending your CV as a PDF so its layout stays intact for the recipient.",
+      "Submitting letters, application forms or official correspondence as PDF.",
+      "Handing in assignments and reports in the PDF format a teacher or manager requires.",
+      "Viewing a .docx document and converting it to PDF on a computer without Word."
+    ],
+    "tips": [
+      "Only the .docx format is supported. Save older .doc files as .docx in Word, LibreOffice or Google Docs first.",
+      "Pages in the resulting PDF are stored as images, so selecting and searching text may be limited. If you need selectable text, use Word's own \"Save as PDF\" option.",
+      "If the document uses a special font that isn't installed on your device, the preview shows a similar font. Always check the preview.",
+      "For multi-page documents, it's a good idea to check page breaks after downloading."
+    ],
+    "faq": [
+      {
+        "q": "Is my document sent to a server?",
+        "a": "No. The document is read, displayed and converted to PDF in your browser. It is never uploaded at any stage."
+      },
+      {
+        "q": "Why can't I select the text in the PDF?",
+        "a": "This tool exports pages to the PDF as images. The appearance is preserved, but the text isn't selectable. For selectable text, use Word's built-in PDF export."
+      },
+      {
+        "q": "Can I convert old .doc files?",
+        "a": "Not directly. Open the file in a word processor and save it as .docx first."
+      },
+      {
+        "q": "What paper size is used?",
+        "a": "The PDF is created in portrait A4 with a 10 mm margin on each side."
+      }
+    ]
+  },
+  "compressor": {
+    "seo_title": "Image Compressor – Reduce Photo File Size Online",
+    "meta": "Shrink JPG, PNG and WebP images right in your browser. See before and after sizes, then download the compressed image. No uploads, completely free.",
+    "intro": "The Image Compressor reduces the file size of your photos without a noticeable loss in quality. Photos from phone cameras are often several megabytes, which causes problems with email attachments, websites and upload forms. The tool scales images down to at most 1920 pixels on the longest side and aims to bring the file size below roughly 1 MB.\n\nCompression runs in a background worker in your browser using the browser-image-compression library. Your photo is never uploaded; when it's done you see the original and new sizes and how much space you saved as a percentage.",
+    "steps": [
+      "Choose the photo you want to compress in the \"Drag and drop image here or select\" area.",
+      "A preview of the image and its original file size are displayed.",
+      "Press \"Compress\". It usually takes only a few seconds.",
+      "On the result screen, check the new file size and the percentage of space saved.",
+      "Save the compressed image with \"Download\". Use \"Select New Image\" for the next one."
+    ],
+    "uses": [
+      "Shrinking website or blog images so pages load faster.",
+      "Uploading photos to official forms and portals that enforce a size limit.",
+      "Sending lots of photos by email without hitting attachment limits.",
+      "Freeing up space on your phone or cloud storage by shrinking a photo archive."
+    ],
+    "tips": [
+      "Images larger than 1920 pixels on the longest side are scaled down to that size. Keep the original if you need high resolution for printing.",
+      "Images that are already small and well compressed may not shrink much; that's normal.",
+      "PNG photos are usually much larger than JPGs. If you don't need transparency, converting to JPG with the Image Converter before compressing saves more space.",
+      "The compressed image is downloaded as a new file; your original stays unchanged."
+    ],
+    "faq": [
+      {
+        "q": "Are my photos uploaded to a server?",
+        "a": "No. Compression happens entirely in your browser and your images never leave your device."
+      },
+      {
+        "q": "Which formats can I compress?",
+        "a": "You can compress common image formats your browser can open, such as JPG, PNG and WebP."
+      },
+      {
+        "q": "How much quality is lost?",
+        "a": "The tool targets a quality level where differences are hard to see. Most photos look the same on screen, though small losses may be visible when zoomed in closely."
+      },
+      {
+        "q": "Can I compress several images at once?",
+        "a": "Currently images are compressed one at a time. After downloading each one, use \"Select New Image\" to move on to the next."
+      }
+    ]
+  },
+  "image_converter": {
+    "seo_title": "Image Converter – Convert PNG, JPG and WebP",
+    "meta": "Convert PNG, JPG and WebP images to each other. Turn WebP into JPG, PNG into JPG or JPG into WebP. Runs in your browser and is completely free.",
+    "intro": "The Image Converter lets you switch quickly between the three most common web formats: PNG, JPG (JPEG) and WebP. It comes in handy when you can't open a WebP image you downloaded, when a site only accepts JPG, or when you want to move your site's images to the lighter WebP format.\n\nConversion is done on your device using your browser's Canvas engine. The image isn't sent to a server; a new file in the format you choose is created and downloaded directly.",
+    "steps": [
+      "Choose a PNG, JPG or WebP image in the \"Upload or Drop Image\" area.",
+      "A preview of the image appears. If you picked the wrong one, remove it and add another.",
+      "Choose JPG, PNG or WEBP under \"Target Format\".",
+      "Press \"Download\"; the converted image is saved to your device as \"converted-image\"."
+    ],
+    "uses": [
+      "Converting WebP images to JPG so older programs and websites can open them.",
+      "Turning screenshots (PNG) into smaller JPGs for sharing.",
+      "Moving website images to the lighter WebP format to improve page speed.",
+      "Preparing files for forms and platforms that only accept a specific format."
+    ],
+    "tips": [
+      "JPG doesn't support transparency. When you convert a PNG with a transparent background to JPG, the background becomes white.",
+      "PNG is usually best for logos, screenshots and sharp-edged graphics; JPG or WebP is usually better for photos.",
+      "Conversion uses a high quality setting. To shrink the file further, run the result through the Image Compressor.",
+      "The pixel dimensions of the image don't change during conversion."
+    ],
+    "faq": [
+      {
+        "q": "How do I convert WebP to JPG?",
+        "a": "Upload your WebP file, choose JPG as the target format and press Download. The file is downloaded as a JPG within seconds."
+      },
+      {
+        "q": "Does conversion reduce quality?",
+        "a": "JPG and WebP are lossy formats; because conversion uses a high quality setting, the difference is usually invisible. Converting to PNG is lossless."
+      },
+      {
+        "q": "Is my image uploaded anywhere?",
+        "a": "No. Conversion happens in your browser and the image never leaves your device."
+      },
+      {
+        "q": "Can I convert HEIC (iPhone) photos?",
+        "a": "The tool accepts PNG, JPG and WebP files. On an iPhone you can go to Settings > Camera > Formats and choose \"Most Compatible\" to save photos as JPG directly."
+      }
+    ]
+  },
+  "qr_generator": {
+    "seo_title": "QR Code Generator – Free, Colorful QR Codes",
+    "meta": "Create free QR codes for website links or text. Pick colors and size, then download as PNG. Codes never expire and no sign-up is needed.",
+    "intro": "The QR Code Generator turns a web address or any text into a QR code that can be scanned with a phone camera. It's the most practical way to send people to a page with a single tap from menus, business cards, posters, product labels or presentations.\n\nThe QR codes you create are static: the information is written directly into the code with no redirect service in between. That means codes never expire, scans aren't limited and nobody tracks your scans. The code is generated in your browser.",
+    "steps": [
+      "Type the link (e.g. https://example.com) or text you want to encode into the \"Website / Text\" box.",
+      "The QR code updates instantly as you type and appears in the preview.",
+      "Use the \"Foreground Color\" and \"Background Color\" pickers to match your brand.",
+      "Set the pixel size of the code between 128 and 384 pixels with the \"Size\" slider.",
+      "Press \"Download as PNG\" to save the QR code and use it anywhere you like."
+    ],
+    "uses": [
+      "Making table cards in restaurants and cafés that link to a digital menu.",
+      "Adding a website or social media link to business cards, flyers and posters.",
+      "Sharing a location or registration form link on event invitations.",
+      "Letting audience members open resources from presentation slides with their phones."
+    ],
+    "tips": [
+      "For readability, choose a dark foreground and a light background. Low-contrast combinations may not scan on some phones.",
+      "Test the QR code with a few different phones before printing.",
+      "Including \"https://\" helps phones recognize the code as a web address.",
+      "The longer the text, the denser the QR pattern. Short, simple addresses scan more easily than long links."
+    ],
+    "faq": [
+      {
+        "q": "Do the QR codes I create expire?",
+        "a": "No. The codes are static and the link is stored inside the code itself. The QR code works as long as the link does."
+      },
+      {
+        "q": "Can I edit a QR code later?",
+        "a": "Static QR codes can't be changed after they're created. If your link changes, generate a new code."
+      },
+      {
+        "q": "Can I use them commercially?",
+        "a": "Yes. You can use the QR codes you create in personal or commercial projects for free."
+      },
+      {
+        "q": "Do you track scans?",
+        "a": "No. The code points straight to your link; Toolio doesn't see or record scans."
+      }
+    ]
+  },
+  "signature": {
+    "seo_title": "Online Signature Maker – Transparent PNG Signature",
+    "meta": "Draw your signature with a mouse or finger, choose color and thickness, and download it as a transparent PNG. Runs in your browser; nothing is saved.",
+    "intro": "The Online Signature Maker lets you draw your own handwritten signature digitally and save it as a PNG image with a transparent background. You can add this image to email signatures, Word or PDF documents, quotes and forms. Draw with a mouse on a computer, or with your finger or a stylus on a phone or tablet.\n\nYour signature is created only on the drawing canvas in your browser and is never sent to a server. One important note: this tool creates an image of your signature; it is not a legally qualified electronic signature such as a certificate-based e-signature.",
+    "steps": [
+      "Sign in the white \"Draw Here\" area by holding down the mouse button or using your finger.",
+      "Choose a black, blue, red or green pen from the color options.",
+      "Adjust line thickness with the \"Thickness\" slider; changes apply to the strokes you draw next.",
+      "If you don't like it, press \"Clear\" to reset the canvas and draw again.",
+      "Press \"Download Signature\"; your signature is downloaded as \"toolio-signature.png\" with a transparent background."
+    ],
+    "uses": [
+      "Adding a handwritten signature image to your email signature.",
+      "Placing a signature image on quotes, invoices or forms you prepare yourself.",
+      "Filling in the signature area on digital certificates and invitation designs.",
+      "Getting a cleaner, transparent signature image instead of a scanned one."
+    ],
+    "tips": [
+      "On touch screens, use a stylus or hold your phone in landscape mode to get a wider canvas and a more natural signature.",
+      "Dark blue or black usually gives the most professional look in documents.",
+      "Because the downloaded PNG is transparent, no white box appears behind it when you place it in a document.",
+      "Use your signature image only in your own documents and don't share it with people you don't trust."
+    ],
+    "faq": [
+      {
+        "q": "Is this signature legally valid?",
+        "a": "This tool creates an image of your signature. Official transactions often require a qualified electronic signature. Check with the relevant institution which kind of signature they accept."
+      },
+      {
+        "q": "Is my signature saved?",
+        "a": "No. The signature exists only on the canvas in your browser and isn't stored anywhere except the file you download."
+      },
+      {
+        "q": "How do I add the signature to a Word document?",
+        "a": "In Word, go to Insert > Pictures, choose the PNG you downloaded, resize it and use the \"In Front of Text\" layout option."
+      },
+      {
+        "q": "Why is the background transparent?",
+        "a": "A transparent background means no box appears behind the signature when you place it on non-white pages or forms, so it looks natural."
+      }
+    ]
+  },
+  "color_palette": {
+    "seo_title": "Color Palette Generator – Random Color Schemes",
+    "meta": "Generate random 5-color palettes with one key, lock the colors you like and copy their HEX codes. A free color tool for designers and developers.",
+    "intro": "The Color Palette Generator helps you quickly discover color combinations for web design, presentations, logos, social media graphics or even home décor. It generates a random palette of five colors each time; lock the colors you like and keep refreshing the rest.\n\nEach color's HEX code (e.g. #4F46E5) is shown on screen and can be copied to the clipboard with one click. You can paste these codes straight into Figma, Photoshop, Canva, CSS files or PowerPoint.",
+    "steps": [
+      "When the page opens, a first palette of five colors is generated automatically.",
+      "Press \"Generate\" or tap the Space key for a new palette.",
+      "Click the lock icon on a color you like; locked colors don't change in new palettes.",
+      "Keep refreshing the unlocked colors until you find the combination you want.",
+      "Click a color's HEX code to copy it and paste it into your design tool."
+    ],
+    "uses": [
+      "Choosing a color theme for a new website, app or brand.",
+      "Using harmonious colors in presentation and report charts.",
+      "Finding inspiration for social media posts and cover images.",
+      "Helping design students practice with color combinations."
+    ],
+    "tips": [
+      "Find and lock your brand's main color first, then refresh the others around it.",
+      "Make sure text and background colors have enough contrast; white text on light gray, for example, is hard to read.",
+      "Because palettes are random, some colors may not go together. Use locking to build a matching set step by step.",
+      "Using one or two colors from a palette as accents and the rest as neutral tones usually gives a more balanced design."
+    ],
+    "faq": [
+      {
+        "q": "What is a HEX code?",
+        "a": "A HEX code is a six-digit code that represents a color's red, green and blue values in hexadecimal (e.g. #FF5733). It's used to define colors in web and design software."
+      },
+      {
+        "q": "Is there a keyboard shortcut?",
+        "a": "Yes. Pressing the Space key refreshes all unlocked colors."
+      },
+      {
+        "q": "Are my palettes saved?",
+        "a": "No. To keep a palette you like, copy the HEX codes and note them down."
+      },
+      {
+        "q": "Can I use the colors in commercial projects?",
+        "a": "Yes. Colors aren't owned by anyone; you can use your palettes in any project."
+      }
+    ]
+  },
+  "meme": {
+    "seo_title": "Meme Generator – Add Top and Bottom Text to Images",
+    "meta": "Upload your own image, add classic top and bottom captions, adjust font size and color, and download your meme as a JPG. Free and browser-based.",
+    "intro": "The Meme Generator lets you add the classic top and bottom caption style of internet culture to your own photo or any image. Bold, uppercase text with a black outline stays readable on almost any picture. Create shareable images in seconds for group chats, social media or presentations.\n\nYour image is placed on a drawing canvas in your browser and the text is drawn on top of it. Your picture isn't uploaded to a server; when it's ready it's downloaded to your device as a JPG.",
+    "steps": [
+      "Choose a photo from your device with the \"Upload Image\" button.",
+      "Type your captions into the \"Top Text\" and \"Bottom Text\" boxes; the preview updates instantly and the text is converted to uppercase automatically.",
+      "Use \"Font Size\" to scale the text to the size of your image.",
+      "Try a color other than classic white with the \"Text Color\" picker.",
+      "Press \"Download Meme\"; the image is downloaded as \"toolio-meme.jpg\"."
+    ],
+    "uses": [
+      "Making fun images for friend and work group chats.",
+      "Creating eye-catching, humorous content for social media.",
+      "Adding memorable visuals to lessons and presentations.",
+      "Turning your own photos into personalized greeting images."
+    ],
+    "tips": [
+      "Short, punchy captions work best; long sentences may run off the edges of the image.",
+      "Very wide images are scaled to 800 pixels wide. Adjust the font size with that width in mind.",
+      "White text stays readable on light photos thanks to the black outline, but you might still try a darker text color.",
+      "Respect copyright and personal rights when using other people's photos, and avoid content that humiliates people."
+    ],
+    "faq": [
+      {
+        "q": "Do I have to use my own image?",
+        "a": "Yes. The tool doesn't provide ready-made templates; you create memes by uploading any image from your device."
+      },
+      {
+        "q": "Is my image saved?",
+        "a": "No. The image is processed only in your browser and isn't sent to any server."
+      },
+      {
+        "q": "Which font is used?",
+        "a": "Impact, the classic meme font, is used. If Impact isn't available on your device, a similar bold font is used instead."
+      },
+      {
+        "q": "Do accented and non-English characters work?",
+        "a": "Yes. Accented letters and characters from other languages display correctly in captions."
+      }
+    ]
+  },
+  "word_counter": {
+    "seo_title": "Word Counter – Count Words and Characters Online",
+    "meta": "See the word, character, sentence and paragraph count of your text instantly as you type. A free word counter for essays, articles and social media.",
+    "intro": "The Word Counter instantly calculates the number of words, characters, sentences and paragraphs in the text you type or paste. It's a practical helper for hitting the word limit of an essay, bringing an article to the length an editor expects, or staying within character limits for social media posts and SEO descriptions.\n\nThe counts update automatically as you type; there's no button to press. Your text is processed only in your browser and is never saved or sent anywhere.",
+    "steps": [
+      "Start typing in the \"Paste Your Text Here\" area, or paste text you copied from elsewhere.",
+      "The cards at the top update instantly with word, character, sentence and paragraph counts.",
+      "Keep an eye on the numbers as you edit to reach your target length.",
+      "Use the copy button to copy the text, or the clear button to start over with new text."
+    ],
+    "uses": [
+      "Students keeping essays, compositions and theses within word limits.",
+      "Writers and editors checking the length of articles, blog posts or press releases.",
+      "Tracking character limits for social posts, ad copy and meta descriptions.",
+      "Translators and copywriters preparing quotes based on word count."
+    ],
+    "tips": [
+      "Words are counted by spaces; hyphenated expressions (e.g. \"face-to-face\") count as one word.",
+      "The character count includes spaces and line breaks.",
+      "Sentences are counted by periods, exclamation marks and question marks; abbreviations like \"Dr.\" or \"etc.\" can increase the sentence count.",
+      "Leave a blank line between paragraphs so the paragraph count is accurate."
+    ],
+    "faq": [
+      {
+        "q": "Is my text saved?",
+        "a": "No. Your text is counted only in your browser; it disappears when you close the page and is never sent to a server."
+      },
+      {
+        "q": "Does the character count include spaces?",
+        "a": "Yes. The character count shown includes spaces and line breaks."
+      },
+      {
+        "q": "Why are there small differences from Word's count?",
+        "a": "Every program defines words and sentences slightly differently. Some count numbers or standalone punctuation differently, for example. The differences are usually very small."
+      },
+      {
+        "q": "Can it handle long texts?",
+        "a": "Yes. You can comfortably count texts several pages long, even book chapters."
+      }
+    ]
+  },
+  "case_converter": {
+    "seo_title": "Case Converter – Change Text to Upper, Lower or Title Case",
+    "meta": "Convert text to UPPERCASE, lowercase, Title Case, Sentence case or a URL slug. Handles accented and Turkish characters correctly. Free online tool.",
+    "intro": "The Case Converter changes the letter case of your text with one click. It's ideal for fixing a paragraph typed with Caps Lock on, capitalizing every word of a headline, or turning a title into a \"url-friendly-slug\" for a web address.\n\nThe slug option also converts accented letters to plain Latin letters (é → e, ü → u, ş → s) so your URLs stay clean. When the site language is set to Turkish, the special Turkish dotted and dotless i rules are applied as well. Your text is processed in your browser.",
+    "steps": [
+      "Type or paste the text you want to convert into the text box.",
+      "Press the button for the format you want: UPPERCASE, lowercase, Capitalize Words, Sentence case or URL Format (Slug).",
+      "The text in the box changes to that format instantly. Press another format button to change it again if needed.",
+      "Copy the result with the copy button and paste it wherever you need it."
+    ],
+    "uses": [
+      "Fixing text typed with Caps Lock on without retyping it.",
+      "Formatting report, presentation and blog headlines in Title Case.",
+      "Creating clean, hyphenated URL slugs for blog posts and product pages.",
+      "Tidying up name lists from spreadsheets or forms with inconsistent capitalization."
+    ],
+    "tips": [
+      "The URL Format (Slug) option lowercases the text, converts accented letters to plain ones, turns spaces into hyphens and removes other special characters.",
+      "Sentence case capitalizes the first letter after a period, exclamation mark or question mark. You may need to re-capitalize proper nouns (e.g. London, Maria) afterwards.",
+      "Conversion changes the text itself. If you need the original, copy it first.",
+      "Title Case here capitalizes every word, including short words like \"and\" or \"of\"; style guides may treat those differently."
+    ],
+    "faq": [
+      {
+        "q": "What is a slug?",
+        "a": "A slug is the part of a web address that identifies a page, written in lowercase with words separated by hyphens. For example, \"10 Tips for Café Owners\" becomes \"10-tips-for-cafe-owners\"."
+      },
+      {
+        "q": "Is my text saved?",
+        "a": "No. Conversion happens in your browser and your text isn't sent anywhere."
+      },
+      {
+        "q": "What's the difference between Capitalize Words and Sentence case?",
+        "a": "Capitalize Words capitalizes the first letter of every word (The Weather Is Nice). Sentence case capitalizes only the first letter of each sentence (The weather is nice)."
+      },
+      {
+        "q": "Does it work with non-English text?",
+        "a": "Yes. Upper and lower case conversion works for accented letters and other alphabets that have letter case, such as Greek and Cyrillic."
+      }
+    ]
+  },
+  "diff": {
+    "seo_title": "Diff Checker – Compare Two Texts and Find Differences",
+    "meta": "Paste two texts side by side and instantly see added and removed words highlighted in color. Compare contracts, articles and code changes easily.",
+    "intro": "The Diff Checker shows the changes between two versions of a text, word by word. Added words are highlighted in green and removed words in red. That way you can see what changed in the new version of a long contract, the edits an editor made to your article, or the differences in a configuration file without reading line by line.\n\nComparison is done in your browser with the widely used open-source \"diff\" algorithm. Your texts are never sent to a server, so you can safely compare confidential documents.",
+    "steps": [
+      "Paste the old or original version of the text into the \"Original Text\" box.",
+      "Paste the new or modified version into the \"Modified Text\" box.",
+      "The differences appear instantly in the \"Comparison Result\" section as you type.",
+      "Words highlighted in green were added in the new text; red, struck-through words were removed.",
+      "Use the clear button to empty both boxes for a new comparison."
+    ],
+    "uses": [
+      "Checking the changes made in new versions of contracts and proposals.",
+      "Seeing the corrections an editor or teacher made to your writing.",
+      "Quickly spotting differences between code snippets and configuration files.",
+      "Finding words that were skipped or changed in translations and copied texts."
+    ],
+    "tips": [
+      "Comparison works at word level; even if only one letter changes, the whole word is marked as changed.",
+      "Whitespace and line break differences can also show up as changes. If you only care about content, paste both texts in a similar format.",
+      "For very long texts, compare section by section to make the result easier to read.",
+      "When comparing Word documents, just copy and paste the text from Word; formatting is ignored."
+    ],
+    "faq": [
+      {
+        "q": "Are my texts saved anywhere?",
+        "a": "No. The comparison runs in your browser and your texts are never sent to a server."
+      },
+      {
+        "q": "Does it compare line by line or word by word?",
+        "a": "The tool compares at word level, which makes even small changes within a sentence easy to see."
+      },
+      {
+        "q": "Can I use it to compare code?",
+        "a": "Yes. It works well for short code snippets and configuration files. For large projects, version control tools such as Git are a better fit."
+      },
+      {
+        "q": "Are formatting differences (bold, color) shown?",
+        "a": "No. The tool compares plain text only; differences in font, color or weight are ignored."
+      }
+    ]
+  },
+  "tts": {
+    "seo_title": "Text to Speech – Read Text Aloud Online (TTS)",
+    "meta": "Listen to your text read aloud using your browser's voices. Choose a voice and adjust speed and pitch. Free text-to-speech in many languages.",
+    "intro": "The Text to Speech tool reads the text you type or paste out loud. Use it to listen to a long article without straining your eyes, hear the pronunciation of words while learning a language, catch mistakes by listening to your own writing, or support people who find reading difficult.\n\nThe tool uses your browser's built-in Web Speech API. Which voices appear depends on your operating system and browser; a voice matching the site language is selected automatically when available. You can adjust the speaking rate and pitch to your liking.",
+    "steps": [
+      "Type or paste the text you want to hear into the text box.",
+      "Choose a voice that matches the language of your text from the \"Select Voice\" list.",
+      "Adjust the reading speed and pitch between 0.5 and 2 with the \"Speed\" and \"Pitch\" sliders.",
+      "Press \"Speak\" to start listening.",
+      "Use \"Pause\" to pause the reading temporarily and \"Stop\" to end it completely."
+    ],
+    "uses": [
+      "Listening to long articles and reports without looking at the screen.",
+      "Hearing the pronunciation of words and sentences while learning a foreign language.",
+      "Proofreading your writing by listening to it read aloud.",
+      "Making text more accessible for people with visual impairments or reading difficulties."
+    ],
+    "tips": [
+      "The voice language should match the text language; otherwise pronunciation may be hard to understand.",
+      "If you don't see a voice for your language, install a language voice pack in your operating system's speech settings or try Chrome or Edge.",
+      "Punctuation creates natural pauses; long text without punctuation may sound more mechanical.",
+      "Some browsers stop reading very long texts after a while. If that happens, read the text in sections."
+    ],
+    "faq": [
+      {
+        "q": "Can I download the audio as an MP3?",
+        "a": "No. The browser's speech feature plays audio directly through your speakers and doesn't allow saving it as a file. The tool is for listening only."
+      },
+      {
+        "q": "Why can't I find a voice for my language?",
+        "a": "Voices are provided by your operating system and browser. If no voice for your language is installed on your device, it won't appear in the list. Trying another browser or adding a voice in your system settings usually helps."
+      },
+      {
+        "q": "Is my text sent to a server?",
+        "a": "Toolio doesn't receive your text. However, depending on the voice you pick, some browsers (e.g. online Google or Microsoft voices) may use their own cloud services to synthesize speech."
+      },
+      {
+        "q": "Does it work on mobile?",
+        "a": "Yes. Current Android and iOS browsers support speech synthesis; available voices vary by device."
+      }
+    ]
+  },
+  "markdown_editor": {
+    "seo_title": "Markdown Editor – Online Editor with Live Preview",
+    "meta": "Write Markdown and see the result instantly in a side panel. Supports headings, lists, tables, code blocks and links. A free online editor for READMEs and notes.",
+    "intro": "The Markdown Editor shows text written in Markdown syntax in its formatted form instantly. As you type on the left, you see live how headings, lists, tables and code blocks will look on the right. It's ideal for GitHub README files, technical documentation, blog drafts or personal notes.\n\nThanks to the GitHub Flavored Markdown (GFM) plugin, the editor also supports advanced features such as tables, strikethrough text and task lists. What you write is processed in your browser and never sent anywhere.",
+    "steps": [
+      "Write your text in Markdown syntax in the \"Write (Markdown)\" area on the left. The sample text shows the basics.",
+      "See the formatted result instantly in the \"Preview\" panel on the right.",
+      "Use # for headings, **double asterisks** for bold, *single asterisks* for italics, and start lines with - or 1. for lists.",
+      "Separate table columns with |, and wrap code blocks in three backticks (```).",
+      "Use the clear button to start a new document. When you're done, copy the Markdown text into your file."
+    ],
+    "uses": [
+      "Writing README.md files for GitHub and GitLab projects.",
+      "Drafting technical documentation and installation guides.",
+      "Preparing posts for blogging platforms that support Markdown.",
+      "Practicing Markdown syntax with instant feedback while learning."
+    ],
+    "tips": [
+      "Leave a space after the # so headings render correctly (\"# Heading\").",
+      "Leave a blank line between paragraphs; a single Enter doesn't start a new paragraph.",
+      "Adding the language name when opening a code block (e.g. ```javascript) improves readability.",
+      "The editor doesn't save automatically. When working on long texts, copy and save them to a file regularly."
+    ],
+    "faq": [
+      {
+        "q": "What is Markdown?",
+        "a": "Markdown is a lightweight markup language that formats plain text with simple symbols such as #, * and -. It's supported by GitHub, Reddit, Notion and many note-taking apps."
+      },
+      {
+        "q": "Can I create tables?",
+        "a": "Yes. With GitHub Flavored Markdown support, tables built with | characters render as proper tables in the preview."
+      },
+      {
+        "q": "Is my writing saved?",
+        "a": "No. Your text exists only in your browser and is lost when the page reloads. Remember to copy and keep important content."
+      },
+      {
+        "q": "Does HTML work in the preview?",
+        "a": "For security reasons raw HTML tags aren't rendered in the preview; using Markdown syntax is recommended."
+      }
+    ]
+  },
+  "lorem_ipsum": {
+    "seo_title": "Lorem Ipsum Generator – Placeholder Text and Text Repeater",
+    "meta": "Generate as many Lorem Ipsum paragraphs as you need, or repeat your own text. A free placeholder text tool for design and web projects.",
+    "intro": "Lorem Ipsum is the standard placeholder text designers and developers use to see a page layout before the real content is ready. It comes from Cicero's \"De Finibus Bonorum et Malorum\", written in 45 BC, and has been used as dummy text in printing since the 1500s. Because it looks meaningless, it keeps the reader's attention on the design rather than the content.\n\nToolio's Lorem Ipsum tool generates as many classic Lorem Ipsum paragraphs as you need. You can also enter your own text and use the tool as a text repeater that duplicates it as many times as you like.",
+    "steps": [
+      "Choose how many paragraphs you want in the \"Repeat Count\" field.",
+      "Leave \"Custom Source Text\" empty for classic Lorem Ipsum, or type your own text there to repeat it.",
+      "Press \"Generate\"; the text appears in the area below.",
+      "Copy the result with the \"Copy\" button and paste it into your design, code or document."
+    ],
+    "uses": [
+      "Filling content areas in website and app interface designs.",
+      "Testing text layout in magazine, brochure and presentation templates.",
+      "Developers testing forms, databases and page loads with sample text.",
+      "Repeating your own sentence to create long test texts or repetitive lists."
+    ],
+    "tips": [
+      "Make sure all Lorem Ipsum is replaced with real content before going live; pages published with placeholder text make a poor impression on visitors and search engines.",
+      "Try different paragraph counts to see whether your design holds up with real-world text lengths.",
+      "If the final content will be in a language with longer words, such as German or Turkish, leave extra room in your layout.",
+      "The custom source text field is also handy for test scenarios where you need the same line repeated dozens of times."
+    ],
+    "faq": [
+      {
+        "q": "What does Lorem Ipsum mean?",
+        "a": "The text is taken from a Latin work, but its words are scrambled and shortened, so it doesn't form meaningful sentences. \"Lorem ipsum dolor sit amet\" is derived from a sentence roughly meaning \"there is no one who loves pain itself\"."
+      },
+      {
+        "q": "Why use Lorem Ipsum instead of readable text?",
+        "a": "Readable text draws the reviewer's attention to the content. Lorem Ipsum has a letter distribution similar to real text but isn't read, which makes it easier to focus on the design."
+      },
+      {
+        "q": "How many paragraphs can I generate?",
+        "a": "You can generate between 1 and 100 paragraphs at a time."
+      },
+      {
+        "q": "Can I repeat my own text?",
+        "a": "Yes. The text you enter in Custom Source Text is repeated as many times as you choose."
+      }
+    ]
+  },
+  "fancy_font": {
+    "seo_title": "Fancy Text Generator – Cool Fonts for Instagram and Games",
+    "meta": "Turn your text into 8 styles such as gothic, script, bubble and upside-down text, and copy it with one click. Free for Instagram bios and gamer tags.",
+    "intro": "The Fancy Text Generator converts your normal text into different styles using special letters from the Unicode character set. The results aren't actually a font but special characters, which is why they keep their style when you copy and paste them into your Instagram bio, TikTok profile, WhatsApp status or in-game username.\n\nThere are eight styles: double-struck (outline), bold script, gothic (Fraktur), bubble, small caps, square, wide and upside-down text. All styles are previewed at once as you type.",
+    "steps": [
+      "Type your username, nickname or the text you want to transform into the text box.",
+      "Your text instantly appears in every style in the list below.",
+      "Press the copy button next to the style you like; the text is copied to your clipboard.",
+      "Paste the copied text into the relevant field on Instagram, TikTok, Discord, a game or a messaging app."
+    ],
+    "uses": [
+      "Creating eye-catching headings in Instagram and TikTok bios.",
+      "Choosing unique gamer tags and Discord nicknames.",
+      "Emphasizing key words in social media posts.",
+      "Sharing fun, different-looking text in messaging apps."
+    ],
+    "tips": [
+      "Most styles only cover the basic Latin alphabet; accented and language-specific letters (é, ñ, ü, ş) stay in their normal form.",
+      "Some games and platforms don't allow special characters in usernames. Check the rules before saving.",
+      "Screen readers may not read fancy characters correctly; avoid using them for important information such as contact details.",
+      "On some older devices or fonts, special characters may appear as boxes (□)."
+    ],
+    "faq": [
+      {
+        "q": "Why does this text work everywhere?",
+        "a": "Because these aren't a font but separate characters defined in the Unicode standard. Any app that supports Unicode can display them."
+      },
+      {
+        "q": "Why don't accented letters change?",
+        "a": "The mathematical and decorative letter sets in Unicode mostly cover only the basic English alphabet, so there are no fancy versions of most accented letters."
+      },
+      {
+        "q": "Will using fancy text harm my Instagram account?",
+        "a": "No. Instagram doesn't block these characters. However, words written in fancy text may not be found in search like normal words."
+      },
+      {
+        "q": "How many styles are there?",
+        "a": "There are currently eight styles: Outline, Bold Script, Fraktur, Bubbles, Small Caps, Square, Wide and Upside Down."
+      }
+    ]
+  },
+  "password_gen": {
+    "seo_title": "Password Generator – Create Strong, Random Passwords",
+    "meta": "Generate strong passwords 6–30 characters long with upper and lower case letters, numbers and symbols. Passwords are created in your browser and never stored.",
+    "intro": "The Password Generator creates random passwords that are extremely hard to guess. Easy passwords such as birthdays, names or \"123456\" can be cracked in seconds, and reusing the same password on several sites puts all your accounts at risk after a single breach. Using a separate, strong password for every account is the foundation of online security.\n\nGenerated passwords use upper case letters, lower case letters, numbers and the symbols !@#$%^&*. They are created on your device with your browser's cryptographically secure random number generator (Web Crypto API) and are never sent to a server or stored.",
+    "steps": [
+      "When the page opens, a strong 16-character password is generated automatically.",
+      "Set the password length between 6 and 30 characters with the \"Length\" slider; a new password is generated as the length changes.",
+      "Press \"Refresh\" if you would like a different password.",
+      "Click the password to copy it to your clipboard.",
+      "Paste it into the account you're securing and save it in a password manager."
+    ],
+    "uses": [
+      "Creating unique passwords for new email, social media and shopping accounts.",
+      "Replacing old, weak passwords with strong ones.",
+      "Choosing a hard-to-guess passphrase for your Wi-Fi network.",
+      "System administrators and developers generating passwords for test accounts or temporary access."
+    ],
+    "tips": [
+      "Use passwords of at least 12, preferably 16 or more, characters for important accounts. Each extra character makes cracking exponentially harder.",
+      "Never reuse the same password on more than one account.",
+      "Strong passwords are hard to memorize; use a trusted password manager such as Bitwarden, 1Password or your browser's built-in manager.",
+      "Turn on two-factor authentication (2FA) wherever possible so your account stays protected even if your password leaks."
+    ],
+    "faq": [
+      {
+        "q": "Are generated passwords saved?",
+        "a": "No. Passwords are generated entirely in your browser; Toolio never sees, stores or transmits them."
+      },
+      {
+        "q": "How random are the passwords?",
+        "a": "Passwords are generated with the browser's random number generator designed for cryptographic security (crypto.getRandomValues), and every character is chosen with equal probability."
+      },
+      {
+        "q": "Which characters are used?",
+        "a": "Upper case letters (A–Z), lower case letters (a–z), numbers (0–9) and the symbols ! @ # $ % ^ & *."
+      },
+      {
+        "q": "A site doesn't accept symbols. What should I do?",
+        "a": "Replace the rejected symbol with a letter or number after copying, and make the password slightly longer to make up for the lost strength."
+      }
+    ]
+  },
+  "json_formatter": {
+    "seo_title": "JSON Formatter – Beautify, Validate and Minify JSON",
+    "meta": "Make JSON readable (beautify), compress it to a single line (minify) and check whether it's valid. Data is processed in your browser. Free.",
+    "intro": "The JSON Formatter does three things developers and anyone working with data need all the time, on a single screen: it turns messy one-line JSON into indented, readable output (beautify), compresses readable JSON into a single line (minify), and checks whether the data is valid JSON.\n\nIt's ideal for inspecting API responses, editing configuration files or finding an error in a data set. Because processing happens in your browser, you can safely format JSON containing sensitive information such as API keys or customer data.",
+    "steps": [
+      "Paste the JSON you want to work with into the \"Input (Raw JSON)\" area.",
+      "Press \"Beautify\" for readable output indented with 4 spaces.",
+      "Use \"Minify\" to remove whitespace and reduce the data to a single line.",
+      "If the JSON is invalid, an \"Invalid JSON format!\" warning appears; check quotes, commas and brackets and try again.",
+      "Copy the result with the copy button, or start over with the clear button."
+    ],
+    "uses": [
+      "Making one-line API responses readable so you can inspect them.",
+      "Finding syntax errors in configuration files such as package.json or tsconfig.json.",
+      "Minifying JSON to use as a request body or database field.",
+      "Data analysts and QA engineers editing sample data sets."
+    ],
+    "tips": [
+      "In JSON, keys and string values must be in double quotes (\"); single quotes are invalid.",
+      "A comma after the last item (trailing comma) makes JSON invalid; it's one of the most common mistakes.",
+      "JSON doesn't support comments (// or /* */). Remove comments before formatting files that contain them.",
+      "Very large JSON files can slow down the browser; in that case, inspect the data in parts."
+    ],
+    "faq": [
+      {
+        "q": "What is JSON?",
+        "a": "JSON (JavaScript Object Notation) is a data format that stores data as key-value pairs and lists, easily read by both people and computers. It's the most common format in web APIs."
+      },
+      {
+        "q": "Is my data sent to a server?",
+        "a": "No. Formatting and validation use your browser's built-in JSON features; your data never leaves your device."
+      },
+      {
+        "q": "What is minify for?",
+        "a": "Minify removes the whitespace and line breaks added for readability, making the data smaller. This reduces the amount of data sent over the network."
+      },
+      {
+        "q": "Does it show which line the error is on?",
+        "a": "The tool tells you the data is invalid but doesn't give a line number. Common mistakes are missing quotes, extra commas and unclosed brackets."
+      }
+    ]
+  },
+  "base64_converter": {
+    "seo_title": "Base64 Encode and Decode – Online Base64 Converter",
+    "meta": "Encode text to Base64 or decode Base64 back to text. Full UTF-8 support including accented characters and emoji. Runs entirely in your browser.",
+    "intro": "The Base64 Converter lets you encode text into Base64 and decode Base64-encoded data back into readable text. Base64 shows up in many places: email attachments, data URLs, API authentication headers and binary data carried inside JSON.\n\nThe tool is UTF-8 compatible, so text containing accented characters and emoji is encoded and decoded correctly. Conversion happens automatically as you type and entirely in your browser.",
+    "steps": [
+      "Choose \"Encode\" or \"Decode\" mode from the tabs at the top.",
+      "In Encode mode, type or paste plain text into the input area; in Decode mode, paste Base64 data.",
+      "The result appears instantly in the output area.",
+      "In Decode mode, a warning appears if the input isn't valid Base64; make sure you copied the data completely.",
+      "Copy the result with the copy button."
+    ],
+    "uses": [
+      "Preparing or inspecting Basic Authentication headers used in API requests.",
+      "Viewing the contents of JWT tokens or Base64-encoded values in configuration files.",
+      "Carrying text inside URLs or JSON without problems from special characters.",
+      "Quickly checking encoded data during software development and debugging."
+    ],
+    "tips": [
+      "Base64 is not encryption; encoded data can be decoded by anyone. Don't use it to protect secrets such as passwords.",
+      "Base64 encoding makes data roughly one third larger.",
+      "The \"Base64URL\" variant used in JWT tokens uses - and _ instead of + and /; you may need to swap those characters before decoding.",
+      "This tool converts text; it doesn't encode images or files to Base64."
+    ],
+    "faq": [
+      {
+        "q": "What is Base64?",
+        "a": "Base64 is an encoding that represents binary data as text using only 64 safe characters (A–Z, a–z, 0–9, + and /). It lets data travel through text-based systems without being corrupted."
+      },
+      {
+        "q": "Is Base64 secure encryption?",
+        "a": "No. Base64 is just an encoding; it needs no key and anyone can decode it. Use real encryption for confidentiality."
+      },
+      {
+        "q": "Will special characters break?",
+        "a": "No. The tool encodes text as UTF-8, so accented characters, non-Latin alphabets and emoji are preserved correctly."
+      },
+      {
+        "q": "Is my data saved?",
+        "a": "No. Encoding and decoding happen in your browser; the data you enter isn't sent anywhere."
+      }
+    ]
+  },
+  "percentage_calc": {
+    "seo_title": "Percentage Calculator – Percent Of, Ratio and Percent Change",
+    "meta": "Find a percentage of a number, work out what percent one number is of another, and calculate percentage increase or decrease. Free percentage calculator.",
+    "intro": "The Percentage Calculator solves the three percentage problems you run into most often, on a single page: finding a percentage of a number (e.g. 18% of 250), working out what percent one number is of another (e.g. 45 is what percent of 60?) and finding the percentage change between two values (e.g. the increase when a price goes from 80 to 100).\n\nYou don't need to remember formulas for pay rises, exam scores, profit margins, sales tax, interest or price changes. Just enter the values and press Calculate.",
+    "steps": [
+      "Pick the calculator that matches your question: Find Percentage, Find Rate or Percentage Change.",
+      "For Find Percentage, enter the number and then the percentage (e.g. 18% of 250).",
+      "For Find Rate, enter the part and the whole (e.g. 45 is what percent of 60?).",
+      "For Percentage Change, enter the old value and the new value (e.g. from 80 to 100).",
+      "Press \"Calculate\"; the result appears below the box."
+    ],
+    "uses": [
+      "Working out what percentage a pay rise or price increase represents.",
+      "Finding success rates for exams, surveys or sales targets.",
+      "Calculating profit margins, commissions, tips or tax amounts.",
+      "Tracking percentage changes in stock, currency or crypto prices."
+    ],
+    "tips": [
+      "Percent of: Result = Number × Percentage ÷ 100. For example, 250 × 18 ÷ 100 = 45.",
+      "Find rate: Rate = Part ÷ Whole × 100. For example, 45 ÷ 60 × 100 = 75%.",
+      "Percent change: (New − Old) ÷ Old × 100. A negative result means a decrease; going from 100 to 80 is −20%.",
+      "A 20% increase followed by a 20% decrease doesn't bring you back to the start: 100 → 120 → 96. Apply successive percentages one after another instead of adding them."
+    ],
+    "faq": [
+      {
+        "q": "How do I calculate a percentage of a number?",
+        "a": "Multiply the number by the percentage and divide by 100. For example, 15% of 1,200: 1,200 × 15 ÷ 100 = 180."
+      },
+      {
+        "q": "How do I find a percentage increase?",
+        "a": "Subtract the old value from the new value, divide by the old value and multiply by 100. For example, from 80 to 100: (100 − 80) ÷ 80 × 100 = 25%."
+      },
+      {
+        "q": "Can I enter decimal numbers?",
+        "a": "Yes. Use a period as the decimal separator (e.g. 12.5)."
+      },
+      {
+        "q": "Can I use it for sales tax or VAT?",
+        "a": "Yes. For example, you can find 20% VAT on an amount with Find Percentage. To combine discounts and tax, the Discount Calculator is more convenient."
+      }
+    ]
+  },
+  "discount_calculator": {
+    "seo_title": "Discount Calculator – Percent Off, Extra Discount and Tax",
+    "meta": "Enter the original price and discount rate to see what you'll pay and how much you save. Includes stacked (extra) discounts and sales tax/VAT. Free.",
+    "intro": "The Discount Calculator shows the sale price of an item and how much you save in seconds. Just enter the original price and the discount rate. You can also account for stacked offers such as \"an extra 10% off the sale price\" and tax that is added to prices quoted without it.\n\nAlongside the final amount you'll see a detailed breakdown of each discount and the tax. You can choose between Turkish lira, US dollar, euro and pound sterling.",
+    "steps": [
+      "Choose a currency (₺, $, €, £) and enter the item's full price in the \"Original Price\" field.",
+      "Enter the discount percentage in \"1st Discount Rate (%)\".",
+      "If there's an extra discount, turn on \"Add Extra Discount\" and enter the second rate.",
+      "If the price excludes tax, turn on \"Add Tax\" and enter the tax rate (e.g. 20%).",
+      "Press \"Calculate\" to see the final price, your total savings and the calculation details. Copy the result to share it."
+    ],
+    "uses": [
+      "Quickly seeing the real price of items during sales and promotions.",
+      "Comparing discount offers from different stores.",
+      "Shop owners calculating the discounted price to offer a customer.",
+      "Finding the tax-inclusive total of quotes given without tax."
+    ],
+    "tips": [
+      "The extra discount is applied to the already discounted price. That's why 20% + 10% off equals 28% in total, not 30%.",
+      "Tax is added to the price after the discounts are applied.",
+      "In many countries shelf prices already include VAT; only use the tax option when the price is quoted without tax (as is common in the US).",
+      "Discount rates must be between 0 and 100; otherwise the tool shows a warning."
+    ],
+    "faq": [
+      {
+        "q": "How is the sale price calculated?",
+        "a": "Original price × (1 − discount rate ÷ 100). For example, 20% off a 500 item: 500 × 0.80 = 400."
+      },
+      {
+        "q": "What do 20% and then 10% off add up to?",
+        "a": "28% in total. A 100 item first drops to 80, then 10% of 80 is taken off, bringing it to 72."
+      },
+      {
+        "q": "What does Total Savings show?",
+        "a": "The difference between the original price and the final amount you pay. If you added tax, the difference shrinks by the tax amount."
+      },
+      {
+        "q": "Are my calculations saved?",
+        "a": "No. All calculations happen in your browser and aren't sent anywhere."
+      }
+    ]
+  },
+  "unit_converter": {
+    "seo_title": "Unit Converter – Length, Weight and Temperature",
+    "meta": "Convert instantly between meters, kilometers, inches, feet and miles; kilograms, grams, pounds and ounces; Celsius, Fahrenheit and Kelvin. Free unit converter.",
+    "intro": "The Unit Converter instantly converts length, weight and temperature units. It's ideal for making sense of measurements given in inches or pounds when shopping abroad, converting ounces in recipes to grams, or turning a Fahrenheit forecast into Celsius.\n\nSupported units are meters, kilometers, centimeters, millimeters, feet, inches and miles for length; kilograms, grams, milligrams, pounds and ounces for weight; and Celsius, Fahrenheit and Kelvin for temperature. The result is calculated as soon as you type.",
+    "steps": [
+      "Choose the category at the top: Length, Weight or Temperature.",
+      "Enter the value in the \"From\" field and pick the source unit next to it.",
+      "Pick the unit you want to see in the \"To\" list.",
+      "The result appears instantly. Press the double arrow button in the middle to swap the units."
+    ],
+    "uses": [
+      "Understanding screen (inches), shoe and clothing sizes when shopping internationally.",
+      "Converting pounds and ounces in recipes to grams.",
+      "Making sense of distances in miles and temperatures in Fahrenheit while traveling.",
+      "Students converting units in physics and chemistry homework."
+    ],
+    "tips": [
+      "1 inch = 2.54 cm, 1 foot = 30.48 cm and 1 mile ≈ 1.609 km.",
+      "1 pound (lb) ≈ 453.6 grams and 1 ounce (oz) ≈ 28.35 grams.",
+      "Temperatures are converted with formulas, not ratios: °F = °C × 9/5 + 32 and K = °C + 273.15.",
+      "Use a period for decimal values (e.g. 5.5)."
+    ],
+    "faq": [
+      {
+        "q": "How many centimeters are in an inch?",
+        "a": "Exactly 2.54 centimeters. For example, a 55-inch TV has a diagonal of about 139.7 cm."
+      },
+      {
+        "q": "How do I convert Fahrenheit to Celsius?",
+        "a": "Subtract 32 from the Fahrenheit value and multiply by 5/9. For example, 98.6 °F = (98.6 − 32) × 5/9 = 37 °C."
+      },
+      {
+        "q": "How many pounds is 1 kg?",
+        "a": "1 kilogram is about 2.205 pounds."
+      },
+      {
+        "q": "Are volume or area units available?",
+        "a": "Length, weight and temperature are supported at the moment. New categories may be added based on user requests."
+      }
+    ]
+  },
+  "pomodoro": {
+    "seo_title": "Pomodoro Timer – Online Focus and Study Timer",
+    "meta": "25 minutes of focus, 5 minutes of rest: work productively with the Pomodoro Technique. Set durations, note your task and get an alert when time is up. Free.",
+    "intro": "The Pomodoro Timer helps you apply the Pomodoro Technique, developed by Francesco Cirillo in the late 1980s. The method is simple: focus on a single task for 25 minutes, then take a short 5-minute break. After four focus sessions, take a longer 15–30 minute break.\n\nThis rhythm breaks big tasks into manageable chunks, reduces procrastination and prevents mental fatigue. With Toolio's timer you can adjust focus and break lengths to suit you and note the task you're working on. While the timer runs, the remaining time is also shown in the browser tab title.",
+    "steps": [
+      "Write the task you'll work on in the \"What are you working on?\" box.",
+      "Make sure \"Focus\" mode is selected and press \"Start\".",
+      "Focus only on that task until time runs out; silence notifications and distractions.",
+      "When time is up an alert sounds. Switch to \"Short Break\" and rest for 5 minutes.",
+      "After four focus sessions, take a \"Long Break\". You can change the durations in minutes under \"Duration Settings\"."
+    ],
+    "uses": [
+      "Students preparing for exams and studying in a steady, productive rhythm.",
+      "Remote workers managing focus time throughout the day.",
+      "Writers and developers splitting long projects into small, measurable pieces.",
+      "Getting started on postponed chores or personal projects."
+    ],
+    "tips": [
+      "If another task comes to mind during a pomodoro, jot it down and leave it for the break or the next session.",
+      "Step away from the screen during breaks; a short walk, a stretch or a glass of water rests the mind better.",
+      "If 25 minutes feels too long, start with 15 and increase over time.",
+      "The timer stays accurate in background tabs; just don't close the tab and keep your sound on so you hear the alert."
+    ],
+    "faq": [
+      {
+        "q": "What is the Pomodoro Technique?",
+        "a": "It's a time management method that splits work into focus sessions, usually 25 minutes long, with short breaks in between. It's named after the tomato-shaped kitchen timer Cirillo used (pomodoro means tomato in Italian)."
+      },
+      {
+        "q": "Can I change the durations?",
+        "a": "Yes. In Duration Settings you can set focus, short break and long break lengths in minutes."
+      },
+      {
+        "q": "Does the timer stop when the tab is in the background?",
+        "a": "No. The timer is based on the end time, so it shows the correct time even when you switch to other tabs."
+      },
+      {
+        "q": "How will I know time is up?",
+        "a": "An alert sound plays and a \"Time is up!\" notification appears. The sound is loaded from Google's sound library, so your device's sound needs to be on."
+      }
+    ]
+  },
+  "speedtest": {
+    "seo_title": "Internet Speed Test – Download, Upload and Ping",
+    "meta": "Measure your internet download and upload speed (Mbps) and latency (ping). A free, independent speed test powered by Measurement Lab (M-Lab) servers.",
+    "intro": "The Internet Speed Test measures the three key values of your connection: download speed (how fast web pages, videos and files reach you), upload speed (how fast files and video call data leave you) and latency, or ping (how long a signal takes to reach a server and come back). Speeds are shown in megabits per second (Mbps) and latency in milliseconds (ms).\n\nMeasurements are made against servers of Measurement Lab (M-Lab), an independent measurement network supported by Google and many research institutions, using the open NDT7 protocol. The tool finds the servers nearest to you and automatically picks the one with the lowest latency.",
+    "steps": [
+      "For a more accurate result, close apps that use the connection, such as downloads, video streams and games.",
+      "Press the \"GO / START\" button in the middle; the tool first finds the nearest M-Lab server.",
+      "The download test runs, followed automatically by the upload test. Watch the live speed on the gauges.",
+      "When the test finishes, your download, upload and ping values are shown along with the server location.",
+      "Press \"Test Again\" to repeat the test a few times and confirm the result."
+    ],
+    "uses": [
+      "Checking whether you're getting the speed your internet provider promised.",
+      "Finding out whether slowdowns or drop-outs are caused by your connection.",
+      "Measuring the difference after moving your router or switching to a new plan.",
+      "Seeing whether your ping is good enough for online gaming and video calls."
+    ],
+    "tips": [
+      "Testing over a wired (Ethernet) connection instead of Wi-Fi shows your line's real speed more accurately.",
+      "Speeds may drop during busy hours such as evenings. Test at different times to get an average.",
+      "Tests run with a VPN on also reflect the VPN server's speed; turn the VPN off to measure your real speed.",
+      "A ping below 20 ms is excellent, 20–50 ms is good, and above 100 ms is considered high for gaming and video calls."
+    ],
+    "faq": [
+      {
+        "q": "What's the difference between Mbps and MB/s?",
+        "a": "Speed tests use megabits per second (Mbps), while download managers usually show megabytes per second (MB/s). Since 1 byte is 8 bits, 100 Mbps is about 12.5 MB/s."
+      },
+      {
+        "q": "Why do results differ from other speed tests?",
+        "a": "Each test uses different servers and methods. M-Lab measures real internet conditions with provider-independent servers, while providers' own tests often use servers inside their networks."
+      },
+      {
+        "q": "Where does my test data go?",
+        "a": "When you start a test, your IP address and measurement results are processed by M-Lab and published as open data to support internet research. Toolio doesn't store this data. See the M-Lab privacy policy for details."
+      },
+      {
+        "q": "How much data does a test use?",
+        "a": "It depends on your connection speed; on fast connections a single test can use a few hundred megabytes. Keep this in mind on metered mobile connections."
+      }
+    ]
+  },
+  "typing": {
+    "seo_title": "Typing Speed Test – How Many Words Per Minute Can You Type?",
+    "meta": "Measure your words per minute (WPM) with a 1-minute typing test. Practice touch typing with English or Turkish words. Free online typing test.",
+    "intro": "The Typing Speed Test measures how many words you can type correctly in one minute and shows the result as words per minute (WPM). Common words appear on screen in random order; as you type, the input box warns you when you make a mistake.\n\nWhen the site language is English the test uses English words, and when it's Turkish it uses Turkish words. With regular practice you can improve your touch typing and see your progress with every attempt.",
+    "steps": [
+      "Click the typing area of the test.",
+      "The 60-second timer starts automatically as soon as you begin typing the first word.",
+      "Press the Space key after each word to move on to the next one.",
+      "If the letters you type don't match the word, the input box turns red, so you notice the mistake before finishing the word.",
+      "When time is up, your WPM score and your correct and incorrect word counts are shown. Press \"Try Again\" for a new test."
+    ],
+    "uses": [
+      "Seeing how close you are to the typing speed required in job applications.",
+      "Students and beginners practicing touch typing.",
+      "Developers, writers and office workers improving their typing efficiency.",
+      "Having a friendly speed contest with friends."
+    ],
+    "tips": [
+      "Focus on accuracy before speed; as you get used to typing without errors, your speed will increase on its own.",
+      "Keep your fingers on the home row (A-S-D-F and J-K-L-;) and try not to look at the keyboard.",
+      "Regular practice of 10–15 minutes a day is more effective than one long session a week.",
+      "The average person types 35–40 words per minute; 60 WPM and above is considered professional level."
+    ],
+    "faq": [
+      {
+        "q": "How is WPM calculated?",
+        "a": "WPM is the number of words you typed correctly divided by the elapsed time in minutes. Incorrect words aren't counted toward the score."
+      },
+      {
+        "q": "How long does the test take?",
+        "a": "The test lasts 60 seconds and starts when you press the first key."
+      },
+      {
+        "q": "Can I take the test with Turkish words?",
+        "a": "Yes. Switch the site to Turkish with the language button at the top of the page and the test will use Turkish words."
+      },
+      {
+        "q": "Can I use it on a phone?",
+        "a": "It technically works, but the test is designed to measure typing speed on a physical keyboard. You'll get the most meaningful result with a computer keyboard."
+      }
+    ]
+  },
+  "screen_recorder": {
+    "seo_title": "Online Screen Recorder – Record Your Screen Without Software",
+    "meta": "Record your whole screen, a window or a browser tab without installing anything. No time limit, no watermark; the video is created in your browser. Free.",
+    "intro": "The Online Screen Recorder lets you record your computer screen as a video without installing any program or extension. You can record the whole screen, a single application window or just one browser tab. It's a practical way to make tutorial videos, recordings that show a software bug, or short presentations.\n\nRecording is done entirely on your device using the browser's screen capture (Screen Capture API) and recording (MediaRecorder API) features. The video is never uploaded to a server, and there's no time limit or watermark. When you're done, preview it and download it in .webm format.",
+    "steps": [
+      "Press \"Start Recording\".",
+      "In the window the browser opens, choose what to record: the entire screen, a window or a tab. If you also want sound, tick the \"share audio\" option if available.",
+      "Recording starts when you press \"Share\". Do whatever you want to show on screen.",
+      "When you're finished, press \"Stop\" on Toolio or the browser's \"Stop sharing\" bar.",
+      "Preview the recording and save it with \"Download Video\". Use \"New Recording\" to record again."
+    ],
+    "uses": [
+      "Making tutorial videos that show how to use a program or website.",
+      "Showing software bugs to a support team or developers on video.",
+      "Teachers and students recording lessons or project presentations.",
+      "Recording an online meeting or webinar for your own notes (with participants' permission)."
+    ],
+    "tips": [
+      "This feature works in desktop browsers (Chrome, Edge, Firefox, Opera); mobile browsers generally don't support screen recording.",
+      "Tab audio recording works best in Chrome and Edge. Your microphone isn't included in the recording.",
+      "Before recording, close personal notifications, passwords and any confidential information on your screen.",
+      "Long recordings are kept in your device's memory. Several short recordings are safer than one very long one.",
+      "If you need MP4, you can convert the WebM file with VLC Player's Convert feature."
+    ],
+    "faq": [
+      {
+        "q": "Is recording time limited?",
+        "a": "No. Toolio doesn't impose any time limit. The practical limit is your device's available memory."
+      },
+      {
+        "q": "Is there a watermark?",
+        "a": "No. The video you download has no Toolio logo or watermark."
+      },
+      {
+        "q": "Is the video uploaded to a server?",
+        "a": "No. The recording is created in your browser and saved to your device only when you download it."
+      },
+      {
+        "q": "What format are recordings in?",
+        "a": "Recordings are WebM files. They open in Chrome, Firefox, Edge and VLC Player, and platforms like YouTube accept WebM uploads."
+      }
+    ]
+  },
+  "counter": {
+    "seo_title": "Online Counter – Click to Count (Tally Counter)",
+    "meta": "An online tally counter with keyboard shortcuts, sound and vibration. Set the step size and count with the arrow keys or Space. For inventory, reps and scores.",
+    "intro": "The Smart Counter is a simple but handy digital tally counter for any situation where you need to count things one by one. Tap the big plus button or use keyboard shortcuts to count, with an optional short click sound and vibration on each count. It's ideal for inventory counts, counting people at an event entrance, workout reps, game scores or prayer counting.\n\nYou can set the step size from 1 to 100, so you can count in twos, fives or tens. The counter runs entirely in your browser.",
+    "steps": [
+      "Tap the big plus (+) button or press the Up Arrow or Space key to start counting.",
+      "If you counted too many, use the minus (−) button or the Down Arrow key.",
+      "Set how much each press adds in the \"Step Size\" field.",
+      "Turn sound and vibration feedback on or off with their buttons.",
+      "Press \"Reset\" or the R key to set the counter back to zero."
+    ],
+    "uses": [
+      "Counting stock and inventory in a warehouse, shop or library.",
+      "Counting people at event, meeting or venue entrances.",
+      "Keeping track of reps and sets during workouts.",
+      "Using it as a digital tally counter for prayer beads or habit tracking."
+    ],
+    "tips": [
+      "On a computer, keyboard shortcuts are fastest: Space or Up Arrow increases, Down Arrow decreases, R resets.",
+      "Vibration only works on phones and browsers that support it (mostly Android).",
+      "The count isn't saved; it resets when you reload the page. Note down the result now and then during long counts.",
+      "When using a phone, extend the screen timeout so the screen doesn't turn off while you count."
+    ],
+    "faq": [
+      {
+        "q": "Can I use it as a tally counter on my phone?",
+        "a": "Yes. Thanks to the big button and vibration support, it works comfortably as a digital tally counter on a phone."
+      },
+      {
+        "q": "Is the count saved?",
+        "a": "No. The count is kept only on the open page; it resets when the page is reloaded or closed."
+      },
+      {
+        "q": "Can I count backwards?",
+        "a": "Yes. The minus button or Down Arrow key decreases the count by the step size you set."
+      },
+      {
+        "q": "Why is there no sound?",
+        "a": "Make sure the sound button is on and your device isn't on silent. Some browsers don't allow sound until you've interacted with the page."
+      }
+    ]
+  },
+  "decision_wheel": {
+    "seo_title": "Decision Wheel – Spin the Wheel to Pick at Random",
+    "meta": "Type your options, spin the wheel and let it pick a random result. A free online spinner wheel for draws, games, classrooms and undecided moments.",
+    "intro": "The Decision Wheel places your options on a colorful wheel and picks one at random when you can't decide. Settle what to have for dinner, who speaks next in a meeting, which student answers in class or who buys the next round in a fun and impartial way.\n\nJust write one option per line. The wheel spins several full turns, slows down and stops, and the winning option is announced on screen with confetti.",
+    "steps": [
+      "Type your options in the \"Options\" box, one per line. The wheel updates as you type.",
+      "Use the \"Shuffle\" button if you want to change the order.",
+      "Press the big \"SPIN\" button under the options box.",
+      "When the wheel stops, the winning option is shown on screen. Close the window and spin again if you like.",
+      "Press \"Clear List\" to start a completely new list."
+    ],
+    "uses": [
+      "Breaking indecision when choosing food, a movie or weekend plans.",
+      "Teachers picking which student speaks or the order of groups.",
+      "Fairly deciding presentation order or task assignments in team meetings.",
+      "Running small draws and games among friends."
+    ],
+    "tips": [
+      "At least two options are needed to spin the wheel.",
+      "Only the first 15 characters of long options are shown on the wheel; short phrases keep it readable.",
+      "To give an option a better chance, write it on more than one line.",
+      "For official draws involving money or valuable prizes, use proper regulated methods; this tool is meant for fun and everyday decisions."
+    ],
+    "faq": [
+      {
+        "q": "Is the wheel really random?",
+        "a": "Yes. The spin angle is determined by the browser's random number generator on each spin; every option has an equal-sized slice and equal probability."
+      },
+      {
+        "q": "How many options can I add?",
+        "a": "There's no fixed limit, but with too many options the slices get small and the text becomes hard to read. 2 to 20 options look best."
+      },
+      {
+        "q": "Is the winner removed from the list?",
+        "a": "No. The list stays the same. To exclude the winner in the next round, simply delete that line from the box."
+      },
+      {
+        "q": "Is my list saved?",
+        "a": "No. Options are kept only on the open page; when you reload, the default list returns."
+      }
+    ]
+  }
+}

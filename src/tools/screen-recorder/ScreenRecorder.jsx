@@ -125,7 +125,7 @@ const ScreenRecorder = () => {
             <div className="text-center">
               <Monitor className="w-24 h-24 text-gray-700 mx-auto mb-4 opacity-50" />
               <p className="text-gray-500 font-medium">
-                Kayıt başlatılmaya hazır
+                {t("tools.screen_recorder.ready")}
               </p>
             </div>
           )}
@@ -177,8 +177,7 @@ const ScreenRecorder = () => {
 
         {/* Bilgi Notu */}
         <p className="text-center text-xs text-gray-400 mt-6">
-          Not: Kayıtlar .webm formatındadır. VLC Player veya Chrome ile
-          açabilirsiniz.
+          {t("tools.screen_recorder.webm_note")}
         </p>
       </div>
 
@@ -186,30 +185,6 @@ const ScreenRecorder = () => {
         <AdBanner slot="1234567890" />
       </div>
 
-      {/* SEO İçeriği */}
-      <article className="mt-12 prose prose-lg max-w-none text-gray-600 bg-white p-8 rounded-2xl border border-gray-100 shadow-sm">
-        <h2 className="text-gray-800">
-          {t("tools.screen_recorder.content.title")}
-        </h2>
-        <p>{t("tools.screen_recorder.content.p1")}</p>
-        <h3 className="text-gray-800">
-          {t("tools.screen_recorder.content.h2")}
-        </h3>
-        <ul>
-          <li>
-            <strong>{t("tools.screen_recorder.content.li1_title")}</strong>{" "}
-            {t("tools.screen_recorder.content.li1")}
-          </li>
-          <li>
-            <strong>{t("tools.screen_recorder.content.li2_title")}</strong>{" "}
-            {t("tools.screen_recorder.content.li2")}
-          </li>
-          <li>
-            <strong>{t("tools.screen_recorder.content.li3_title")}</strong>{" "}
-            {t("tools.screen_recorder.content.li3")}
-          </li>
-        </ul>
-      </article>
     </div>
   );
 };

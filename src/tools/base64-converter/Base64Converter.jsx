@@ -167,33 +167,6 @@ const Base64Converter = () => {
           <AdBanner slot="5566778899" className="mt-8" />
         </div>
 
-        {/* --- ZENGİN İÇERİK (SEO) ALANI (YENİ EKLENDİ) --- */}
-        <div className="mt-12 bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
-          <article className="prose prose-indigo prose-lg text-gray-600 max-w-none">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">
-              {t("tools.base64_converter.content.title")}
-            </h2>
-            <p className="mb-6 leading-relaxed">
-              {t("tools.base64_converter.content.intro")}
-            </p>
-
-            <h3 className="text-xl font-bold text-gray-800 mb-3">
-              {t("tools.base64_converter.content.usage_title")}
-            </h3>
-            <ul className="list-disc pl-5 space-y-2 mb-6">
-              <li>{t("tools.base64_converter.content.usage_list_1")}</li>
-              <li>{t("tools.base64_converter.content.usage_list_2")}</li>
-              <li>{t("tools.base64_converter.content.usage_list_3")}</li>
-            </ul>
-
-            <h3 className="text-xl font-bold text-gray-800 mb-3">
-              {t("tools.base64_converter.content.modes_title")}
-            </h3>
-            <p className="leading-relaxed">
-              {t("tools.base64_converter.content.modes_text")}
-            </p>
-          </article>
-        </div>
 
         {/* REKLAM 2: Sayfa sonu */}
         <AdBanner slot="9988776655" className="mt-8" />

@@ -1,19 +1,20 @@
-import React from "react";
 import SEO from "../components/SEO";
+import { CONTACT_EMAIL } from "../lib/site";
 import { Mail, MapPin, Send, MessageSquare } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 const Contact = () => {
   const { t } = useTranslation();
+  const faqList = t("contact.faq_list", { returnObjects: true });
 
   const handleSubmit = (e) => {
     e.preventDefault();
     const formData = new FormData(e.target);
-    const subject = `Toolio İletişim: ${formData.get("name")}`;
-    const body = `Ad: ${formData.get("name")}\nEmail: ${formData.get(
+    const subject = `${t("contact.mail_subject")}: ${formData.get("name")}`;
+    const body = `${t("contact.form_name")}: ${formData.get("name")}\nEmail: ${formData.get(
       "email",
-    )}\n\nMesaj:\n${formData.get("message")}`;
-    window.location.href = `mailto:info@toolio.com.tr?subject=${encodeURIComponent(
+    )}\n\n${t("contact.form_message")}:\n${formData.get("message")}`;
+    window.location.href = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(
       subject,
     )}&body=${encodeURIComponent(body)}`;
   };
@@ -83,7 +84,7 @@ const Contact = () => {
                           {t("contact.location_label")}
                         </p>
                         <p className="font-semibold text-lg">
-                          İstanbul, Türkiye
+                          {t("contact.location_value")}
                         </p>
                       </div>
                     </div>
@@ -92,7 +93,7 @@ const Contact = () => {
 
                 <div className="mt-12">
                   <p className="text-sm text-indigo-200 opacity-80">
-                    Toolio.com.tr © 2025
+                    Toolio.com.tr © {new Date().getFullYear()}
                   </p>
                 </div>
               </div>
@@ -148,18 +149,26 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* FAQ Bölümü */}
-          <div className="mt-16 text-center">
-            <div className="inline-flex items-center gap-2 text-indigo-600 font-semibold bg-indigo-50 px-4 py-2 rounded-full mb-4">
-              <MessageSquare size={18} /> SSS
+          {/* SSS */}
+          <section className="mt-16 max-w-3xl mx-auto">
+            <div className="text-center mb-8">
+              <div className="inline-flex items-center gap-2 text-indigo-600 font-semibold bg-indigo-50 px-4 py-2 rounded-full mb-4">
+                <MessageSquare size={18} /> {t("contact.faq_badge")}
+              </div>
+              <h2 className="text-2xl font-bold text-gray-900 mb-2">
+                {t("contact.faq_title")}
+              </h2>
+              <p className="text-gray-500">{t("contact.faq_desc")}</p>
             </div>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
-              {t("contact.faq_title")}
-            </h2>
-            <p className="text-gray-500 max-w-2xl mx-auto">
-              {t("contact.faq_desc")}
-            </p>
-          </div>
+            <div className="bg-white rounded-2xl border border-gray-100 shadow-sm divide-y divide-gray-100">
+              {(Array.isArray(faqList) ? faqList : []).map((item, index) => (
+                <div key={index} className="p-6">
+                  <h3 className="font-semibold text-gray-900 mb-2">{item.q}</h3>
+                  <p className="text-gray-600 leading-relaxed">{item.a}</p>
+                </div>
+              ))}
+            </div>
+          </section>
         </div>
       </div>
     </>

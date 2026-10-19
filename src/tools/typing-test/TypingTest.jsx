@@ -390,26 +390,6 @@ const TypingTest = () => {
         <AdBanner slot="1234567890" />
       </div>
 
-      {/* SEO İçeriği */}
-      <article className="mt-12 prose prose-lg max-w-none text-gray-600 bg-white p-8 rounded-2xl border border-gray-100 shadow-sm">
-        <h2 className="text-gray-800">{t("tools.typing.content.title")}</h2>
-        <p>{t("tools.typing.content.p1")}</p>
-        <h3 className="text-gray-800">{t("tools.typing.content.h2")}</h3>
-        <ul>
-          <li>
-            <strong>{t("tools.typing.content.li1_title")}</strong>{" "}
-            {t("tools.typing.content.li1")}
-          </li>
-          <li>
-            <strong>{t("tools.typing.content.li2_title")}</strong>{" "}
-            {t("tools.typing.content.li2")}
-          </li>
-          <li>
-            <strong>{t("tools.typing.content.li3_title")}</strong>{" "}
-            {t("tools.typing.content.li3")}
-          </li>
-        </ul>
-      </article>
     </div>
   );
 };

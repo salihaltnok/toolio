@@ -353,6 +353,19 @@ const SpeedTest = () => {
                 </div>
               </button>
             )}
+            {(status === "idle" || status === "error") && (
+              <p className="mt-6 max-w-md text-center text-xs text-gray-500 leading-relaxed">
+                {t("tools.speedtest.mlab_notice")}{" "}
+                <a
+                  href="https://www.measurementlab.net/privacy/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-indigo-600 underline"
+                >
+                  {t("tools.speedtest.mlab_policy")}
+                </a>
+              </p>
+            )}
 
             {/* LOCATING / BAĞLANIYOR */}
             {status === "locating" && (
@@ -506,69 +519,6 @@ const SpeedTest = () => {
         <AdBanner slot="1234567890" />
       </div>
 
-      {/* SEO Metni */}
-      <article className="mt-16 prose prose-lg max-w-none text-gray-600 bg-white p-8 md:p-12 rounded-[2rem] border border-gray-100 shadow-sm">
-        <h2 className="text-3xl font-bold text-gray-900 mb-6">
-          {t("tools.speedtest.content.title")}
-        </h2>
-        <p className="leading-relaxed mb-8">
-          {t("tools.speedtest.content.p1")}
-        </p>
-
-        <div className="grid md:grid-cols-2 gap-12">
-          <div>
-            <h3 className="text-xl font-bold text-indigo-700 mb-4 flex items-center gap-2">
-              <Activity size={24} />
-              {t("tools.speedtest.content.h2")}
-            </h3>
-            <ul className="space-y-4 list-none pl-0">
-              <li className="bg-indigo-50 p-4 rounded-xl">
-                <strong className="block text-gray-900 mb-1">
-                  {t("tools.speedtest.content.li1_title")}
-                </strong>
-                {t("tools.speedtest.content.li1")}
-              </li>
-              <li className="bg-purple-50 p-4 rounded-xl">
-                <strong className="block text-gray-900 mb-1">
-                  {t("tools.speedtest.content.li2_title")}
-                </strong>
-                {t("tools.speedtest.content.li2")}
-              </li>
-              <li className="bg-orange-50 p-4 rounded-xl">
-                <strong className="block text-gray-900 mb-1">
-                  {t("tools.speedtest.content.li3_title")}
-                </strong>
-                {t("tools.speedtest.content.li3")}
-              </li>
-            </ul>
-          </div>
-
-          <div className="space-y-8">
-            <div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">
-                {t("tools.speedtest.content.h_tips")}
-              </h3>
-              <p className="mb-4 text-sm font-medium">
-                {t("tools.speedtest.content.tips_p")}
-              </p>
-              <ul className="list-disc pl-5 space-y-2 text-gray-700">
-                <li>{t("tools.speedtest.content.tip1")}</li>
-                <li>{t("tools.speedtest.content.tip2")}</li>
-                <li>{t("tools.speedtest.content.tip3")}</li>
-              </ul>
-            </div>
-
-            <div className="bg-gray-50 p-6 rounded-2xl border border-gray-200">
-              <h3 className="text-lg font-bold text-gray-900 mb-2">
-                {t("tools.speedtest.content.h_faq")}
-              </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                {t("tools.speedtest.content.faq_p")}
-              </p>
-            </div>
-          </div>
-        </div>
-      </article>
     </div>
   );
 };

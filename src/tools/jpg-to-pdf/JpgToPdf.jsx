@@ -73,7 +73,7 @@ const JpgToPdf = () => {
       doc.save("toolio-images.pdf");
     } catch (error) {
       console.error("PDF Hatası:", error);
-      alert("Bir hata oluştu. Lütfen tekrar deneyin.");
+      alert(t("common.error_generic"));
     } finally {
       setIsConverting(false);
     }
@@ -183,26 +183,6 @@ const JpgToPdf = () => {
         <AdBanner slot="1234567890" />
       </div>
 
-      {/* SEO Makalesi */}
-      <article className="mt-12 prose prose-lg max-w-none text-gray-600 bg-white p-8 rounded-2xl border border-gray-100 shadow-sm">
-        <h2 className="text-gray-800">{t("tools.jpg_to_pdf.content.title")}</h2>
-        <p>{t("tools.jpg_to_pdf.content.p1")}</p>
-        <h3 className="text-gray-800">{t("tools.jpg_to_pdf.content.h2")}</h3>
-        <ul>
-          <li>
-            <strong>{t("tools.jpg_to_pdf.content.li1_title")}</strong>{" "}
-            {t("tools.jpg_to_pdf.content.li1")}
-          </li>
-          <li>
-            <strong>{t("tools.jpg_to_pdf.content.li2_title")}</strong>{" "}
-            {t("tools.jpg_to_pdf.content.li2")}
-          </li>
-          <li>
-            <strong>{t("tools.jpg_to_pdf.content.li3_title")}</strong>{" "}
-            {t("tools.jpg_to_pdf.content.li3")}
-          </li>
-        </ul>
-      </article>
     </div>
   );
 };

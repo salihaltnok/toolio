@@ -16,7 +16,7 @@ const ImageConverter = () => {
     const file = e.target.files[0];
     if (file) {
       if (!file.type.startsWith("image/")) {
-        alert("Lütfen geçerli bir resim dosyası yükleyin.");
+        alert(t("common.invalid_image"));
         return;
       }
       setImage(file);
@@ -156,30 +156,6 @@ const ImageConverter = () => {
         {/* REKLAM 2: Sayfa Altı */}
         <AdBanner slot="9988776655" className="mt-8" />
 
-        {/* --- ZENGİN İÇERİK (SEO) ALANI (YENİ EKLENDİ) --- */}
-        <div className="mt-12 bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
-          <article className="prose prose-pink prose-lg text-gray-600 max-w-none">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">
-              {t("tools.image_converter.content.title")}
-            </h2>
-            <p className="mb-6 leading-relaxed">
-              {t("tools.image_converter.content.intro")}
-            </p>
-
-            <h3 className="text-xl font-bold text-gray-800 mb-3">
-              {t("tools.image_converter.content.formats_title")}
-            </h3>
-            <ul className="list-disc pl-5 space-y-2 mb-6">
-              <li>{t("tools.image_converter.content.formats_list_1")}</li>
-              <li>{t("tools.image_converter.content.formats_list_2")}</li>
-              <li>{t("tools.image_converter.content.formats_list_3")}</li>
-            </ul>
-
-            <p className="leading-relaxed">
-              {t("tools.image_converter.content.privacy_note")}
-            </p>
-          </article>
-        </div>
       </div>
     </>
   );

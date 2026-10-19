@@ -12,7 +12,8 @@ import {
 } from "lucide-react";
 
 const MemeGenerator = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const locale = (i18n.resolvedLanguage || "tr") === "tr" ? "tr-TR" : "en-US";
   const canvasRef = useRef(null);
 
   const [image, setImage] = useState(null);
@@ -63,8 +64,8 @@ const MemeGenerator = () => {
           ctx.textBaseline = "top";
           const x = canvas.width / 2;
           const y = canvas.height * 0.05; // %5 yukarıdan
-          ctx.strokeText(topText.toUpperCase(), x, y);
-          ctx.fillText(topText.toUpperCase(), x, y);
+          ctx.strokeText(topText.toLocaleUpperCase(locale), x, y);
+          ctx.fillText(topText.toLocaleUpperCase(locale), x, y);
         }
 
         // Alt Yazı
@@ -72,12 +73,12 @@ const MemeGenerator = () => {
           ctx.textBaseline = "bottom";
           const x = canvas.width / 2;
           const y = canvas.height * 0.95; // %5 aşağıdan
-          ctx.strokeText(bottomText.toUpperCase(), x, y);
-          ctx.fillText(bottomText.toUpperCase(), x, y);
+          ctx.strokeText(bottomText.toLocaleUpperCase(locale), x, y);
+          ctx.fillText(bottomText.toLocaleUpperCase(locale), x, y);
         }
       };
     }
-  }, [image, topText, bottomText, fontSize, textColor]);
+  }, [image, topText, bottomText, fontSize, textColor, locale]);
 
   const handleImageUpload = (e) => {
     const file = e.target.files[0];
@@ -144,7 +145,7 @@ const MemeGenerator = () => {
                 <input
                   type="text"
                   className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-yellow-400 outline-none"
-                  placeholder="ÜST YAZI"
+                  placeholder={t("tools.meme.top_placeholder")}
                   value={topText}
                   onChange={(e) => setTopText(e.target.value)}
                 />
@@ -157,7 +158,7 @@ const MemeGenerator = () => {
                 <input
                   type="text"
                   className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-yellow-400 outline-none"
-                  placeholder="ALT YAZI"
+                  placeholder={t("tools.meme.bottom_placeholder")}
                   value={bottomText}
                   onChange={(e) => setBottomText(e.target.value)}
                 />
@@ -225,26 +226,6 @@ const MemeGenerator = () => {
         <AdBanner slot="1234567890" />
       </div>
 
-      {/* SEO Metni */}
-      <article className="mt-12 prose prose-lg max-w-none text-gray-600 bg-white p-8 rounded-2xl border border-gray-100 shadow-sm">
-        <h2 className="text-gray-800">{t("tools.meme.content.title")}</h2>
-        <p>{t("tools.meme.content.p1")}</p>
-        <h3 className="text-gray-800">{t("tools.meme.content.h2")}</h3>
-        <ul>
-          <li>
-            <strong>{t("tools.meme.content.li1_title")}</strong>{" "}
-            {t("tools.meme.content.li1")}
-          </li>
-          <li>
-            <strong>{t("tools.meme.content.li2_title")}</strong>{" "}
-            {t("tools.meme.content.li2")}
-          </li>
-          <li>
-            <strong>{t("tools.meme.content.li3_title")}</strong>{" "}
-            {t("tools.meme.content.li3")}
-          </li>
-        </ul>
-      </article>
     </div>
   );
 };

@@ -40,6 +40,13 @@ const WordCounter = () => {
       />
 
       <div className="max-w-4xl mx-auto">
+        <div className="text-center mb-8">
+          <h1 className="text-3xl font-extrabold text-gray-900 mb-2">
+            {t("tools.word_counter.name")}
+          </h1>
+          <p className="text-gray-600">{t("tools.word_counter.desc")}</p>
+        </div>
+
         {/* REKLAM 1: İstatistiklerin Üstü */}
         <AdBanner slot="1111111111" className="mb-6" />
 
@@ -100,36 +107,6 @@ const WordCounter = () => {
         {/* REKLAM 2: İçerik Sonu */}
         <AdBanner slot="2222222222" />
 
-        {/* --- ZENGİN İÇERİK ALANI (SEO) --- */}
-        <div className="mt-12 bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
-          <article className="prose prose-indigo prose-lg text-gray-600 max-w-none">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">
-              {t("tools.word_counter.content.title")}
-            </h2>
-
-            <p className="mb-6 leading-relaxed">
-              {t("tools.word_counter.content.intro")}
-            </p>
-
-            <h3 className="text-xl font-bold text-gray-800 mb-3">
-              {t("tools.word_counter.content.why_title")}
-            </h3>
-
-            <ul className="list-disc pl-5 space-y-2 mb-6">
-              <li>{t("tools.word_counter.content.why_list_1")}</li>
-              <li>{t("tools.word_counter.content.why_list_2")}</li>
-              <li>{t("tools.word_counter.content.why_list_3")}</li>
-            </ul>
-
-            <h3 className="text-xl font-bold text-gray-800 mb-3">
-              {t("tools.word_counter.content.privacy_title")}
-            </h3>
-
-            <p className="leading-relaxed">
-              {t("tools.word_counter.content.privacy_text")}
-            </p>
-          </article>
-        </div>
       </div>
     </>
   );

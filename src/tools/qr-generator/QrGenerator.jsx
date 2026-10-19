@@ -128,40 +128,6 @@ const QrGenerator = () => {
           </div>
         </div>
 
-        {/* --- ZENGİN İÇERİK ALANI (SEO) --- */}
-        <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 mb-12">
-          <article className="prose prose-purple prose-lg text-gray-600 max-w-none">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">
-              {t("tools.qr_generator.content.title")}
-            </h2>
-
-            <p className="mb-6 leading-relaxed">
-              {t("tools.qr_generator.content.intro")}
-            </p>
-
-            <h3 className="text-xl font-bold text-gray-800 mb-3">
-              {t("tools.qr_generator.content.features_title")}
-            </h3>
-
-            <ul className="list-disc pl-5 space-y-2 mb-6">
-              <li>{t("tools.qr_generator.content.features_list_1")}</li>
-              <li>{t("tools.qr_generator.content.features_list_2")}</li>
-              <li>{t("tools.qr_generator.content.features_list_3")}</li>
-            </ul>
-
-            <h3 className="text-xl font-bold text-gray-800 mb-3">
-              {t("tools.qr_generator.content.areas_title")}
-            </h3>
-
-            <p className="leading-relaxed mb-6">
-              {t("tools.qr_generator.content.areas_text")}
-            </p>
-
-            <div className="bg-blue-50 p-4 rounded-lg border-l-4 border-blue-500 text-sm text-blue-800">
-              {t("tools.qr_generator.content.privacy_note")}
-            </div>
-          </article>
-        </div>
 
         {/* REKLAM 2 */}
         <AdBanner slot="9988776655" />

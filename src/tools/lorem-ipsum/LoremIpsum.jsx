@@ -132,37 +132,12 @@ const LoremIpsum = () => {
             value={text}
             onChange={(e) => setText(e.target.value)}
             className="w-full h-96 p-8 rounded-xl border border-gray-200 text-gray-700 leading-8 font-serif text-lg shadow-inner outline-none focus:ring-2 focus:ring-teal-500/50 resize-y"
-            placeholder="Sonuç burada görünecek..."
+            placeholder={t("common.result_placeholder")}
           ></textarea>
         </div>
 
         <AdBanner slot="9988776655" className="mt-8 mb-12" />
 
-        {/* --- ZENGİN İÇERİK ALANI --- */}
-        <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
-          <article className="prose prose-teal prose-lg text-gray-600 max-w-none">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">
-              {t("tools.lorem_ipsum.content.title")}
-            </h2>
-            <p className="mb-6 leading-relaxed">
-              {t("tools.lorem_ipsum.content.intro")}
-            </p>
-
-            <h3 className="text-xl font-bold text-gray-800 mb-3">
-              {t("tools.lorem_ipsum.content.history_title")}
-            </h3>
-            <p className="mb-6 leading-relaxed">
-              {t("tools.lorem_ipsum.content.history_text")}
-            </p>
-
-            <h3 className="text-xl font-bold text-gray-800 mb-3">
-              {t("tools.lorem_ipsum.content.why_title")}
-            </h3>
-            <p className="leading-relaxed">
-              {t("tools.lorem_ipsum.content.why_text")}
-            </p>
-          </article>
-        </div>
 
         {/* Toast */}
         <div

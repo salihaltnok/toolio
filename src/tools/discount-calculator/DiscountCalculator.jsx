@@ -376,7 +376,7 @@ const DiscountCalculator = () => {
                       </span>
                     </div>
                     <div className="flex justify-between text-red-500 font-medium">
-                      <span>- 1. İndirim:</span>
+                      <span>- {t("tools.discount_calculator.first_discount")}:</span>
                       <span>
                         {currency}
                         {result.details.d1.toLocaleString()}
@@ -384,7 +384,7 @@ const DiscountCalculator = () => {
                     </div>
                     {result.details.d2 > 0 && (
                       <div className="flex justify-between text-red-500 font-medium">
-                        <span>- Ekstra İndirim:</span>
+                        <span>- {t("tools.discount_calculator.extra_discount")}:</span>
                         <span>
                           {currency}
                           {result.details.d2.toLocaleString()}
@@ -425,31 +425,6 @@ const DiscountCalculator = () => {
           </div>
         </div>
 
-        {/* --- ZENGİN İÇERİK (SEO) ALANI (YENİ EKLENDİ) --- */}
-        <div className="mt-12 bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
-          <article className="prose prose-green prose-lg text-gray-600 max-w-none">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">
-              {t("tools.discount_calculator.content.title")}
-            </h2>
-            <p className="mb-6 leading-relaxed">
-              {t("tools.discount_calculator.content.intro")}
-            </p>
-
-            <h3 className="text-xl font-bold text-gray-800 mb-3">
-              {t("tools.discount_calculator.content.how_title")}
-            </h3>
-            <p className="mb-6 leading-relaxed">
-              {t("tools.discount_calculator.content.how_text")}
-            </p>
-
-            <h3 className="text-xl font-bold text-gray-800 mb-3">
-              {t("tools.discount_calculator.content.tax_title")}
-            </h3>
-            <p className="leading-relaxed">
-              {t("tools.discount_calculator.content.tax_text")}
-            </p>
-          </article>
-        </div>
       </div>
     </>
   );

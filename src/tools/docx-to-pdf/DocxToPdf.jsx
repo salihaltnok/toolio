@@ -30,7 +30,7 @@ const DocxToPdf = () => {
     if (!selectedFile) return;
 
     if (!selectedFile.name.endsWith(".docx")) {
-      alert("Lütfen geçerli bir .docx dosyası yükleyin.");
+      alert(t("common.invalid_docx"));
       return;
     }
 
@@ -66,7 +66,7 @@ const DocxToPdf = () => {
         setIsRendering(false);
       } catch (error) {
         console.error("Render hatası:", error);
-        alert("Dosya görüntülenirken bir hata oluştu.");
+        alert(t("common.docx_render_error"));
         setIsRendering(false);
       }
     };
@@ -221,7 +221,7 @@ const DocxToPdf = () => {
                 onClick={handleReset}
                 className="px-4 py-3 text-gray-500 hover:text-red-600 hover:bg-red-50 rounded-lg transition font-medium flex items-center gap-2"
               >
-                <X size={18} /> {t("common.cancel") || "İptal"}
+                <X size={18} /> {t("common.cancel")}
               </button>
               <button
                 onClick={downloadPdf}
@@ -272,90 +272,6 @@ const DocxToPdf = () => {
         <AdBanner slot="1234567890" />
       </div>
 
-      {/* --- SEO VE İÇERİK ALANI (EKLENDİ) --- */}
-      <article className="mt-16 prose prose-lg max-w-none text-gray-600 bg-white p-8 md:p-12 rounded-[2rem] border border-gray-100 shadow-sm">
-        <h2 className="text-3xl font-bold text-gray-900 mb-6 flex items-center gap-3">
-          <FileText className="text-blue-500" />
-          {t("tools.docx_converter.content.title")}
-        </h2>
-        <p className="leading-relaxed mb-10 text-lg">
-          {t("tools.docx_converter.content.p1")}
-        </p>
-
-        <div className="grid md:grid-cols-2 gap-12">
-          {/* Sol Kolon */}
-          <div className="space-y-8">
-            <div className="bg-blue-50 p-6 rounded-2xl border border-blue-100">
-              <h3 className="text-xl font-bold text-blue-800 mb-3 flex items-center gap-2">
-                <ShieldCheck size={24} className="text-blue-600" />
-                {t("tools.docx_converter.content.h2_privacy")}
-              </h3>
-              <p className="text-blue-900/80 text-sm font-medium leading-relaxed">
-                {t("tools.docx_converter.content.p_privacy")}
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-                <Zap size={24} className="text-yellow-500" />
-                {t("tools.docx_converter.content.h2_features")}
-              </h3>
-              <ul className="space-y-4 list-none pl-0">
-                {[1, 2, 3].map((num) => (
-                  <li key={num} className="flex gap-3 items-start">
-                    <CheckCircle2
-                      className="text-blue-500 flex-shrink-0 mt-1"
-                      size={20}
-                    />
-                    <span>
-                      <strong className="block text-gray-900">
-                        {t(`tools.docx_converter.content.li${num}_title`)}
-                      </strong>
-                      {t(`tools.docx_converter.content.li${num}`)}
-                    </span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-
-          {/* Sağ Kolon */}
-          <div className="bg-gray-50 p-8 rounded-2xl border border-gray-100">
-            <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-              <Lightbulb size={24} className="text-orange-500" />
-              {t("tools.docx_converter.content.h_guide")}
-            </h3>
-            <p className="mb-6 text-sm font-medium">
-              {t("tools.docx_converter.content.guide_p")}
-            </p>
-            <ul className="space-y-6 relative before:absolute before:left-4 before:top-2 before:h-[calc(100%-20px)] before:w-0.5 before:bg-blue-200">
-              {[1, 2, 3].map((num) => (
-                <li key={num} className="relative flex gap-4">
-                  <span className="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-sm font-bold z-10 ring-4 ring-white">
-                    {num}
-                  </span>
-                  <div>
-                    <h4 className="font-bold text-gray-900 mb-1">
-                      {
-                        t(`tools.docx_converter.content.step${num}`).split(
-                          ":",
-                        )[0]
-                      }
-                    </h4>
-                    <p className="text-sm text-gray-700">
-                      {
-                        t(`tools.docx_converter.content.step${num}`).split(
-                          ":",
-                        )[1]
-                      }
-                    </p>
-                  </div>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </article>
     </div>
   );
 };
