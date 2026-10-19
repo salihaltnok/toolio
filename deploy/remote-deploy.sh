@@ -8,6 +8,7 @@
 #    bash remote-deploy.sh deploy   <web_klasoru> <arsiv.tar.gz> [saklanacak_yedek]
 #    bash remote-deploy.sh rollback <web_klasoru>
 #    bash remote-deploy.sh status   <web_klasoru>
+#    bash remote-deploy.sh diagnose <web_klasoru>   (sadece okur)
 #
 #  Yaptiklari (deploy):
 #    1. Arsivi /var/www altinda gecici bir klasore acar ve icerigini kontrol eder.
@@ -163,9 +164,53 @@ do_status() {
   fi
 }
 
+do_diagnose() {
+  # Sadece okur, hicbir seyi degistirmez. Bir komut hata verse de devam eder.
+  set +e +u +o pipefail
+  local HOST="${SITE_HOST:-toolio.com.tr}"
+  local S=""; [ "$(id -u)" -ne 0 ] && command -v sudo >/dev/null 2>&1 && S="sudo"
+  echo "=================== TOOLIO SUNUCU TESHISI ==================="
+  echo "## Kullanici / sistem"; id; uname -srm
+  echo; echo "## Yayin klasoru: $WEB_ROOT"
+  ls -la "$WEB_ROOT" 2>&1 | head -12
+  [ -f "$WEB_ROOT/surum.txt" ] && echo "surum.txt: $(cat "$WEB_ROOT/surum.txt")"
+  echo; echo "## 80/443 portlarini dinleyen programlar"
+  ($S ss -ltnp 2>/dev/null || $S netstat -ltnp 2>/dev/null) | grep -E ':(80|443|8080|8443)[[:space:]]' || echo "(bulunamadi)"
+  echo; echo "## Sunucunun kendisinden siteye istek (surum.txt)"
+  curl --noproxy "*" -sk -m 8 --resolve "$HOST:443:127.0.0.1" "https://$HOST/surum.txt" | head -c 200; echo
+  curl --noproxy "*" -sk -m 8 -o /dev/null -w "HTTPS / -> %{http_code}\n" --resolve "$HOST:443:127.0.0.1" "https://$HOST/"
+  echo "HTTP (port 80) surum.txt: $(curl --noproxy "*" -s -m 8 -H "Host: $HOST" http://127.0.0.1/surum.txt | head -c 120 | tr '\n' ' ')"
+  echo; echo "## Docker"
+  if command -v docker >/dev/null 2>&1; then
+    $S docker ps --format 'table {{.Names}}\t{{.Image}}\t{{.Ports}}\t{{.Status}}' 2>&1
+    for c in $($S docker ps --format '{{.Names}}' 2>/dev/null); do
+      echo "---- konteyner: $c"
+      $S docker inspect -f '{{range .Mounts}}  mount: {{.Source}} -> {{.Destination}}{{println}}{{end}}{{range $k, $v := .Config.Labels}}{{if or (eq $k "com.docker.compose.project.working_dir") (eq $k "com.docker.compose.project.config_files")}}  {{$k}}={{$v}}{{println}}{{end}}{{end}}' "$c" 2>/dev/null
+      $S docker exec "$c" sh -c 'for f in /usr/share/nginx/html/surum.txt /usr/share/nginx/html/index.html; do [ -f "$f" ] && echo "  $f: $(head -c 120 "$f" | tr "\n" " ")"; done; ls /etc/nginx/conf.d 2>/dev/null | sed "s/^/  conf.d: /"' 2>/dev/null
+    done
+  else
+    echo "(docker yok)"
+  fi
+  echo; echo "## Host Nginx ayarlari (server_name / root / proxy_pass)"
+  if command -v nginx >/dev/null 2>&1; then
+    $S nginx -T 2>/dev/null | grep -nE '^# configuration file|server_name|^\s*root |proxy_pass|^\s*listen' | grep -vE '^\s*[0-9]+:\s*#[^ ]' | head -80
+  else
+    echo "(host'ta nginx yok)"
+  fi
+  echo; echo "## 'toolio' gecen ayar dosyalari"
+  $S find /etc/nginx /etc/caddy /etc/apache2 /etc/httpd /etc/traefik /opt /srv /root /home -maxdepth 4 -type f \
+      \( -name '*.conf' -o -name '*.yml' -o -name '*.yaml' -o -name 'Caddyfile' -o -name '*.toml' -o -name 'docker-compose*' \) \
+      -size -200k 2>/dev/null | grep -v node_modules | head -400 | xargs -r $S grep -lis toolio 2>/dev/null | head -30
+  echo; echo "## GitHub Actions runner"
+  ls -d /root/actions-runner* /home/*/actions-runner* 2>/dev/null || echo "(bulunamadi)"
+  systemctl list-units --type=service --no-pager 2>/dev/null | grep -i 'actions.runner' || true
+  echo "=================== TESHIS SONU ==================="
+}
+
 case "$ACTION" in
   deploy) do_deploy ;;
   rollback) do_rollback ;;
   status) do_status ;;
-  *) fail "Gecersiz islem: '$ACTION' (deploy | rollback | status)" ;;
+  diagnose) do_diagnose ;;
+  *) fail "Gecersiz islem: '$ACTION' (deploy | rollback | status | diagnose)" ;;
 esac

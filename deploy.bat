@@ -7,6 +7,7 @@ rem    deploy.bat            -> Siteyi derler ve sunucuya yukler (cift tikla da 
 rem    deploy.bat kurulum    -> Sunucu bilgilerini ve SSH anahtarini (yeniden) ayarlar
 rem    deploy.bat geri-al    -> Siteyi bir onceki surume dondurur
 rem    deploy.bat durum      -> Sunucudaki surumu ve yedekleri gosterir
+rem    deploy.bat teshis     -> Siteyi sunucuda hangi programin sundugunu raporlar
 rem    deploy.bat onizle     -> Siteyi derleyip bilgisayarinda acar (yuklemez)
 rem
 rem  Gerekenler: Node.js 20.19+ (https://nodejs.org), Windows 10/11
@@ -66,9 +67,10 @@ call :ssh_ayarla
 if /I "%ACTION%"=="yayinla" goto :yayinla
 if /I "%ACTION%"=="geri-al" goto :geri_al
 if /I "%ACTION%"=="durum" goto :durum
+if /I "%ACTION%"=="teshis" goto :teshis
 
 echo  Bilinmeyen islem: %ACTION%
-echo  Kullanim: deploy.bat [kurulum ^| geri-al ^| durum ^| onizle]
+echo  Kullanim: deploy.bat [kurulum ^| geri-al ^| durum ^| teshis ^| onizle]
 set "EXIT_CODE=1"
 goto :son
 
@@ -167,6 +169,20 @@ call :betigi_gonder
 if errorlevel 1 goto :hata
 "%SSH_EXE%" -t %SSH_OPTS% -p %SERVER_PORT% %SERVER_USER%@%SERVER_HOST% "tr -d '\r' < /tmp/remote-deploy.sh > %REMOTE_SCRIPT% && rm -f /tmp/remote-deploy.sh && bash %REMOTE_SCRIPT% status '%WEB_ROOT%'"
 if errorlevel 1 goto :hata
+goto :son
+
+
+rem ===========================================================================
+:teshis
+rem ===========================================================================
+set "REPORT=%ROOT%teshis-raporu.txt"
+echo  Sunucu taraniyor (hicbir sey degistirilmez)...
+call :betigi_gonder
+if errorlevel 1 goto :hata
+"%SSH_EXE%" %SSH_OPTS% -p %SERVER_PORT% %SERVER_USER%@%SERVER_HOST% "tr -d '\r' < /tmp/remote-deploy.sh > %REMOTE_SCRIPT% && rm -f /tmp/remote-deploy.sh && bash %REMOTE_SCRIPT% diagnose '%WEB_ROOT%'" > "%REPORT%" 2>&1
+type "%REPORT%"
+echo.
+echo  Rapor kaydedildi: teshis-raporu.txt  (bu dosyayi Claude'a gonderebilirsin)
 goto :son
 
 
