@@ -8,6 +8,7 @@ rem    deploy.bat kurulum    -> Sunucu bilgilerini ve SSH anahtarini (yeniden) a
 rem    deploy.bat geri-al    -> Siteyi bir onceki surume dondurur
 rem    deploy.bat durum      -> Sunucudaki surumu ve yedekleri gosterir
 rem    deploy.bat teshis     -> Siteyi sunucuda hangi programin sundugunu raporlar
+rem    deploy.bat sunucu-kur -> (Bir kerelik) Sitenin yayin klasorunden sunulmasini saglar
 rem    deploy.bat onizle     -> Siteyi derleyip bilgisayarinda acar (yuklemez)
 rem
 rem  Gerekenler: Node.js 20.19+ (https://nodejs.org), Windows 10/11
@@ -68,9 +69,10 @@ if /I "%ACTION%"=="yayinla" goto :yayinla
 if /I "%ACTION%"=="geri-al" goto :geri_al
 if /I "%ACTION%"=="durum" goto :durum
 if /I "%ACTION%"=="teshis" goto :teshis
+if /I "%ACTION%"=="sunucu-kur" goto :sunucu_kur
 
 echo  Bilinmeyen islem: %ACTION%
-echo  Kullanim: deploy.bat [kurulum ^| geri-al ^| durum ^| teshis ^| onizle]
+echo  Kullanim: deploy.bat [kurulum ^| geri-al ^| durum ^| teshis ^| sunucu-kur ^| onizle]
 set "EXIT_CODE=1"
 goto :son
 
@@ -187,6 +189,58 @@ goto :son
 
 
 rem ===========================================================================
+:sunucu_kur
+rem ===========================================================================
+set "NEW_WEB_ROOT=/var/www/toolio-site/html"
+echo  Bu islem BIR KEZ yapilir:
+echo   - toolio.com.tr'yi sunan Docker konteyneri, siteyi %NEW_WEB_ROOT%
+echo     klasorunden okuyacak sekilde yeniden olusturulur (ayni ad, ayni ag).
+echo   - Nginx Proxy Manager'a ve diger sitelere dokunulmaz.
+echo   - Eski konteyner silinmez; sorun olursa otomatik geri getirilir.
+echo.
+choice /C EH /N /M "  Devam edilsin mi? [E/H]: "
+if errorlevel 2 goto :son
+call :betigi_gonder
+if errorlevel 1 goto :hata
+"%SSH_EXE%" -t %SSH_OPTS% -p %SERVER_PORT% %SERVER_USER%@%SERVER_HOST% "tr -d '\r' < /tmp/remote-deploy.sh > %REMOTE_SCRIPT% && rm -f /tmp/remote-deploy.sh && bash %REMOTE_SCRIPT% setup '%WEB_ROOT%' '%NEW_WEB_ROOT%'"
+if errorlevel 1 (
+  echo.
+  echo  Sunucu kurulumu tamamlanamadi. Yukaridaki mesaji okuyun; site eski haliyle calisiyor.
+  goto :hata
+)
+set "WEB_ROOT=%NEW_WEB_ROOT%"
+call :config_yaz
+echo.
+echo  deploy.config.bat guncellendi: WEB_ROOT=%NEW_WEB_ROOT%
+call :saglik_kontrolu
+echo.
+echo  Sunucu kurulumu tamamlandi. Bundan sonra sadece deploy.bat calistirman yeterli.
+goto :son
+
+
+rem ===========================================================================
+:config_yaz
+rem ===========================================================================
+if not defined GIT_PUSH set "GIT_PUSH=1"
+if not defined KEEP_BACKUPS set "KEEP_BACKUPS=5"
+(
+  echo @echo off
+  echo rem Toolio yayin ayarlari - deploy.bat tarafindan olusturuldu.
+  echo rem Bu dosya GitHub'a gonderilmez ^(.gitignore^).
+  echo set "SERVER_HOST=!SERVER_HOST!"
+  echo set "SERVER_USER=!SERVER_USER!"
+  echo set "SERVER_PORT=!SERVER_PORT!"
+  echo set "WEB_ROOT=!WEB_ROOT!"
+  echo set "SITE_URL=!SITE_URL!"
+  echo rem Yayindan once degisiklikleri GitHub'a commit+push et: 1=evet, 0=hayir
+  echo set "GIT_PUSH=!GIT_PUSH!"
+  echo rem Sunucuda saklanacak eski surum sayisi
+  echo set "KEEP_BACKUPS=!KEEP_BACKUPS!"
+) > "%CONFIG%"
+exit /b 0
+
+
+rem ===========================================================================
 :betigi_gonder
 rem ===========================================================================
 rem Goreli yol kullaniyoruz: scp "C:\..." gibi yollari sunucu adi sanabilir.
@@ -254,7 +308,7 @@ set "IN_PORT="
 set /p "IN_PORT=  SSH portu [!D_PORT!]: "
 if defined IN_PORT (set "S_PORT=!IN_PORT!") else (set "S_PORT=!D_PORT!")
 
-set "D_ROOT=/var/www/toolio"
+set "D_ROOT=/var/www/toolio-site/html"
 if defined WEB_ROOT set "D_ROOT=%WEB_ROOT%"
 set "IN_ROOT="
 set /p "IN_ROOT=  Sunucudaki site klasoru [!D_ROOT!]: "
@@ -266,20 +320,12 @@ set "IN_SITE="
 set /p "IN_SITE=  Site adresi [!D_SITE!]: "
 if defined IN_SITE (set "S_SITE=!IN_SITE!") else (set "S_SITE=!D_SITE!")
 
-(
-  echo @echo off
-  echo rem Toolio yayin ayarlari - deploy.bat kurulum ile olusturuldu.
-  echo rem Bu dosya GitHub'a gonderilmez ^(.gitignore^).
-  echo set "SERVER_HOST=!S_HOST!"
-  echo set "SERVER_USER=!S_USER!"
-  echo set "SERVER_PORT=!S_PORT!"
-  echo set "WEB_ROOT=!S_ROOT!"
-  echo set "SITE_URL=!S_SITE!"
-  echo rem Yayindan once degisiklikleri GitHub'a commit+push et: 1=evet, 0=hayir
-  echo set "GIT_PUSH=1"
-  echo rem Sunucuda saklanacak eski surum sayisi
-  echo set "KEEP_BACKUPS=5"
-) > "%CONFIG%"
+set "SERVER_HOST=!S_HOST!"
+set "SERVER_USER=!S_USER!"
+set "SERVER_PORT=!S_PORT!"
+set "WEB_ROOT=!S_ROOT!"
+set "SITE_URL=!S_SITE!"
+call :config_yaz
 echo.
 echo  Ayarlar kaydedildi: deploy.config.bat
 
@@ -439,8 +485,8 @@ if "!HTTP_CODE!"=="200" (
 )
 curl -s -L --max-time 20 "%SITE_URL%/privacy/" | findstr /C:"toolio.com.tr/privacy/" >nul
 if errorlevel 1 (
-  echo        UYARI: Alt sayfalar hazir HTML olarak sunulmuyor olabilir.
-  echo        README.md icindeki "Nginx ayari" bolumune bakin ^(deploy\nginx-toolio.conf^).
+  echo        UYARI: Site yeni surumu gostermiyor olabilir.
+  echo        Sunucu kurulumu yapilmadiysa bir kez calistirin:  deploy.bat sunucu-kur
 ) else (
   echo        Alt sayfalar hazir HTML olarak sunuluyor.
 )

@@ -29,6 +29,10 @@ kategorilerinde ücretsiz, tarayıcıda çalışan online araçlar.
 | `deploy.bat durum` | Sunucudaki sürümü ve yedekleri listeler |
 | `deploy.bat onizle` | Derleyip siteyi bilgisayarında açar (`http://localhost:4173`), yüklemez |
 | `deploy.bat kurulum` | Sunucu bilgilerini ve SSH anahtarını yeniden ayarlar |
+| `deploy.bat teshis` | Sunucuyu yalnızca okuyarak sitenin nereden sunulduğunu raporlar |
+| `deploy.bat sunucu-kur` | (Bir kerelik) Sitenin yayın klasöründen sunulmasını sağlar |
+
+PowerShell kullanıyorsan komutların başına `.\` ekle: `.\deploy.bat`, `.\deploy.bat geri-al` gibi.
 
 ### İlk çalıştırma
 
@@ -37,7 +41,7 @@ kategorilerinde ücretsiz, tarayıcıda çalışan online araçlar.
 - Sunucu IP adresi
 - SSH kullanıcı adı (ör. `root`)
 - SSH portu (genelde `22`)
-- Sunucudaki site klasörü (varsayılan `/var/www/toolio`)
+- Sunucudaki site klasörü (varsayılan `/var/www/toolio-site/html`)
 - Site adresi (varsayılan `https://toolio.com.tr`)
 
 Ardından **SSH anahtarı** kurmayı önerir. "E" dersen sunucu şifren son bir kez sorulur ve sonraki
@@ -54,42 +58,36 @@ yayınlarda bir daha sorulmaz.
 ### Sunucuda neler oluyor?
 
 ```
-/var/www/toolio              ← yayındaki site (Nginx buradan sunar)
-/var/www/toolio_yedekler/    ← son 5 sürüm (KEEP_BACKUPS ile değiştirilebilir)
-/var/www/toolio_geri_alinan/ ← "geri-al" sonrası çıkarılan sürüm
+ziyaretçi ─► Nginx Proxy Manager (Docker, 80/443, SSL)
+                └─► react-website-container (nginx:alpine)
+                       └─ /var/www/toolio-site/html      ← deploy.bat buraya yayınlar
+/var/www/toolio-site/html_yedekler/    son 5 sürüm (KEEP_BACKUPS)
+/var/www/toolio-site/html_geri_alinan/ "geri-al" sonrası çıkarılan sürüm
+/opt/toolio/                           konteyner ayarları (docker-compose.yml, nginx.conf)
 ```
 
-Sunucuda Node.js, Git veya GitHub Actions runner'ı **gerekmez**; yalnızca Nginx ve SSH yeterlidir.
-Kullanıcın `/var/www` klasörüne yazamıyorsa betik otomatik olarak `sudo` kullanır (şifre sorabilir).
+Sunucuda Node.js, Git veya GitHub Actions runner'ı **gerekmez**. Konteyner site dosyalarını
+klasörden okuduğu için yeni sürüm yayınlandığı anda görünür; konteyneri yeniden başlatmaya gerek yoktur.
 Sunucuda çalışan kısım `deploy/remote-deploy.sh` dosyasıdır.
 
----
+### Bir kerelik sunucu kurulumu: `deploy.bat sunucu-kur`
 
-## Nginx ayarı (bir kerelik, önerilir)
+Eski kurulumda `react-website-container` konteyneri dosyaları kendi içinde taşıyordu, bu yüzden
+yayınlar siteye yansımıyordu. `deploy.bat sunucu-kur` bunu bir kez düzeltir:
 
-Site, sunucudaki mevcut Nginx ayarıyla da çalışır. Ancak önerilen ayar şunları ekler:
+1. Nginx Proxy Manager'ın `toolio.com.tr`'yi `react-website-container:80`'e yönlendirdiğini doğrular
+   (değilse hiçbir şeyi değiştirmeden durur ve ne yapılacağını söyler),
+2. Site dosyalarını `/var/www/toolio` → `/var/www/toolio-site/html` taşır,
+3. `/opt/toolio/` altına yeni konteyner ayarlarını yazar,
+4. Eski konteyneri **silmeden** `react-website-container-eski` adıyla durdurur,
+5. Aynı ad ve ağla (`proxy_net`) yeni konteyneri başlatır ve siteyi kontrol eder.
+   Kontrol başarısız olursa eski konteyneri otomatik geri getirir.
 
-- Olmayan adresler gerçek **404** döner (AdSense ve Google "soft 404" görmez),
-- `/about` → `/about/` yönlendirmesi ve doğru önbellek başlıkları,
-- `www` ve `http` adreslerinin tek adrese yönlendirilmesi.
+Proxy Manager'a ve sunucudaki diğer konteynerlere dokunulmaz. Birkaç gün sorun olmazsa eski
+konteyneri silebilirsin: `docker rm react-website-container-eski`.
 
-Adımlar (sunucuda):
-
-```bash
-# 1) Mevcut ayarın yedeğini al (dosya adı sunucunda farklı olabilir)
-ls /etc/nginx/sites-enabled/
-sudo cp /etc/nginx/sites-available/toolio /root/toolio.nginx.yedek
-
-# 2) deploy/nginx-toolio.conf içindeki server bloklarını mevcut dosyaya uygula.
-#    ssl_certificate satırlarını (certbot) AYNEN koru.
-sudo nano /etc/nginx/sites-available/toolio
-
-# 3) Test et ve uygula
-sudo nginx -t && sudo systemctl reload nginx
-```
-
-`deploy.bat` her yayından sonra alt sayfaların hazır HTML olarak sunulup sunulmadığını kontrol eder
-ve sorun görürse uyarır.
+`deploy.bat teshis` sunucuyu yalnızca okuyarak sitenin nereden sunulduğunu raporlar
+(`teshis-raporu.txt`).
 
 ---
 
@@ -99,7 +97,7 @@ ve sorun görürse uyarır.
 Sunucuda kurulu GitHub Actions runner'ı hâlâ çalışıyorsa kaynak tüketmemesi için kapatabilirsin:
 
 ```bash
-cd ~/actions-runner        # runner'ı kurduğun klasör
+cd /home/githubuser/actions-runner
 sudo ./svc.sh stop
 sudo ./svc.sh uninstall
 ```

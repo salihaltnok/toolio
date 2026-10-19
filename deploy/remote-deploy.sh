@@ -9,6 +9,7 @@
 #    bash remote-deploy.sh rollback <web_klasoru>
 #    bash remote-deploy.sh status   <web_klasoru>
 #    bash remote-deploy.sh diagnose <web_klasoru>   (sadece okur)
+#    bash remote-deploy.sh setup    <eski_klasor> <yeni_klasor>   (bir kerelik sunucu kurulumu)
 #
 #  Yaptiklari (deploy):
 #    1. Arsivi /var/www altinda gecici bir klasore acar ve icerigini kontrol eder.
@@ -91,7 +92,7 @@ do_deploy() {
     OWNER="$(stat -c '%U:%G' "$WEB_ROOT" 2>/dev/null || true)"
     if [ -n "$OWNER" ]; then $SUDO chown -R "$OWNER" "$NEW" 2>/dev/null || true; fi
   fi
-  $SUDO chmod -R a+rX "$NEW"
+  $SUDO chmod -R u+rwX,go+rX,go-w "$NEW"
   $SUDO chmod 755 "$NEW"
 
   # Gecis
@@ -207,10 +208,225 @@ do_diagnose() {
   echo "=================== TESHIS SONU ==================="
 }
 
+# -----------------------------------------------------------------------------
+#  SETUP (bir kerelik): toolio.com.tr'yi sunan Docker konteynerini, site
+#  dosyalarini sunucudaki klasorden okuyacak sekilde yeniden olusturur.
+#  - Nginx Proxy Manager'a ve diger konteynerlere DOKUNMAZ.
+#  - Yeni konteyner ayni adla (react-website-container) ve ayni agda
+#    (proxy_net) calisir; Proxy Manager ayari degismeden calismaya devam eder.
+#  - Eski konteyner silinmez, "react-website-container-eski" adiyla durdurulur.
+#  - Kontrol basarisiz olursa eski konteyner otomatik geri getirilir.
+# -----------------------------------------------------------------------------
+CONTAINER="react-website-container"
+OLD_CONTAINER="react-website-container-eski"
+DOCKER_NET="proxy_net"
+APP_DIR="/opt/toolio"
+COMPOSE_PROJECT="toolio-site"
+NPM_PROXY_DIR="/root/npm/data/nginx/proxy_host"
+SITE_DOMAIN="toolio.com.tr"
+
+site_check_via_proxy() {
+  curl --noproxy "*" -sk -m 8 --resolve "$SITE_DOMAIN:443:127.0.0.1" "https://$SITE_DOMAIN/surum.txt" 2>/dev/null \
+    | head -c 100 | grep -qE '^[0-9]{4}-[0-9]{2}-[0-9]{2}'
+}
+
+restore_old_container() {
+  info "Eski konteyner geri getiriliyor..."
+  docker rm -f "$CONTAINER" >/dev/null 2>&1 || true
+  if docker inspect "$OLD_CONTAINER" >/dev/null 2>&1; then
+    docker rename "$OLD_CONTAINER" "$CONTAINER"
+    docker update --restart=always "$CONTAINER" >/dev/null 2>&1 || true
+    docker start "$CONTAINER" >/dev/null
+    info "Eski konteyner tekrar calisiyor; site eski haline dondu."
+  fi
+}
+
+do_setup() {
+  local OLD_ROOT="$WEB_ROOT"
+  local NEW_ROOT="${ARCHIVE%/}"
+  case "$NEW_ROOT" in /*) ;; *) fail "Yeni site klasoru mutlak yol olmali: $NEW_ROOT" ;; esac
+  local SITE_BASE NEW_NAME DC
+  SITE_BASE="$(dirname "$NEW_ROOT")"
+  NEW_NAME="$(basename "$NEW_ROOT")"
+
+  [ "$(id -u)" -eq 0 ] || fail "Sunucu kurulumu root kullanicisiyla yapilmali."
+  command -v docker >/dev/null 2>&1 || fail "docker bulunamadi."
+  if docker compose version >/dev/null 2>&1; then DC="docker compose"
+  elif command -v docker-compose >/dev/null 2>&1; then DC="docker-compose"
+  else fail "docker compose bulunamadi."; fi
+
+  info "1/6 Kontroller yapiliyor (henuz hicbir sey degismedi)..."
+  docker network inspect "$DOCKER_NET" >/dev/null 2>&1 || fail "'$DOCKER_NET' Docker agi bulunamadi."
+  local NPM_CONF="" FWD_HOST="" FWD_PORT=""
+  if [ -d "$NPM_PROXY_DIR" ]; then
+    NPM_CONF="$(grep -lE "server_name[^;]*[[:space:]](www\.)?toolio\.com\.tr([[:space:]]|;)" "$NPM_PROXY_DIR"/*.conf 2>/dev/null | head -n 1 || true)"
+  fi
+  [ -n "$NPM_CONF" ] || fail "Nginx Proxy Manager'da $SITE_DOMAIN ayari bulunamadi ($NPM_PROXY_DIR). Hicbir sey degistirilmedi."
+  FWD_HOST="$(sed -nE 's/^[[:space:]]*set[[:space:]]+\$server[[:space:]]+"?([^";[:space:]]+)"?;.*/\1/p' "$NPM_CONF" | head -n 1)"
+  FWD_PORT="$(sed -nE 's/^[[:space:]]*set[[:space:]]+\$port[[:space:]]+([0-9]+);.*/\1/p' "$NPM_CONF" | head -n 1)"
+  info "    Proxy Manager: $SITE_DOMAIN -> ${FWD_HOST:-?}:${FWD_PORT:-?}  ($(basename "$NPM_CONF"))"
+  if [ "$FWD_HOST" != "$CONTAINER" ] || [ "${FWD_PORT:-80}" != "80" ]; then
+    fail "Proxy Manager $SITE_DOMAIN adresini '$FWD_HOST:$FWD_PORT' hedefine yonlendiriyor, '$CONTAINER:80' bekleniyordu.
+           Proxy Manager panelinde (http://SUNUCU_IP:81) $SITE_DOMAIN kaydini acip
+           Forward Hostname = $CONTAINER, Forward Port = 80 yapin ve bu komutu tekrar calistirin.
+           Hicbir sey degistirilmedi."
+  fi
+
+  local SRC=""
+  if [ -f "$NEW_ROOT/index.html" ]; then SRC="$NEW_ROOT"
+  elif [ -f "$OLD_ROOT/index.html" ]; then SRC="$OLD_ROOT"
+  else fail "Site dosyalari bulunamadi ($OLD_ROOT veya $NEW_ROOT). Once deploy.bat ile yayin yapin."; fi
+  grep -qE '<div id="root"><[^/]' "$SRC/index.html" \
+    || fail "$SRC/index.html yeni surum degil. Once deploy.bat ile yayin yapin. Hicbir sey degistirilmedi."
+  info "    Site dosyalari: $SRC ($(head -n 1 "$SRC/surum.txt" 2>/dev/null || echo 'surum bilgisi yok'))"
+
+  info "2/6 Site klasoru hazirlaniyor: $NEW_ROOT"
+  mkdir -p "$SITE_BASE"
+  if [ "$SRC" = "$OLD_ROOT" ] && [ "$OLD_ROOT" != "$NEW_ROOT" ]; then
+    [ ! -e "$NEW_ROOT" ] || fail "$NEW_ROOT zaten var; uzerine yazilmadi."
+    mv "$OLD_ROOT" "$NEW_ROOT"
+    if [ -d "${OLD_ROOT}_yedekler" ] && [ ! -e "$SITE_BASE/${NEW_NAME}_yedekler" ]; then
+      mv "${OLD_ROOT}_yedekler" "$SITE_BASE/${NEW_NAME}_yedekler"
+    fi
+    if [ -d "${OLD_ROOT}_geri_alinan" ] && [ ! -e "$SITE_BASE/${NEW_NAME}_geri_alinan" ]; then
+      mv "${OLD_ROOT}_geri_alinan" "$SITE_BASE/${NEW_NAME}_geri_alinan"
+    fi
+    info "    $OLD_ROOT -> $NEW_ROOT tasindi."
+  fi
+  chmod 755 "$SITE_BASE"
+  chmod -R u+rwX,go+rX,go-w "$NEW_ROOT"
+
+  info "3/6 Konteyner ayarlari yaziliyor: $APP_DIR"
+  mkdir -p "$APP_DIR"
+  cat > "$APP_DIR/nginx.conf" <<NGINX
+# Toolio statik site - konteyner icindeki Nginx ayari.
+# deploy.bat sunucu-kur tarafindan olusturuldu. Site dosyalari: $NEW_ROOT
+server {
+    listen 80;
+    server_name _;
+    root /srv/site/$NEW_NAME;
+    index index.html;
+    charset utf-8;
+    absolute_redirect off;
+    port_in_redirect off;
+
+    location ~ /\\. {
+        deny all;
+    }
+
+    location /assets/ {
+        add_header Cache-Control "public, max-age=31536000, immutable";
+        try_files \$uri =404;
+    }
+
+    location ~* \\.(?:png|jpe?g|webp|gif|svg|ico)\$ {
+        add_header Cache-Control "public, max-age=2592000";
+        try_files \$uri =404;
+    }
+
+    location ~* ^/(ads\\.txt|robots\\.txt|sitemap\\.xml|surum\\.txt)\$ {
+        add_header Cache-Control "no-cache";
+        try_files \$uri =404;
+    }
+
+    location / {
+        add_header Cache-Control "no-cache";
+        try_files \$uri \$uri/ =404;
+    }
+
+    error_page 404 /404.html;
+    location = /404.html {
+        add_header Cache-Control "no-cache";
+        internal;
+    }
+
+    gzip on;
+    gzip_vary on;
+    gzip_min_length 1024;
+    gzip_types text/plain text/css text/xml application/javascript application/json application/xml image/svg+xml;
+}
+NGINX
+  cat > "$APP_DIR/docker-compose.yml" <<YAML
+# Toolio statik site konteyneri - deploy.bat sunucu-kur tarafindan olusturuldu.
+# deploy.bat yeni surumu $NEW_ROOT klasorune yayinlar; bu konteyner oradan sunar.
+# Yeniden baslatmak icin:  cd $APP_DIR && $DC -p $COMPOSE_PROJECT up -d
+services:
+  web:
+    image: nginx:alpine
+    container_name: $CONTAINER
+    restart: always
+    volumes:
+      - $SITE_BASE:/srv/site:ro
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    networks:
+      - $DOCKER_NET
+
+networks:
+  $DOCKER_NET:
+    external: true
+YAML
+
+  info "4/6 Eski konteyner durduruluyor (silinmiyor)..."
+  local CURRENT_PROJECT=""
+  CURRENT_PROJECT="$(docker inspect -f '{{index .Config.Labels "com.docker.compose.project"}}' "$CONTAINER" 2>/dev/null || true)"
+  if docker inspect "$CONTAINER" >/dev/null 2>&1 && [ "$CURRENT_PROJECT" != "$COMPOSE_PROJECT" ]; then
+    docker inspect "$CONTAINER" > "$APP_DIR/eski-konteyner-$TS.json" 2>/dev/null || true
+    if docker inspect "$OLD_CONTAINER" >/dev/null 2>&1; then
+      docker rm -f "$OLD_CONTAINER" >/dev/null
+    fi
+    docker update --restart=no "$CONTAINER" >/dev/null
+    docker rename "$CONTAINER" "$OLD_CONTAINER"
+    docker stop "$OLD_CONTAINER" >/dev/null
+    info "    Eski konteyner '$OLD_CONTAINER' adiyla durduruldu."
+  else
+    info "    Konteyner zaten yeni yapida; ayarlar yenilenecek."
+  fi
+
+  info "5/6 Yeni konteyner baslatiliyor..."
+  if ! (cd "$APP_DIR" && $DC -p "$COMPOSE_PROJECT" up -d --force-recreate); then
+    restore_old_container
+    fail "Yeni konteyner baslatilamadi."
+  fi
+
+  info "6/6 Site kontrol ediliyor..."
+  local i ok=0
+  for i in 1 2 3 4 5; do
+    sleep 2
+    if docker exec "$CONTAINER" wget -qO- http://127.0.0.1/surum.txt 2>/dev/null | grep -qE '^[0-9]{4}-'; then ok=1; break; fi
+  done
+  if [ "$ok" -ne 1 ]; then
+    docker logs --tail 20 "$CONTAINER" 2>&1 | sed 's/^/      /' || true
+    restore_old_container
+    fail "Yeni konteyner site dosyalarini sunamadi."
+  fi
+  ok=0
+  for i in $(seq 1 15); do
+    if site_check_via_proxy; then ok=1; break; fi
+    sleep 2
+  done
+  if [ "$ok" -ne 1 ]; then
+    info "    Proxy Manager henuz yeni konteyneri gormedi; Proxy Manager ayarlari yeniden yukleniyor..."
+    docker exec npm-app-1 nginx -s reload >/dev/null 2>&1 || true
+    for i in $(seq 1 10); do
+      if site_check_via_proxy; then ok=1; break; fi
+      sleep 2
+    done
+  fi
+  if [ "$ok" -ne 1 ]; then
+    restore_old_container
+    fail "https://$SITE_DOMAIN yeni konteynere ulasamadi. Degisiklikler geri alindi."
+  fi
+
+  info "TAMAM: https://$SITE_DOMAIN artik $NEW_ROOT klasorunden sunuluyor."
+  info "Eski konteyner '$OLD_CONTAINER' durdurulmus halde duruyor; birkac gun sorun yoksa silebilirsiniz:"
+  info "    docker rm $OLD_CONTAINER"
+}
+
 case "$ACTION" in
   deploy) do_deploy ;;
   rollback) do_rollback ;;
   status) do_status ;;
   diagnose) do_diagnose ;;
-  *) fail "Gecersiz islem: '$ACTION' (deploy | rollback | status | diagnose)" ;;
+  setup) do_setup ;;
+  *) fail "Gecersiz islem: '$ACTION' (deploy | rollback | status | diagnose | setup)" ;;
 esac
