@@ -1,0 +1,4 @@
+# Satir sonlari: .sh dosyalari her zaman LF, .bat dosyalari CRLF
+*.sh text eol=lf
+*.bat text eol=crlf
+*.cmd text eol=crlf

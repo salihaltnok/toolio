@@ -58,3 +58,9 @@ Thumbs.db
 # Optional: Coverage & test
 # =========================
 coverage/
+
+# =========================
+# Yayin (deploy.bat)
+# =========================
+deploy.config.bat
+.deploy-tmp/
